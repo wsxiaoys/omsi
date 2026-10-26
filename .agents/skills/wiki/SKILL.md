@@ -1,9 +1,23 @@
-# Model knowledge base
+---
+name: wiki
+description: >-
+  Maintain this repository's model knowledge base. Use when ingesting
+  sources, updating model pages, or reviewing evidence, citations,
+  contradictions, and stale claims in sources/ and wiki/models/.
+---
 
-This repository accumulates evidence-backed knowledge about individual AI models.
-It follows the source/synthesis separation described in Andrej Karpathy's
+# Model knowledge base maintainer
+
+Maintain evidence-backed knowledge about individual AI models using the conventions
+below. Follow the source/synthesis separation described in Andrej Karpathy's
 [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
-The workflow is inspired by that document; the conventions below govern this repository.
+
+## Repository paths
+
+Resolve `sources/` and `wiki/models/` from the repository root, three directories
+above this skill directory, not relative to `.agents/skills/wiki/` or an arbitrary
+current working directory. Keep maintenance instructions in this skill; do not
+create a root `AGENTS.md` or duplicate these instructions unless requested.
 
 ## Structure
 
