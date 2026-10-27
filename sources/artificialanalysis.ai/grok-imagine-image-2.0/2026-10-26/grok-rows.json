@@ -1,0 +1,84 @@
+{
+  "text-to-image": [
+    {
+      "name": "Grok Imagine Image 2.0",
+      "rank": 5,
+      "elo": 1165.59,
+      "ciLower": 1153.59,
+      "ciUpper": 1177.59,
+      "appearances": 7481,
+      "releaseDate": "2026-08-07",
+      "pricePer1kImages": 60,
+      "note": "Served at quality medium and 2k resolution; the API default quality (auto) serves low for generation.",
+      "isCurrent": true,
+      "introducedAt": "2026-09-14T03:01:57.685832+00:00"
+    },
+    {
+      "name": "grok-imagine-image-quality",
+      "rank": 19,
+      "elo": 1048.86,
+      "ciLower": 1039.86,
+      "ciUpper": 1057.86,
+      "appearances": 16728,
+      "releaseDate": "2026-05-06",
+      "pricePer1kImages": 50,
+      "note": "$undefined",
+      "isCurrent": true,
+      "introducedAt": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "name": "grok-imagine-image",
+      "rank": 33,
+      "elo": 1022.23,
+      "ciLower": 1011.23,
+      "ciUpper": 1033.23,
+      "appearances": 6330,
+      "releaseDate": "2026-01-28",
+      "pricePer1kImages": 20,
+      "note": "$undefined",
+      "isCurrent": true,
+      "introducedAt": "2026-02-10T00:00:00+00:00"
+    }
+  ],
+  "editing": [
+    {
+      "name": "Grok Imagine Image 2.0",
+      "rank": 16,
+      "elo": 1116.87,
+      "ciLower": 1103.87,
+      "ciUpper": 1129.87,
+      "appearances": 8692,
+      "releaseDate": "2026-08-07",
+      "pricePer1kImages": 60,
+      "note": "Served at quality medium and 2k resolution; the API default quality (auto) serves medium for editing.",
+      "isCurrent": true,
+      "introducedAt": "2026-09-14T03:02:17.313158+00:00"
+    },
+    {
+      "name": "grok-imagine-image-quality",
+      "rank": 18,
+      "elo": 1095.27,
+      "ciLower": 1083.27,
+      "ciUpper": 1107.27,
+      "appearances": 8787,
+      "releaseDate": "2026-05-06",
+      "pricePer1kImages": 50,
+      "note": "$undefined",
+      "isCurrent": true,
+      "introducedAt": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "name": "grok-imagine-image",
+      "rank": 25,
+      "elo": 1073.23,
+      "ciLower": 1060.23,
+      "ciUpper": 1086.23,
+      "appearances": 6100,
+      "releaseDate": "2026-01-28",
+      "pricePer1kImages": 20,
+      "note": "$undefined",
+      "isCurrent": true,
+      "introducedAt": "2026-02-10T00:00:00+00:00"
+    }
+  ]
+}
