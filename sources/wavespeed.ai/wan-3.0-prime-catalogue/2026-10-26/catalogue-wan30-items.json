@@ -1,0 +1,66 @@
+{
+ "query": "GET https://wavespeed.ai/api/models?search=wan",
+ "total_reported": 1100,
+ "items": [
+  {
+   "model_uuid": "alibaba/wan-3.0-prime/reference-to-video",
+   "model_name": "alibaba/wan-3.0-prime/reference-to-video",
+   "type": "reference-to-video",
+   "description": "Wan 3.0 Prime Reference to Video is an accelerated variant that creates coherent videos from prompts and multimodal references, including images, videos, and audio, with flexible 2-30 second duration and aspect ratio control for subject consistency, motion guidance, timing control, and scene continuity. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/1787546478975244978_9IJS1aku.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/1787546478975244978_9IJS1aku.webp",
+   "base_price": 450000,
+   "discount_rate": 95
+  },
+  {
+   "model_uuid": "alibaba/wan-3.0-prime/text-to-video",
+   "model_name": "alibaba/wan-3.0-prime/text-to-video",
+   "type": "text-to-video",
+   "description": "Wan 3.0 Prime Text to Video is an accelerated variant that generates cinematic videos from text prompts, with flexible 2-30 second duration, aspect ratio control, optional audio, and deep-thinking controls for high-quality video generation. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/1787543886315744792_dtDLU3dn.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/1787543886315744792_dtDLU3dn.webp",
+   "base_price": 150000,
+   "discount_rate": 95
+  },
+  {
+   "model_uuid": "alibaba/wan-3.0-prime/image-to-video",
+   "model_name": "alibaba/wan-3.0-prime/image-to-video",
+   "type": "image-to-video",
+   "description": "Wan 3.0 Prime Image to Video is an accelerated variant that animates a first-frame image into a cinematic video, with optional last-frame guidance, flexible 2-30 second duration, aspect ratio control, optional audio, and deep-thinking controls for high-quality motion and scene continuity. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/1787543869937523936_2JS2bjsC.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/1787543869937523936_2JS2bjsC.webp",
+   "base_price": 150000,
+   "discount_rate": 95
+  },
+  {
+   "model_uuid": "alibaba/wan-3.0/image-to-video",
+   "model_name": "alibaba/wan-3.0/image-to-video",
+   "type": "image-to-video",
+   "description": "Wan 3.0 Image to Video animates a first-frame image into a cinematic video, with optional last-frame guidance, flexible 2-30 second duration, aspect ratio control, optional audio, and deep-thinking controls for high-quality motion and scene continuity. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/1785738862631835931_QQZ9i1ak.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/1785738862631835931_QQZ9i1ak.webp",
+   "base_price": 100000,
+   "discount_rate": 95
+  },
+  {
+   "model_uuid": "alibaba/wan-3.0/reference-to-video",
+   "model_name": "alibaba/wan-3.0/reference-to-video",
+   "type": "reference-to-video",
+   "description": "Wan 3.0 Reference to Video creates coherent videos from prompts and multimodal references, including images, videos, and audio, with flexible 2-30 second duration and aspect ratio control for subject consistency, motion guidance, timing control, and scene continuity. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/1785740347734124119_3h5foxHR.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/1785740347734124119_3h5foxHR.webp",
+   "base_price": 300000,
+   "discount_rate": 95
+  },
+  {
+   "model_uuid": "alibaba/wan-3.0/text-to-video",
+   "model_name": "alibaba/wan-3.0/text-to-video",
+   "type": "text-to-video",
+   "description": "Wan 3.0 Text to Video generates cinematic videos from text prompts, with flexible 2-30 second duration, aspect ratio control, optional audio, and deep-thinking controls for high-quality video generation. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing.",
+   "poster": "https://static.wavespeed.ai/media/images/dc2cffc4-9885-490b-8e8b-a7a173c84bba.webp",
+   "cover_url": "https://static.wavespeed.ai/media/images/dc2cffc4-9885-490b-8e8b-a7a173c84bba.webp",
+   "base_price": 100000,
+   "discount_rate": 95
+  }
+ ]
+}

@@ -1,0 +1,452 @@
+{
+ "items": [
+  {
+   "id": "alibaba/wan-3.0/reference-to-video",
+   "discovery": {
+    "tasks": [
+     "reference-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "tags": [
+     "input:video",
+     "output:video",
+     "task:reference-to-video"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "d9oilbsregj69er60f4g",
+   "isFavorited": false,
+   "title": "Wan 3.0",
+   "category": "video-to-video",
+   "tags": [
+    "stylized",
+    "transform",
+    "lipsync"
+   ],
+   "shortDescription": "Wan 3.0 is the latest generation AI video model, delivering enhanced motion smoothness, superior scene fidelity, and greater visual coherence.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa4e980/FY0Yw0B-_KVknj6qtv5sp.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0/reference-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-03T23:56:31.060Z",
+   "group": {
+    "key": "Wan30",
+    "label": "Reference to Video"
+   },
+   "pricingInfoOverride": "For every second of video you generate, you will be charged **$0.05** **480p**, **$0.10** **720p**, or **$0.20** **1080p**. For example, a **5s** video at **720p** will cost **$0.50**. **Pricing is subject to change.**",
+   "machineType": null,
+   "examples": [
+    "3673b44c-8d8c-4da6-8402-354512386c2f"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T03:15:20.439Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "alibaba/wan-3.0/image-to-video",
+   "discovery": {
+    "tasks": [
+     "image-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "tags": [
+     "input:image",
+     "output:video",
+     "task:animate-image"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "d9oimscregj688b81qr0",
+   "isFavorited": false,
+   "title": "Wan 3.0",
+   "category": "image-to-video",
+   "tags": [
+    "stylized",
+    "transform",
+    "lipsync"
+   ],
+   "shortDescription": "Wan 3.0 is the latest generation AI video model, delivering enhanced motion smoothness, superior scene fidelity, and greater visual coherence.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa4eab2/NRKAFB7Ix6zejRmcdJ4ZM.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0/image-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-03T23:59:45.555Z",
+   "group": {
+    "key": "Wan30",
+    "label": "Image to Video"
+   },
+   "pricingInfoOverride": "For every second of video you generate, you will be charged **$0.05** **480p**, **$0.10** **720p**, or **$0.20** **1080p**. For example, a **5s** video at **720p** will cost **$0.50**. **Pricing is subject to change.**",
+   "machineType": null,
+   "examples": [
+    "5d54c32d-d9d5-4328-a8dd-528c49587bb4"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T03:15:15.282Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "alibaba/wan-3.0-prime/reference-to-video",
+   "discovery": {
+    "tasks": [
+     "reference-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "variant": "Prime",
+    "tags": [
+     "input:video",
+     "output:video",
+     "task:reference-to-video"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "da5so1cregj8plqoff30",
+   "isFavorited": false,
+   "title": "Wan 3.0 Prime",
+   "category": "video-to-video",
+   "tags": [
+    "reference",
+    "video"
+   ],
+   "shortDescription": "Wan 3.0 Prime Reference-to-Video combines reference images, videos, and audio into a unified video with fast generation and strong multimodal coherence. It follows character identity, visual style, movement, and sound cues across references to create controlled, consistent, and production-ready results.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa79464/AfVcXUCY_wyxlQVsAGpx2.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0-prime/reference-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-24T04:43:49.156Z",
+   "group": {
+    "key": "Wan30prime",
+    "label": "Reference to Video"
+   },
+   "pricingInfoOverride": "Billing is calculated per second of video generated: **$0.068 at 480p**, **$0.14 at 720p**, or **$0.28 at 1080p**. For example, a **5-second video at 720p costs $0.70**. Pricing is subject to change.",
+   "machineType": null,
+   "examples": [
+    "8b0766d2-03c8-4162-a848-cab9eb2df927"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T06:03:21.673Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "alibaba/wan-3.0/text-to-video",
+   "discovery": {
+    "tasks": [
+     "text-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "tags": [
+     "input:text",
+     "output:video",
+     "task:generate-video"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "d9ohpgcregj2ncqltp7g",
+   "isFavorited": false,
+   "title": "Wan Text to Video",
+   "category": "text-to-video",
+   "tags": [
+    "stylized",
+    "transform",
+    "lipsync"
+   ],
+   "shortDescription": "Wan 3.0 is the latest generation AI video model, delivering enhanced motion smoothness, superior scene fidelity, and greater visual coherence.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa4e92e/GZJ8RhOR3CRLj5vpHI2ah.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0/text-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-03T22:57:05.176Z",
+   "group": {
+    "key": "Wan30",
+    "label": "Text to Video"
+   },
+   "pricingInfoOverride": "For every second of video you generate, you will be charged **$0.05** **480p**, **$0.10** **720p**, or **$0.20** **1080p**. For example, a **5s** video at **720p** will cost **$0.50**. **Pricing is subject to change.**",
+   "machineType": null,
+   "examples": [
+    "f7454082-c962-46c8-a312-6825421d9272",
+    "019fc9bb-11eb-7b50-a7b7-63388cc7ac3d",
+    "89ab3ab6-fc1a-45ac-a0c3-12183c8c2f30",
+    "f0cebac7-250f-4dcc-917b-030ee404a978",
+    "e9d8837c-0cf1-4196-88a9-17ca2e5f9946"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T03:15:09.574Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "sandboxFreeRequests": 5,
+   "sandboxFreeDaily": true,
+   "trainingEndpoints": []
+  },
+  {
+   "id": "alibaba/wan-3.0-prime/image-to-video",
+   "discovery": {
+    "tasks": [
+     "image-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "variant": "Prime",
+    "tags": [
+     "input:image",
+     "output:video",
+     "task:animate-image"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "da5sl6cregj8plqoc94g",
+   "isFavorited": false,
+   "title": "Wan 3.0 Prime",
+   "category": "image-to-video",
+   "tags": [
+    "image",
+    "video"
+   ],
+   "shortDescription": "Wan 3.0 Prime Image-to-Video turns still images into dynamic, cinematic sequences with rapid turnaround, natural motion, and excellent visual continuity. It preserves the identity, composition, and atmosphere of the source image while introducing expressive movement, camera dynamics, and richly detailed animation.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa79429/JUbQYD5VzHB08bkIJQC2g.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0-prime/image-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-24T04:37:45.099Z",
+   "group": {
+    "key": "Wan30prime",
+    "label": "Image to Video"
+   },
+   "pricingInfoOverride": "Billing is calculated per second of video generated: **$0.068 at 480p**, **$0.14 at 720p**, or **$0.28 at 1080p**. For example, a **5-second video at 720p costs $0.70**. Pricing is subject to change.",
+   "machineType": null,
+   "examples": [
+    "24197003-8a2d-49c0-8a38-72ede151f419",
+    "dd5c5130-05a2-4246-a65b-3166fd52246f"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T06:03:16.474Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "alibaba/wan-3.0-prime/text-to-video",
+   "discovery": {
+    "tasks": [
+     "text-to-video"
+    ],
+    "hosting": "proxy",
+    "family": "Wan",
+    "version": "3.0",
+    "variant": "Prime",
+    "tags": [
+     "input:text",
+     "output:video",
+     "task:generate-video"
+    ],
+    "lab": "Alibaba"
+   },
+   "modelId": "da5sfrcregj7u9io64jg",
+   "isFavorited": false,
+   "title": "Wan 3.0 Prime",
+   "category": "text-to-video",
+   "tags": [
+    "text",
+    "video"
+   ],
+   "shortDescription": "Wan 3.0 Prime Text-to-Video transforms written prompts into polished videos with accelerated generation, fluid motion, strong scene fidelity, and coherent visual storytelling. Built for fast creative iteration, it brings complex ideas to life while preserving visual detail and cinematic consistency throughout each shot.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa793dd/pgwWiHzdAkUN08U5j8_6f.jpg",
+   "modelUrl": "https://fal.run/alibaba/wan-3.0-prime/text-to-video",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-24T04:26:21.187Z",
+   "group": {
+    "key": "Wan30prime",
+    "label": "Text to Video"
+   },
+   "pricingInfoOverride": "Billing is calculated per second of video generated: **$0.068 at 480p**, **$0.14 at 720p**, or **$0.28 at 1080p**. For example, a **5-second video at 720p costs $0.70**. Pricing is subject to change.",
+   "machineType": null,
+   "examples": [
+    "88796401-0a9a-4a7e-a0bb-02e5fae2b70b"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T06:03:26.646Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Alibaba",
+   "modelLabId": "d8m36bkregj5ka3lrctg",
+   "modelFamily": "Wan 3.0",
+   "landingPageSlug": "wan-3",
+   "hostingType": "proxy",
+   "kind": "inference",
+   "trainingEndpoints": []
+  }
+ ],
+ "page": 1,
+ "size": 40,
+ "pages": 1,
+ "total": 6,
+ "discovery": {
+  "resolved": {
+   "family": "Wan",
+   "version": "3.0",
+   "keywords": "",
+   "rankingKeywords": "Wan -3.0"
+  },
+  "facets": {
+   "tasks": [
+    {
+     "value": "task:generate-video",
+     "label": "Generate video",
+     "count": 6
+    },
+    {
+     "value": "video",
+     "label": "Video",
+     "count": 6
+    },
+    {
+     "value": "output:video",
+     "label": "video output",
+     "count": 6
+    },
+    {
+     "value": "task:animate-image",
+     "label": "Animate image",
+     "count": 2
+    },
+    {
+     "value": "input:image",
+     "label": "image input",
+     "count": 2
+    },
+    {
+     "value": "image-to-video",
+     "label": "Image to video",
+     "count": 2
+    },
+    {
+     "value": "reference-to-video",
+     "label": "Reference to video",
+     "count": 2
+    },
+    {
+     "value": "task:reference-to-video",
+     "label": "Reference to video",
+     "count": 2
+    },
+    {
+     "value": "input:text",
+     "label": "text input",
+     "count": 2
+    },
+    {
+     "value": "text-to-video",
+     "label": "Text to video",
+     "count": 2
+    },
+    {
+     "value": "input:video",
+     "label": "video input",
+     "count": 2
+    },
+    {
+     "value": "video-to-video",
+     "label": "Video to video",
+     "count": 2
+    }
+   ],
+   "families": [
+    {
+     "value": "Wan",
+     "label": "Wan",
+     "count": 6
+    }
+   ],
+   "versions": [
+    {
+     "value": "3.0",
+     "label": "3.0",
+     "count": 6
+    }
+   ],
+   "variants": [
+    {
+     "value": "prime",
+     "label": "Prime",
+     "count": 3
+    }
+   ],
+   "hosting": [
+    {
+     "value": "proxy",
+     "label": "proxy",
+     "count": 6
+    }
+   ],
+   "labs": [
+    {
+     "value": "Alibaba",
+     "label": "Alibaba",
+     "count": 6
+    }
+   ]
+  }
+ }
+}
