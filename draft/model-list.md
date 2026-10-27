@@ -39,7 +39,7 @@ pages, and open questions. They make no capability, pricing, or policy claims.
 | 3 | GPT Image 2.5 Sunburst | OpenAI | fal `openai/gpt-image-2.5/sunburst` | `[x]` |
 | 4 | Nano Banana 2 | Google | fal `fal-ai/nano-banana-2` | `[x]` |
 | 5 | Nano Banana 2.1 | Google | fal `google/nano-banana-2.1` | `[x]` |
-| 6 | Nano Banana Pro | Google | fal `fal-ai/nano-banana-pro` | `[s]` |
+| 6 | Nano Banana Pro | Google | fal `fal-ai/nano-banana-pro` | `[x]` |
 | 7 | Seedream 5.0 | ByteDance | draft discovery; full-model slug unverified | `[s]` |
 | 8 | Seedream 5.0 Lite | ByteDance | Replicate `bytedance/seedream-5-lite` | `[s]` |
 | 9 | Ideogram 4.5 | Ideogram | Replicate `ideogram-ai/ideogram-4-5` | `[s]` |
