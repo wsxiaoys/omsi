@@ -54,7 +54,7 @@ ByteDance documents them as separate tiers.
    launch tiers (plus a `dola-`prefixed *Flash* on the cloud platforms), and fal's catalogue splits
    the family three ways (lite / flash / pro). A bare "Seedream 5.0" is not a first-party product
    name in any captured source, so the roster label "Seedream 5.0" needs its own identity work on
-   its own page ([seedream-5.0.md](./seedream-5.0.md)).
+   its own page ([seedream-5.0-pro.md](./seedream-5.0-pro.md)).
 3. **`fal.ai/models/bytedance/seedream/v5-lite`.** That URL returns HTTP 200 but is an empty page
    shell, and `api.fal.ai/v1/models?endpoint_id=bytedance/seedream/v5-lite` returns 404. It is not a
    fal endpoint ID; the two `/v5/lite/*` endpoints are

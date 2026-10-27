@@ -365,10 +365,10 @@ output. Whether an API image carries a visible mark is not established by any ca
 
 ## Evidence status
 
-Evidence floor: **met**. Six new first-party records — the launch post, the developer post, the DeepMind
-product page, the DeepMind model card PDF, the Vertex/Agent Platform model card, and the Nano Banana
-2.1 model card that supplies the current same-vendor comparison — plus two independent host records
-(fal, Replicate). Five consolidated Gemini API records
+Evidence floor: **met**. Five new first-party records — the launch post, the developer post, the
+DeepMind product page, the DeepMind model card PDF, and the Vertex/Agent Platform model card — plus
+the existing Nano Banana 2.1 model card that supplies the current same-vendor comparison, and two
+independent host records (fal, Replicate). Five consolidated Gemini API records
 ([models](../../sources/google.dev/gemini-api-models/2026-10-26.md),
 [changelog](../../sources/google.dev/gemini-api-changelog/2026-10-26.md),
 [deprecations](../../sources/google.dev/gemini-api-deprecations/2026-10-26.md),

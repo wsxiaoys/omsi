@@ -8,9 +8,9 @@ decomposition of a single image into editable layers. It is hosted-only: no weig
 so the only ways to run it are ByteDance's own Ark/BytePlus APIs, first-party consumer apps, and
 third-party hosts such as fal and Replicate.
 
-The roster slot for this page is labelled "Seedream 5.0". That is the **family** label; the full
+The roster originally labelled this slot "Seedream 5.0". That is the **family** label; the full
 tier's first-party name is **Seedream 5.0 Pro**, and no bare "Seedream 5.0" model or page exists.
-The filename is kept for continuity with the roster.
+The page and filename now use the verified model name.
 
 ## Identity
 
