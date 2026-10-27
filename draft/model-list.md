@@ -1,4 +1,4 @@
-# Model curation roster — 130 models (upper-bound edition)
+# Model curation roster — 131 models (upper-bound edition)
 
 Working backlog for the knowledge base. **Not** knowledge — nothing here is evidence, and
 nothing here should be cited. A model moves out of this file only when its page and source
@@ -8,7 +8,7 @@ Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `
 
 101 pages exist on `master`: all 100 rows, with row 91 split into `deepseek-v4.1-flash` and
 `deepseek-v4.1-flash-1017`. Batches 1–10 are complete and every page is curated with source
-records; no stubs remain. Batches 11–13 (#101–130) are a proposed upper-bound extension: they
+records; no stubs remain. Batches 11–14 (#101–131) are a proposed upper-bound extension: they
 pass the identity tests and evidence floor on discovery, but are still `[ ]` and have not been
 curated.
 
@@ -31,7 +31,12 @@ the original dates; none claims to be a current-window launch.
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist for every curated page: all 101 pages. Batches 11–13 are planned only.
+- Source records exist for every curated page: all 101 pages. Batches 11–14 are planned only.
+- **Lite-tier rule (Batch 14).** A low-priced tier earns a row only when it is the newest member of
+  its own efficiency line *and* the vendor is super-mainstream enough that the tier is a real
+  production default (Gemini, OpenAI, Anthropic). Tiers that are one of five to eight
+  near-identically priced sizes at a second-tier vendor are excluded even when they pass the
+  identity and evidence tests, because they do not change a recommendation.
 
 ## Batch 1 — Image frontier (10)
 
@@ -238,12 +243,31 @@ or notable architectural outlier) with both first-party documentation and OpenRo
 | 129 | DeepSeek V4 Pro 0813 | DeepSeek | OpenRouter `deepseek/deepseek-v4-pro-0813`; AA leaderboard | `[x]` Pro sibling to V4.1 Flash |
 | 130 | Inception Mercury 3 | Inception Labs | OpenRouter `inception/mercury-3`; AA (`Mercury 2.5`) | `[x]` diffusion LLM |
 
-## Upper-bound assessment — why we recommend stopping at 130
+## Batch 14 — mainline lite tiers (1)
+
+Sweep for low-priced tiers at the three super-mainstream LLM vendors. The rule applied: **keep the
+newest member of each efficiency line and drop any predecessor a same-line successor serves**, and
+**only keep a lite tier where it changes a recommendation** — which is true for Gemini, OpenAI, and
+Anthropic (10–30× below flagship, high-volume default, own leaderboard row) but not for the other
+vendors, whose "lite" tier is one of five to eight near-identically priced sizes already covered by
+their own flash or mid tier.
+
+OpenAI and Anthropic need no new rows: GPT-6 Luna (#123) and Claude Haiku 5.5 (#83) are their
+current low tiers, and `gpt-5.6-luna`, `gpt-5.4-nano`, and Gemini 3.1 Flash Lite are all superseded.
+`openai/gpt-audio-mini` is recorded under **Deliberately excluded** rather than here: it is a
+speech-in/speech-out model, not an LLM, and the audio modality is already covered by Batches 7–8
+and 12.
+
+| # | Model | Vendor | Discovery path | Status |
+| --- | --- | --- | --- | --- |
+| 131 | Gemini 3.5 Flash Lite | Google | OpenRouter `google/gemini-3.5-flash-lite` (2026-07-21), $0.30/$2.50 | `[ ]` current Gemini lite tier — no 3.6/3.7/3.8 lite exists |
+
+## Upper-bound assessment — why we recommend stopping at 131
 
 Across the four discovery feeds sampled on 2026-10-26 (`openrouter.ai/api/v1/models` with 318 IDs
 created ≥ 2025-10-26, `fal.ai/api/models` with 301 model families published ≥ 2025-10-26,
-`replicate.com/explore`, and the five Artificial Analysis leaderboards), **130 models is the
-practical upper bound** before curation quality degrades. Expanding beyond Batch 13 runs into four
+`replicate.com/explore`, and the five Artificial Analysis leaderboards), **131 models is the
+practical upper bound** before curation quality degrades. Expanding beyond Batch 14 runs into four
 structural walls:
 
 1. **Identity-rule collapse (effort flags, billing suffixes, and host routes).** More than half of
@@ -263,12 +287,17 @@ structural walls:
    soon"` (e.g., `Utopai X`, `MAGI-2 Preview`, `Muse Wonder Full`), single-host community uploads on
    fal/Replicate with no independent second host, or thin ffmpeg/workflow utilities (`trim-video`,
    `smart-resize`, `merge-audios`).
-4. **Diminishing decision value.** Batches 1–13 cover every top-15 model across Text, Image, Video,
-   TTS, STT, Music, and 3D, plus the leading open-weight and specialist utility options. Beyond 130,
+4. **Diminishing decision value.** Batches 1–14 cover every top-15 model across Text, Image, Video,
+   TTS, STT, Music, and 3D, plus the leading open-weight and specialist utility options. Beyond 131,
    new additions are either regional/niche open weights (`Ring-2.6-1T`, `JT-4.1 Flash`, `A.X-K2`,
    `K-EXAONE 2.0`, `HyperCLOVA X SEED Think`) or incremental point updates (`OmniHuman 2`, `Luma Ray
    3.2`, `SAM 3.1`, `Qwen3.8 2.4T A95B`) that are better handled either by updating the existing
    family page or by curating on demand when a concrete user question requires them.
+
+The Batch 14 lite-tier sweep is the strongest evidence for this ceiling: applying the
+keep-only-the-newest-in-line rule across every mainline vendor's cheap tiers produced **one**
+addition, not fifteen. The apparent gap in "lite models" was a single genuine decision (Gemini 3.5
+Flash Lite) plus a long tail of tiers that shift price by cents without shifting a recommendation.
 
 ## Deliberately excluded (older than the window, or fully superseded)
 
@@ -288,7 +317,8 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
   `5.5` / `5.6` and `gpt-6-sol` (superseded by the GPT-6 Astra / 6.1 Sol / 6.1 Terra / 6 Luna
   lineup); Anthropic `claude-opus-4.5` / `4.6` / `4.7` / `4.8` / `5.0` and `claude-sonnet-4.6` /
   `5.0` (superseded by the 5.5 family and Fable 5.1); Google `gemini-3-flash` / `3.1-pro` /
-  `3.5-flash` / `3.6-flash` / `3.7-flash` (superseded by Gemini 4 Argon and 3.8 Flash); Alibaba
+  `3.5-flash` / `3.6-flash` / `3.7-flash` (superseded by Gemini 4 Argon and 3.8 Flash — note this
+  is the non-lite Flash line; `gemini-3.5-flash-lite` is current and is row 131); Alibaba
   `qwen3.5` / `3.6` / `3.7` series (superseded by Qwen3.8, with `qwen3.7-max` already marked legacy
   in Model Studio); Moonshot `kimi-k2.5` / `k2.6` / `k2.7-code` / `k3` (K2 series retiring Dec 2026;
   K3 described as previous-generation in favour of K3.1 Pro); Z AI `glm-4.7` / `5.0` / `5.1` / `5.2`
@@ -302,6 +332,20 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
   marked "No API available"), `MAGI-2 Preview` (#14 on AA-Video-T2V v2.1, marked "Coming soon"), and
   `Muse Wonder Full` (AA LLM board, no public API pricing/speed columns). Eligible once an API or
   weights artifact ships.
+- **Superseded lite tiers** — Gemini 3.1 Flash Lite (superseded by 3.5 Flash Lite), GPT-5.6 Luna and
+  GPT-5.4 Nano (superseded by GPT-6 Luna), and Nemotron 3 Nano 30B (superseded by Nemotron 3.5
+  Lightning). Each is served by a same-line successor at equal or lower price.
+- **Non-mainstream-vendor lite tiers** — Amazon Nova 2 Lite, Mistral Small 4, Ministral 3
+  (3B/8B/14B), Mistral Medium 3.5, Qwen3.8 Flash, Qwen3.8 Omni Flash, Qwen3.8 27B, GLM 5.3 Flash,
+  GLM 5.3 FlashX, Nemotron 3.5 Lightning, Nemotron 3.5 Super VL, Meta Muse Glimmer 30B, and Command
+  A+. These pass the identity and evidence tests but fail the decision test: each is one of five to
+  eight near-identically priced sizes inside a vendor whose own flash or mid tier already occupies
+  that slot, so a separate page adds a row without adding a choice. Revisit only if a vendor's lite
+  tier becomes the cheapest credible option for a constraint that recurs (on-prem, flat-rate, or a
+  specific regional endpoint).
+- **`gpt-audio-mini`** — OpenAI's cheap speech-in/speech-out tier (2026-01-19, $0.60/$2.40). Not an
+  LLM, and the audio modality is already covered by Batches 7–8 and 12; add only if a
+  realtime-voice cost question makes the mini tier the answer.
 
 ## Open questions for the roster itself
 
@@ -327,5 +371,5 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
    asked for all modalities, not only generative models. If the 100 slots should be reserved
    for generative models, these four are the first to replace.
 5. Launch dates were checked for rows 1–100: 18 fell outside the one-year window and are recorded
-   as exceptions. Rows 101–130 still need the same check before curation; their inclusion is a
+   as exceptions. Rows 101–131 still need the same check before curation; their inclusion is a
    proposal, not a verified count.
