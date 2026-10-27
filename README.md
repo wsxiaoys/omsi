@@ -4,6 +4,10 @@ An evidence-backed knowledge base of AI models. Each model gets one canonical Ma
 `wiki/models/`, and every substantive claim links to a dated capture of the source it came from in
 `sources/`.
 
+The structure follows Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+gist: keep captured evidence in one layer and the maintained synthesis in another, so a claim can
+always be traced back to what was actually read and when.
+
 **Read it at <https://wsxiaoys.github.io/omsi/>.**
 
 ## Layout
