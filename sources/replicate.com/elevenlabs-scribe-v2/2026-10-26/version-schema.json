@@ -1,0 +1,159 @@
+{
+ "version_id": "9eb29120c4147eb5631dc99ab1f1f4ece9aac3c483e1810d4c5ef80f123edb11",
+ "version_created_at": "2026-05-06T16:07:57.474854Z",
+ "input_schema": {
+  "type": "object",
+  "title": "Input",
+  "required": [
+   "audio"
+  ],
+  "properties": {
+   "seed": {
+    "type": "integer",
+    "title": "Seed",
+    "default": -1,
+    "maximum": 2147483647,
+    "minimum": -1,
+    "x-order": 9,
+    "description": "Random seed for reproducible outputs. Set to -1 to use a non-deterministic seed."
+   },
+   "audio": {
+    "type": "string",
+    "title": "Audio",
+    "format": "uri",
+    "x-order": 0,
+    "description": "Audio or video file to transcribe. Supports MP3, WAV, M4A, FLAC, OGG, OPUS, WebM, AAC, MP4, MOV, MKV, AVI, and more. Max 3 GB, up to 10 hours."
+   },
+   "diarize": {
+    "type": "boolean",
+    "title": "Diarize",
+    "default": false,
+    "x-order": 2,
+    "description": "Identify and label different speakers in the audio. When enabled, each word in the output includes a 'speaker_id'. Supports up to 32 speakers."
+   },
+   "keyterms": {
+    "type": "string",
+    "title": "Keyterms",
+    "default": "",
+    "x-order": 7,
+    "description": "Comma-separated list of words or phrases to bias transcription towards. Useful for product names, technical terms, or proper nouns. Up to 1000 terms, max 50 characters each."
+   },
+   "no_verbatim": {
+    "type": "boolean",
+    "title": "No Verbatim",
+    "default": false,
+    "x-order": 6,
+    "description": "Remove filler words ('um', 'uh'), false starts, and disfluencies from the transcript. Produces a cleaner, more readable output."
+   },
+   "temperature": {
+    "type": "number",
+    "title": "Temperature",
+    "default": -1,
+    "maximum": 2,
+    "minimum": -1,
+    "x-order": 8,
+    "description": "Sampling temperature. Higher values produce more diverse, less deterministic output. Set to -1 to use the model default (usually 0)."
+   },
+   "num_speakers": {
+    "type": "integer",
+    "title": "Num Speakers",
+    "default": 0,
+    "maximum": 32,
+    "minimum": 0,
+    "x-order": 3,
+    "description": "Maximum number of speakers expected in the audio. Helps the model with diarization. Set to 0 to let the model decide. Only used when 'diarize' is true."
+   },
+   "language_code": {
+    "type": "string",
+    "title": "Language Code",
+    "default": "auto",
+    "x-order": 1,
+    "description": "Language of the audio as an ISO-639-1 (e.g. 'en') or ISO-639-3 (e.g. 'eng') code. Set to 'auto' to detect the language automatically. Setting a specific language can improve accuracy for noisy or unusual audio."
+   },
+   "tag_audio_events": {
+    "type": "boolean",
+    "title": "Tag Audio Events",
+    "default": true,
+    "x-order": 5,
+    "description": "Tag non-speech sounds in the transcription, like (laughter), (footsteps), or (applause)."
+   },
+   "timestamps_granularity": {
+    "enum": [
+     "none",
+     "word",
+     "character"
+    ],
+    "type": "string",
+    "title": "timestamps_granularity",
+    "description": "Granularity of word timestamps in the output. 'word' returns start/end times for each word, 'character' adds per-character timing, 'none' omits timestamps.",
+    "default": "word",
+    "x-order": 4
+   }
+  }
+ },
+ "output_schema": {
+  "type": "object",
+  "title": "Output",
+  "required": [
+   "text",
+   "language_code",
+   "language_probability"
+  ],
+  "properties": {
+   "text": {
+    "type": "string",
+    "title": "Text"
+   },
+   "words": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "text",
+      "type"
+     ],
+     "properties": {
+      "end": {
+       "type": "number",
+       "title": "End",
+       "nullable": true
+      },
+      "text": {
+       "type": "string",
+       "title": "Text"
+      },
+      "type": {
+       "type": "string",
+       "title": "Type"
+      },
+      "start": {
+       "type": "number",
+       "title": "Start",
+       "nullable": true
+      },
+      "speaker_id": {
+       "type": "string",
+       "title": "Speaker Id",
+       "nullable": true
+      }
+     }
+    },
+    "title": "Words",
+    "nullable": true
+   },
+   "language_code": {
+    "type": "string",
+    "title": "Language Code"
+   },
+   "duration_seconds": {
+    "type": "number",
+    "title": "Duration Seconds",
+    "nullable": true
+   },
+   "language_probability": {
+    "type": "number",
+    "title": "Language Probability"
+   }
+  }
+ }
+}

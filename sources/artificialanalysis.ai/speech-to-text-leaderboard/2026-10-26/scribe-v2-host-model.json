@@ -1,0 +1,63 @@
+{
+ "note": "Scalar fields copied verbatim from the embedded host-model objects on https://artificialanalysis.ai/speech-to-text (non-streaming) and https://artificialanalysis.ai/speech-to-text/streaming (streaming). The performanceOverTime daily time series was omitted from this artifact.",
+ "batch_host_model": {
+  "id": "4275fbc8-da46-4694-b928-3c52c398b847",
+  "name": "Scribe v2",
+  "displayName": "Scribe v2",
+  "displayOrder": 120,
+  "pricePer1kMinutes": 3.67,
+  "hostApiId": "scribe_v2",
+  "wordErrorRate": null,
+  "runBenchmarking": true,
+  "aaWerIndex": 0.0218,
+  "aaSttDatasetWer": 0.015087,
+  "voxpopuliCleanedWer": 0.017441,
+  "earnings22CleanedWer": 0.039549,
+  "host": {
+   "name": "ElevenLabs",
+   "slug": "elevenlabs"
+  },
+  "model": {
+   "id": "69a3c281-fbaa-4102-b7de-7eb99354a561",
+   "name": "Scribe v2, ElevenLabs",
+   "releaseDate": "2026-01-09",
+   "openWeights": false
+  },
+  "performance": {
+   "medianSpeedFactor": 69.4900635036259,
+   "percentile05SpeedFactor": 47.4007497842044,
+   "percentile95SpeedFactor": 96.4722309137018,
+   "quartile25SpeedFactor": 63.6117157899156,
+   "quartile75SpeedFactor": 79.3095155651795
+  }
+ },
+ "streaming_host_model": {
+  "id": "92d68a84-ae32-4848-9e1d-118b7de118ee",
+  "name": "ElevenLabs Scribe v2 Realtime",
+  "displayOrder": 180,
+  "pricePer1kMinutes": 6.5,
+  "hostApiId": "scribe_v2_realtime",
+  "host": {
+   "name": "ElevenLabs",
+   "slug": "elevenlabs"
+  },
+  "family": {
+   "name": "ElevenLabs Scribe v2",
+   "slug": "elevenlabs-scribe-v2"
+  },
+  "model": {
+   "id": "2d58a436-da18-44c0-b40f-e000414f0b83",
+   "name": "ElevenLabs Scribe v2 Realtime",
+   "shortName": "Scribe v2 RT",
+   "releaseDate": null,
+   "openWeights": false
+  },
+  "aaWerStreamingIndex": 0.035946,
+  "aaAgenttalkStreamingWer": 0.028398,
+  "voxpopuliStreamingWer": 0.022677,
+  "earnings22StreamingWer": 0.064309,
+  "aaAgenttalkTimeToFirstPartialTranscriptSeconds": 0.12815473420070406,
+  "voxpopuliTimeToFirstPartialTranscriptSeconds": 0.1503588287028538,
+  "earnings22TimeToFirstPartialTranscriptSeconds": 0.12988938324374538
+ }
+}
