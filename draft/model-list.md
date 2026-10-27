@@ -192,7 +192,7 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
 - **Llama 3.x, Phi-4, o3, Gemini 1.5** — outside the window.
 - **Llama 4 Maverick / Scout** — borderline (2025); AA score is far below current models.
   Revisit only if open-weight licensing becomes the deciding constraint.
-- **Seedream 4.0** — 2025-09, just outside the window; Seedream 5.0 and Lite cover the family.
+- **Seedream 4.0** — 2025-09, just outside the window; Seedream 5.0 Pro and Lite cover the family.
 
 ## Open questions for the roster itself
 
