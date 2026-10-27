@@ -6,10 +6,15 @@ records exist under `wiki/models/` and `sources/`.
 
 Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[ ]` planned, no page
 
-23 pages exist. Image: all ten Batch 1 pages, all ten Batch 2 pages (FLUX 3 Max is a video
-derivative, not an image tier), and Recraft V4 Pro from Batch 3. Text: the two DeepSeek V4.1 Flash
-pages from Batch 10. All 23 pages are curated with source records; no stubs remain. Remaining
-rows are marked `[ ]`.
+33 pages exist. Image and image-utility: all ten Batch 1 pages, all ten Batch 2 pages (FLUX 3
+Max is a video derivative, not an image tier), and all ten Batch 3 pages. Video: Seedance 2.0 from
+Batch 4. Text: the two DeepSeek V4.1 Flash pages from Batch 10. All 33 pages are curated with
+source records; no stubs remain. Remaining rows are marked `[ ]`.
+
+Five Batch 3 rows predate the one-year window and are retained as specialist/utility exceptions:
+FASHN Try-On 1.6 (2025-06-25), Leffa (2024-12), BiRefNet v2 (2024; `/v2` is a fal host revision),
+Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut Background Removal
+(2024-07). Their pages state the original dates; none claims to be a current-window launch.
 
 ## How this roster was built
 
@@ -19,14 +24,15 @@ rows are marked `[ ]`.
   records the host catalogue path where one was seen; it is a lead for curation, not a citation.
 - Launch dates are not published in any of the three listings. The one-year filter
   (launched on or after 2025-10-26) therefore has to be checked per model during curation, from
-  first-party changelogs or release notes. A model that turns out to be older gets dropped.
+  first-party changelogs or release notes. A model that turns out to be older gets dropped unless
+  it is retained as a specialist/utility exception with the original date recorded on its page.
 - Whether a family tier or a dated checkpoint gets its own page follows the three tests in
   `.agents/skills/wiki/SKILL.md` under **Model identity** (addressability, divergence, evidence
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist for every curated page: the 21 image models in Batches 1–3 and the two
-  DeepSeek V4.1 Flash pages.
+- Source records exist for every curated page: the 30 image and image-utility models in Batches
+  1–3, Seedance 2.0, and the two DeepSeek V4.1 Flash pages.
 
 ## Batch 1 — Image frontier (10)
 
@@ -63,21 +69,21 @@ rows are marked `[ ]`.
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 21 | Recraft V4 Pro | Recraft | fal `fal-ai/recraft/v4/pro/text-to-image` | `[x]` |
-| 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[ ]` |
-| 23 | BRIA Fibo Edit 1.5 | BRIA AI | fal `bria/fibo-edit-1.5` | `[ ]` |
-| 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[ ]` |
-| 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[ ]` |
-| 26 | Leffa | Meta research | fal `fal-ai/leffa` | `[ ]` |
-| 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[ ]` |
-| 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[ ]` |
-| 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[ ]` |
-| 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[ ]` |
+| 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[x]` |
+| 23 | BRIA Fibo Edit 1.5 | BRIA AI | fal `bria/fibo-edit-1.5` | `[x]` |
+| 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[x]` |
+| 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[x]` out-of-window specialist (2025-06-25); see page |
+| 26 | Leffa | Meta research | fal `fal-ai/leffa` | `[x]` out-of-window specialist (2024-12); see page |
+| 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[x]` out-of-window specialist; `/v2` is a fal host revision |
+| 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[x]` |
+| 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[x]` 2024 API; newer model releases in window |
+| 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[x]` out-of-window utility (2024-07); see page |
 
 ## Batch 4 — Video: frontier (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 31 | Seedance 2.0 | ByteDance | fal `bytedance/seedance-2.0` | `[ ]` |
+| 31 | Seedance 2.0 | ByteDance | fal `bytedance/seedance-2.0` | `[x]` |
 | 32 | Seedance 2.5 | ByteDance | fal `bytedance/seedance-2.5` | `[ ]` |
 | 33 | Wan 3.0 | Alibaba | fal `alibaba/wan-3.0` | `[ ]` |
 | 34 | Wan 3.0 Prime | Alibaba | fal `alibaba/wan-3.0-prime` | `[ ]` |
