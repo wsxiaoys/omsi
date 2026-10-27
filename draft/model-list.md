@@ -34,7 +34,7 @@ claims.
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 1 | GPT Image 2 | OpenAI | Replicate `openai/gpt-image-2` | `[x]` |
-| 2 | GPT Image 2.5 Flare | OpenAI | fal `openai/gpt-image-2.5/flare` | `[s]` |
+| 2 | GPT Image 2.5 Flare | OpenAI | fal `openai/gpt-image-2.5/flare` | `[x]` |
 | 3 | GPT Image 2.5 Sunburst | OpenAI | fal `openai/gpt-image-2.5/sunburst` | `[s]` |
 | 4 | Nano Banana 2 | Google | fal `fal-ai/nano-banana-2` | `[s]` |
 | 5 | Nano Banana 2.1 | Google | fal `google/nano-banana-2.1` | `[s]` |
