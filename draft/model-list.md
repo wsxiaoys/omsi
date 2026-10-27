@@ -1,20 +1,20 @@
-# Model curation roster — 100 models
+# Model curation roster — 130 models (upper-bound edition)
 
 Working backlog for the knowledge base. **Not** knowledge — nothing here is evidence, and
 nothing here should be cited. A model moves out of this file only when its page and source
 records exist under `wiki/models/` and `sources/`.
 
-Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[ ]` planned, no page
+Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[w]` in active worktree curation · `[ ]` planned, no page
 
-33 pages exist. Image and image-utility: all ten Batch 1 pages, all ten Batch 2 pages (FLUX 3
-Max is a video derivative, not an image tier), and all ten Batch 3 pages. Video: Seedance 2.0 from
-Batch 4. Text: the two DeepSeek V4.1 Flash pages from Batch 10. All 33 pages are curated with
-source records; no stubs remain. Remaining rows are marked `[ ]`.
+101 pages exist on `master`: all 100 rows, with row 91 split into `deepseek-v4.1-flash` and
+`deepseek-v4.1-flash-1017`. Batches 1–10 are complete and every page is curated with source
+records; no stubs remain. Batches 11–13 (#101–130) are a proposed upper-bound extension: they
+pass the identity tests and evidence floor on discovery, but are still `[ ]` and have not been
+curated.
 
-Five Batch 3 rows predate the one-year window and are retained as specialist/utility exceptions:
-FASHN Try-On 1.6 (2025-06-25), Leffa (2024-12), BiRefNet v2 (2024; `/v2` is a fal host revision),
-Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut Background Removal
-(2024-07). Their pages state the original dates; none claims to be a current-window launch.
+Eighteen rows predate the one-year window and are retained as specialist/utility or baseline
+exceptions: rows 25–27, 29–30, 38, 47, 49–50, 55, 63–66, 70–71, 74 and 98. Their pages state
+the original dates; none claims to be a current-window launch.
 
 ## How this roster was built
 
@@ -31,8 +31,7 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist for every curated page: the 30 image and image-utility models in Batches
-  1–3, Seedance 2.0, and the two DeepSeek V4.1 Flash pages.
+- Source records exist for every curated page: all 101 pages. Batches 11–13 are planned only.
 
 ## Batch 1 — Image frontier (10)
 
@@ -90,7 +89,7 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | 35 | Happy Horse 1.1 | Alibaba | fal `alibaba/happy-horse/v1.1` | `[x]` |
 | 36 | Kling 3.0 | Kuaishou | fal `fal-ai/kling-video/v3` | `[x]` |
 | 37 | Kling 4.0 | Kuaishou | fal `kling/v4` | `[x]` |
-| 38 | Veo 3.1 | Google | fal `fal-ai/veo3.1` | `[x]` |
+| 38 | Veo 3.1 | Google | fal `fal-ai/veo3.1` | `[x]` out-of-window preview (2025-10-15); GA 2025-11-17 |
 | 39 | MiniMax H3 | MiniMax | fal `minimax/h3` | `[x]` |
 | 40 | MiniMax H3 Max | MiniMax | fal `minimax/h3-max` | `[x]` |
 
@@ -104,10 +103,10 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | 44 | P-Video 2 Pro | Pruna | draft discovery | `[x]` |
 | 45 | Gemini Omni 1.1 | Google | draft discovery | `[x]` |
 | 46 | Hunyuan Motion | Tencent | fal `fal-ai/hunyuan-motion` | `[x]` |
-| 47 | OmniHuman 1.5 | ByteDance | fal `fal-ai/bytedance/omnihuman/v1.5` | `[x]` |
+| 47 | OmniHuman 1.5 | ByteDance | fal `fal-ai/bytedance/omnihuman/v1.5` | `[x]` out-of-window specialist (2025-08-26) |
 | 48 | Sync Lipsync 3 | Sync | fal `fal-ai/sync-lipsync/v3` | `[x]` |
-| 49 | Kling Lip Sync | Kuaishou | fal `fal-ai/kling-video/lipsync` | `[x]` |
-| 50 | Aurora | Creatify | fal `fal-ai/creatify/aurora` | `[x]` |
+| 49 | Kling Lip Sync | Kuaishou | fal `fal-ai/kling-video/lipsync` | `[x]` out-of-window specialist (2024-12-23) |
+| 50 | Aurora | Creatify | fal `fal-ai/creatify/aurora` | `[x]` out-of-window specialist (2025-09-03); Aurora 2.0 later |
 
 ## Batch 6 — Video: avatars and world models, plus 3D (10)
 
@@ -117,7 +116,7 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | 52 | ABot-World 0 | Alibaba | fal `alibaba/abot-world-0` | `[x]` |
 | 53 | LingBot World 2 | Robbyant | fal `robbyant/lingbot-world-2` | `[x]` |
 | 54 | Mirage Avatar X | Mirage | fal `mirage-api/avatar-x` | `[x]` |
-| 55 | VEED Fabric 1.0 | VEED | fal `veed/fabric-1.0` | `[x]` |
+| 55 | VEED Fabric 1.0 | VEED | fal `veed/fabric-1.0` | `[x]` out-of-window specialist (2025-09-19) |
 | 56 | Eden Live 5B | Vast | fal `vast/eden-live-5b` | `[x]` |
 | 57 | Decart Lucy 2 VTON | Decart | fal `decart/lucy2-vton` | `[x]` |
 | 58 | Hunyuan3D 3.1 | Tencent | fal `fal-ai/hunyuan-3d/v3.1` | `[x]` |
@@ -129,24 +128,24 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 61 | Eleven v4 | ElevenLabs | draft discovery | `[x]` |
-| 62 | Eleven v3 | ElevenLabs | fal `fal-ai/elevenlabs/tts/eleven-v3` | `[x]` |
-| 63 | ElevenLabs Multilingual v2 | ElevenLabs | fal `fal-ai/elevenlabs/tts/multilingual-v2` | `[x]` |
-| 64 | ElevenLabs Turbo v2.5 | ElevenLabs | fal `fal-ai/elevenlabs/tts/turbo-v2.5` | `[x]` |
-| 65 | ElevenLabs Music | ElevenLabs | fal `fal-ai/elevenlabs/music` | `[x]` |
-| 66 | ElevenLabs Sound Effects v2 | ElevenLabs | fal `fal-ai/elevenlabs/sound-effects/v2` | `[x]` |
+| 62 | Eleven v3 | ElevenLabs | fal `fal-ai/elevenlabs/tts/eleven-v3` | `[x]` alpha 2025-06; GA 2026-02 |
+| 63 | ElevenLabs Multilingual v2 | ElevenLabs | fal `fal-ai/elevenlabs/tts/multilingual-v2` | `[x]` out-of-window baseline (2023-08-22) |
+| 64 | ElevenLabs Turbo v2.5 | ElevenLabs | fal `fal-ai/elevenlabs/tts/turbo-v2.5` | `[x]` out-of-window baseline (2024-07-19) |
+| 65 | ElevenLabs Music | ElevenLabs | fal `fal-ai/elevenlabs/music` | `[x]` v1 out-of-window (2025-08); v2/v2.5 in window |
+| 66 | ElevenLabs Sound Effects v2 | ElevenLabs | fal `fal-ai/elevenlabs/sound-effects/v2` | `[x]` out-of-window (2025-09) |
 | 67 | MiniMax Music 2.6 | MiniMax | fal `fal-ai/minimax-music/v2.6` | `[x]` |
 | 68 | MiniMax Speech 2.8 HD | MiniMax | fal `fal-ai/minimax/speech-2.8-hd` | `[x]` |
 | 69 | Inworld TTS | Inworld | fal `fal-ai/inworld-tts` | `[x]` |
-| 70 | Chatterbox | Resemble AI | fal `fal-ai/chatterbox` | `[x]` |
+| 70 | Chatterbox | Resemble AI | fal `fal-ai/chatterbox` | `[x]` original 2025-04 out; Turbo/Nano/Flash in window |
 
 ## Batch 8 — Audio and 3D (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 71 | Dia TTS | Nari Labs | fal `fal-ai/dia-tts` | `[x]` |
+| 71 | Dia TTS | Nari Labs | fal `fal-ai/dia-tts` | `[x]` out-of-window specialist (2025-04) |
 | 72 | Qwen3 TTS | Alibaba | fal `fal-ai/qwen-3-tts` | `[x]` |
 | 73 | Lyria 3 | Google | fal `fal-ai/lyria3` | `[x]` |
-| 74 | ACE-Step | ACE Studio | fal `fal-ai/ace-step` | `[x]` |
+| 74 | ACE-Step | ACE Studio | fal `fal-ai/ace-step` | `[x]` out-of-window specialist (2025-05-06) |
 | 75 | Seed Audio 1.0 | ByteDance | fal `bytedance/seed-audio-1.0` | `[x]` |
 | 76 | Gemini 3.1 Flash TTS | Google | fal `fal-ai/gemini-3.1-flash-tts` | `[x]` |
 | 77 | Gemini 3.8 Flash TTS | Google | draft discovery | `[x]` |
@@ -180,9 +179,96 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | 95 | Qwen3.8 Flash-Next | Alibaba | Artificial Analysis leaderboard | `[x]` |
 | 96 | Nemotron 3.5 | NVIDIA | Artificial Analysis leaderboard | `[x]` |
 | 97 | Gemma 4 | Google | Artificial Analysis leaderboard | `[x]` |
-| 98 | gpt-oss-120b | OpenAI | Artificial Analysis leaderboard | `[x]` |
+| 98 | gpt-oss-120b | OpenAI | Artificial Analysis leaderboard | `[x]` out-of-window (2025-08-05); open-weights baseline |
 | 99 | OLMo 3.1 | AI2 | Artificial Analysis leaderboard | `[x]` |
 | 100 | Granite 4.2 | IBM | Artificial Analysis leaderboard | `[x]` |
+
+## Batch 11 — Image and Video: frontier gaps and late-window releases (10)
+
+Models surfaced during the Batch 1–6 curation pass from the same discovery sources (`fal.ai/models`,
+Artificial Analysis Image and Video Arenas, and vendor catalogues) that have distinct model IDs,
+non-overlapping capability/price positioning, and in-window launch dates (Jun–Oct 2026).
+
+| # | Model | Vendor | Discovery path | Status |
+| --- | --- | --- | --- | --- |
+| 101 | MAI-Image 2.6 | Microsoft | AA Image Arena (`MAI-Image-2.6`); fal `microsoft/mai-image-2.5` | `[ ]` verify whether 2.6 is publicly addressable or 2.5 is the API SKU |
+| 102 | Grok Imagine Image 2.0 | xAI | AA Image Arena (`Grok Imagine Image 2.0`) | `[ ]` distinct from `grok-imagine-image` (+144 Elo on AA) |
+| 103 | Meta Muse Image | Meta | fal `meta/muse-image`; AA Image Arena (`Muse Image`) | `[ ]` |
+| 104 | Nano Banana 2 Lite | Google | Google `gemini-3.1-flash-lite-image`; fal `google/nano-banana-2-lite` | `[ ]` |
+| 105 | Seedream 5.0 Flash | ByteDance | fal `bytedance/seedream/v5/flash/text-to-image` | `[ ]` |
+| 106 | Recraft V4.1 | Recraft | fal `fal-ai/recraft/v4.1/text-to-image`; AA Image Arena | `[ ]` |
+| 107 | Luma Uni-1 | Luma AI | fal `luma/agent/uni-1/v1/edit`; AA Image Arena (`Luma UNI 1`) | `[ ]` |
+| 108 | HeyGen Video 1 | HeyGen | fal `heygen/heygen-video/image-to-video`; AA Video Arena | `[ ]` general T2V/I2V model, distinct from Avatar 5 |
+| 109 | Kling O3 | Kuaishou | fal `fal-ai/kling-video/o3/pro/video-to-video/edit` | `[ ]` omni video-edit line |
+| 110 | Vidu Q4 | Shengshu / Vidu | fal `fal-ai/vidu/q4/image-to-video` | `[ ]` |
+
+## Batch 12 — Audio: TTS flagships, music successors, and speech-to-text (10)
+
+Fills the Speech-to-Text (ASR) modality gap (absent from Batches 7–8) and adds the Aug–Oct 2026
+TTS and music releases that now lead the Artificial Analysis TTS board and fal audio catalogue.
+
+| # | Model | Vendor | Discovery path | Status |
+| --- | --- | --- | --- | --- |
+| 111 | Eleven v4 Turbo | ElevenLabs | ElevenLabs `eleven_v4_turbo`; AA TTS leaderboard (#1) | `[ ]` half price of `eleven_v4`, ~100ms WebSocket tier |
+| 112 | Inworld Realtime TTS-2 | Inworld | AA TTS leaderboard (`Realtime TTS-2`, `TTS-2 Flash`) | `[ ]` successor to TTS-1.5 (#69) |
+| 113 | Cartesia Sonic 3.6 | Cartesia | AA TTS leaderboard (`Sonic 3.6`) | `[ ]` |
+| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[ ]` |
+| 115 | Voxtral 3 TTS | Mistral | AA TTS leaderboard (`Voxtral 3 TTS`) | `[ ]` |
+| 116 | Lyria 3.5 | Google | fal `google/lyria-3.5` | `[ ]` successor to Lyria 3 (#73) |
+| 117 | MiniMax Music 3 | MiniMax | fal `minimax/music-3` | `[ ]` successor to Music 2.6 (#67) |
+| 118 | Stable Audio 3 | Stability AI | fal `fal-ai/stable-audio-3/medium/text-to-audio` | `[ ]` |
+| 119 | ElevenLabs Scribe v2 | ElevenLabs | fal `fal-ai/elevenlabs/speech-to-text/scribe-v2`; AA STT leaderboard | `[ ]` STT |
+| 120 | Voxtral Transcribe 3 | Mistral | AA STT leaderboard (`Voxtral Small Transcribe 3`, `Mini Transcribe 3`) | `[ ]` STT |
+
+## Batch 13 — Text: remaining frontier tiers, fast reasoning, and open weights (10)
+
+Remaining in-window text/multimodal models on the Artificial Analysis LLM leaderboard (Index ≥ 30
+or notable architectural outlier) with both first-party documentation and OpenRouter/host listings.
+
+| # | Model | Vendor | Discovery path | Status |
+| --- | --- | --- | --- | --- |
+| 121 | Claude Fable 5.1 | Anthropic | Claude docs `claude-fable-5-1`; OpenRouter; AA leaderboard | `[ ]` $10/$50 tier above Opus 5.5 |
+| 122 | GPT-6.1 Terra | OpenAI | OpenAI `gpt-6.1-terra`; OpenRouter; AA leaderboard | `[ ]` fast/efficient tier below Sol |
+| 123 | GPT-6 Luna | OpenAI | OpenAI `gpt-6-luna`; OpenRouter; AA leaderboard | `[ ]` high-volume low-cost tier |
+| 124 | Meta Muse Wonder | Meta | OpenRouter `meta/muse-wonder`; AA leaderboard | `[ ]` |
+| 125 | Meta Muse Spark Open | Meta | OpenRouter `meta/muse-spark-open`; AA leaderboard | `[ ]` open-weight Muse tier |
+| 126 | Xiaomi MiMo-V2.6-Pro | Xiaomi | OpenRouter `xiaomi/mimo-v2.6-pro`; AA leaderboard | `[ ]` Index 46 at $0.13/task; cover `MiMo-V2.6-Flash` on page if not split |
+| 127 | StepFun Step 5 Preview | StepFun | OpenRouter `stepfun/step-5-preview`; AA leaderboard | `[ ]` |
+| 128 | InclusionAI Ling 3.1 Flash | InclusionAI (Ant) | OpenRouter `inclusionai/ling-3.1-flash`; AA leaderboard | `[ ]` check `1019` checkpoint split during curation |
+| 129 | DeepSeek V4 Pro 0813 | DeepSeek | OpenRouter `deepseek/deepseek-v4-pro-0813`; AA leaderboard | `[ ]` Pro sibling to V4.1 Flash |
+| 130 | Inception Mercury 3 | Inception Labs | OpenRouter `inception/mercury-3`; AA (`Mercury 2.5`) | `[ ]` diffusion LLM |
+
+## Upper-bound assessment — why we recommend stopping at 130
+
+Across the four discovery feeds sampled on 2026-10-26 (`openrouter.ai/api/v1/models` with 318 IDs
+created ≥ 2025-10-26, `fal.ai/api/models` with 301 model families published ≥ 2025-10-26,
+`replicate.com/explore`, and the five Artificial Analysis leaderboards), **130 models is the
+practical upper bound** before curation quality degrades. Expanding beyond Batch 13 runs into four
+structural walls:
+
+1. **Identity-rule collapse (effort flags, billing suffixes, and host routes).** More than half of
+   the remaining post-2025-10-26 IDs on OpenRouter and fal are `:batch` / `:free` / `-pro` /
+   `~latest` aliases, reasoning-effort rows (`low`/`medium`/`high`/`xhigh`/`max`), or task-split
+   endpoints (`/text-to-image` vs `/edit`, `/image-to-video` vs `/reference-to-video`). Under the
+   three-part identity rule in `.agents/skills/wiki/SKILL.md`, those belong inside the canonical
+   model page, not as separate roster rows.
+2. **In-window self-supersession.** Because major labs shipped two to four generations inside this
+   single 12-month window, a large share of post-2025-10-26 releases are already superseded by the
+   same vendor's own current tier (and in several cases already deprecated or scheduled for
+   retirement). Curating every intermediate step (see **Deliberately excluded** below) dilutes
+   recommendations without adding actionable choices.
+3. **Evidence-floor failures in the long tail.** Below ~Index 30 on the AA text leaderboard and
+   outside the top ~25 on the Image/Video/TTS/STT boards, most uncurated entries fail the wiki's
+   evidence floor: they are either leaderboard-only previews marked `"No API available"` / `"Coming
+   soon"` (e.g., `Utopai X`, `MAGI-2 Preview`, `Muse Wonder Full`), single-host community uploads on
+   fal/Replicate with no independent second host, or thin ffmpeg/workflow utilities (`trim-video`,
+   `smart-resize`, `merge-audios`).
+4. **Diminishing decision value.** Batches 1–13 cover every top-15 model across Text, Image, Video,
+   TTS, STT, Music, and 3D, plus the leading open-weight and specialist utility options. Beyond 130,
+   new additions are either regional/niche open weights (`Ring-2.6-1T`, `JT-4.1 Flash`, `A.X-K2`,
+   `K-EXAONE 2.0`, `HyperCLOVA X SEED Think`) or incremental point updates (`OmniHuman 2`, `Luma Ray
+   3.2`, `SAM 3.1`, `Qwen3.8 2.4T A95B`) that are better handled either by updating the existing
+   family page or by curating on demand when a concrete user question requires them.
 
 ## Deliberately excluded (older than the window, or fully superseded)
 
@@ -196,16 +282,34 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
 - **Llama 3.x, Phi-4, o3, Gemini 1.5** — outside the window.
 - **Llama 4 Maverick / Scout** — borderline (2025); AA score is far below current models.
   Revisit only if open-weight licensing becomes the deciding constraint.
-- **Seedream 4.0** — 2025-09, just outside the window; Seedream 5.0 Pro and Lite cover the family.
+- **Seedream 4.0 / 4.5** — 4.0 is 2025-09 (outside the window) and 4.5 (2025-12) is superseded by
+  Seedream 5.0 Pro, Lite, and Flash.
+- **In-window superseded text generations** — OpenAI `gpt-5.1` / `5.2` / `5.3-codex` / `5.4` /
+  `5.5` / `5.6` and `gpt-6-sol` (superseded by the GPT-6 Astra / 6.1 Sol / 6.1 Terra / 6 Luna
+  lineup); Anthropic `claude-opus-4.5` / `4.6` / `4.7` / `4.8` / `5.0` and `claude-sonnet-4.6` /
+  `5.0` (superseded by the 5.5 family and Fable 5.1); Google `gemini-3-flash` / `3.1-pro` /
+  `3.5-flash` / `3.6-flash` / `3.7-flash` (superseded by Gemini 4 Argon and 3.8 Flash); Alibaba
+  `qwen3.5` / `3.6` / `3.7` series (superseded by Qwen3.8, with `qwen3.7-max` already marked legacy
+  in Model Studio); Moonshot `kimi-k2.5` / `k2.6` / `k2.7-code` / `k3` (K2 series retiring Dec 2026;
+  K3 described as previous-generation in favour of K3.1 Pro); Z AI `glm-4.7` / `5.0` / `5.1` / `5.2`
+  (superseded by GLM-5.3); MiniMax `minimax-m2.1` / `m2.5` / `m2.7` / `m3` (superseded by M3.1
+  Flash).
+- **In-window superseded image/video/audio generations** — Ideogram 4.0 (superseded by 4.5), Krea 2
+  (superseded by Krea 3), Wan 2.6 / 2.7 (superseded by Wan 3.0), PixVerse 5.5 / 5.6 (superseded by
+  V6), Seedance 1.5 (superseded by 2.0 / 2.5), Kling 2.6 (superseded by 3.0 / 4.0), LTX 2.3
+  (superseded by 2.5), MiniMax Hailuo 2.3 and Speech 2.6 (superseded by H3 and Speech 2.8).
+- **Leaderboard-only previews without public API or weights** — `Utopai X` (#2 on AA-Video-T2V v2.1,
+  marked "No API available"), `MAGI-2 Preview` (#14 on AA-Video-T2V v2.1, marked "Coming soon"), and
+  `Muse Wonder Full` (AA LLM board, no public API pricing/speed columns). Eligible once an API or
+  weights artifact ships.
 
 ## Open questions for the roster itself
 
 1. Curation on 2026-10-26 settled the FLUX 3 grouping: FLUX 3 Max is a video model post-trained by
    fal, not an image tier, and FLUX 3 Image / FLUX 3 Image Klein are distinct. It also settled
    GPT Image 2.5 Flare vs Sunburst (separate IDs, no measured behavioural difference) and Nano
-   Banana 2 vs 2.1 (distinct successor, with 2 deprecated). Still unverified: Kling 3.0 vs 4.0 and
-   MiniMax H3 vs H3 Max. Each page records the ambiguity; curation should settle it before writing
-   capability claims.
+   Banana 2 vs 2.1 (distinct successor, with 2 deprecated), Kling 3.0 vs 4.0, and MiniMax H3 vs
+   H3 Max. Each page records the ambiguity; curation settled these for rows 1–100.
 2. **DeepSeek V4.1 Flash** (#91) is the first dated-checkpoint case, and it was **split** on
    2026-10-26. Resolved since: `1017` is a **separate MIT weights repository** (~510 GB, fp8),
    not an API-only refresh; both checkpoints are therefore obtainable artifacts, so the
@@ -222,6 +326,6 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
 4. Utility models (BiRefNet, SAM 3, Topaz Upscale, Pixelcut) are included because the user
    asked for all modalities, not only generative models. If the 100 slots should be reserved
    for generative models, these four are the first to replace.
-5. Launch dates remain the bottleneck. Expect some of the 100 to fall outside the one-year
-   window once first-party dates are checked; the roster is sized at 100 so that replacements
-   can be drawn from the same discovery pass.
+5. Launch dates were checked for rows 1–100: 18 fell outside the one-year window and are recorded
+   as exceptions. Rows 101–130 still need the same check before curation; their inclusion is a
+   proposal, not a verified count.
