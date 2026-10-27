@@ -191,16 +191,16 @@ non-overlapping capability/price positioning, and in-window launch dates (Jun–
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 101 | MAI-Image 2.6 | Microsoft | AA Image Arena (`MAI-Image-2.6`); fal `microsoft/mai-image-2.5` | `[ ]` verify whether 2.6 is publicly addressable or 2.5 is the API SKU |
-| 102 | Grok Imagine Image 2.0 | xAI | AA Image Arena (`Grok Imagine Image 2.0`) | `[ ]` distinct from `grok-imagine-image` (+144 Elo on AA) |
-| 103 | Meta Muse Image | Meta | fal `meta/muse-image`; AA Image Arena (`Muse Image`) | `[ ]` |
-| 104 | Nano Banana 2 Lite | Google | Google `gemini-3.1-flash-lite-image`; fal `google/nano-banana-2-lite` | `[ ]` |
-| 105 | Seedream 5.0 Flash | ByteDance | fal `bytedance/seedream/v5/flash/text-to-image` | `[ ]` |
-| 106 | Recraft V4.1 | Recraft | fal `fal-ai/recraft/v4.1/text-to-image`; AA Image Arena | `[ ]` |
-| 107 | Luma Uni-1 | Luma AI | fal `luma/agent/uni-1/v1/edit`; AA Image Arena (`Luma UNI 1`) | `[ ]` |
-| 108 | HeyGen Video 1 | HeyGen | fal `heygen/heygen-video/image-to-video`; AA Video Arena | `[ ]` general T2V/I2V model, distinct from Avatar 5 |
-| 109 | Kling O3 | Kuaishou | fal `fal-ai/kling-video/o3/pro/video-to-video/edit` | `[ ]` omni video-edit line |
-| 110 | Vidu Q4 | Shengshu / Vidu | fal `fal-ai/vidu/q4/image-to-video` | `[ ]` |
+| 101 | MAI-Image 2.6 | Microsoft | AA Image Arena (`MAI-Image-2.6`); fal `microsoft/mai-image-2.5` | `[x]` verify whether 2.6 is publicly addressable or 2.5 is the API SKU |
+| 102 | Grok Imagine Image 2.0 | xAI | AA Image Arena (`Grok Imagine Image 2.0`) | `[x]` distinct from `grok-imagine-image` (+144 Elo on AA) |
+| 103 | Meta Muse Image | Meta | fal `meta/muse-image`; AA Image Arena (`Muse Image`) | `[x]` |
+| 104 | Nano Banana 2 Lite | Google | Google `gemini-3.1-flash-lite-image`; fal `google/nano-banana-2-lite` | `[x]` |
+| 105 | Seedream 5.0 Flash | ByteDance | fal `bytedance/seedream/v5/flash/text-to-image` | `[x]` |
+| 106 | Recraft V4.1 | Recraft | fal `fal-ai/recraft/v4.1/text-to-image`; AA Image Arena | `[x]` |
+| 107 | Luma Uni-1 | Luma AI | fal `luma/agent/uni-1/v1/edit`; AA Image Arena (`Luma UNI 1`) | `[x]` |
+| 108 | HeyGen Video 1 | HeyGen | fal `heygen/heygen-video/image-to-video`; AA Video Arena | `[x]` general T2V/I2V model, distinct from Avatar 5 |
+| 109 | Kling O3 | Kuaishou | fal `fal-ai/kling-video/o3/pro/video-to-video/edit` | `[x]` omni video-edit line |
+| 110 | Vidu Q4 | Shengshu / Vidu | fal `fal-ai/vidu/q4/image-to-video` | `[x]` |
 
 ## Batch 12 — Audio: TTS flagships, music successors, and speech-to-text (10)
 
@@ -209,16 +209,16 @@ TTS and music releases that now lead the Artificial Analysis TTS board and fal a
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 111 | Eleven v4 Turbo | ElevenLabs | ElevenLabs `eleven_v4_turbo`; AA TTS leaderboard (#1) | `[ ]` half price of `eleven_v4`, ~100ms WebSocket tier |
-| 112 | Inworld Realtime TTS-2 | Inworld | AA TTS leaderboard (`Realtime TTS-2`, `TTS-2 Flash`) | `[ ]` successor to TTS-1.5 (#69) |
-| 113 | Cartesia Sonic 3.6 | Cartesia | AA TTS leaderboard (`Sonic 3.6`) | `[ ]` |
-| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[ ]` |
-| 115 | Voxtral 3 TTS | Mistral | AA TTS leaderboard (`Voxtral 3 TTS`) | `[ ]` |
-| 116 | Lyria 3.5 | Google | fal `google/lyria-3.5` | `[ ]` successor to Lyria 3 (#73) |
-| 117 | MiniMax Music 3 | MiniMax | fal `minimax/music-3` | `[ ]` successor to Music 2.6 (#67) |
-| 118 | Stable Audio 3 | Stability AI | fal `fal-ai/stable-audio-3/medium/text-to-audio` | `[ ]` |
-| 119 | ElevenLabs Scribe v2 | ElevenLabs | fal `fal-ai/elevenlabs/speech-to-text/scribe-v2`; AA STT leaderboard | `[ ]` STT |
-| 120 | Voxtral Transcribe 3 | Mistral | AA STT leaderboard (`Voxtral Small Transcribe 3`, `Mini Transcribe 3`) | `[ ]` STT |
+| 111 | Eleven v4 Turbo | ElevenLabs | ElevenLabs `eleven_v4_turbo`; AA TTS leaderboard (#1) | `[x]` half price of `eleven_v4`, ~100ms WebSocket tier |
+| 112 | Inworld Realtime TTS-2 | Inworld | AA TTS leaderboard (`Realtime TTS-2`, `TTS-2 Flash`) | `[x]` successor to TTS-1.5 (#69) |
+| 113 | Cartesia Sonic 3.6 | Cartesia | AA TTS leaderboard (`Sonic 3.6`) | `[x]` |
+| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[x]` |
+| 115 | Voxtral 3 TTS | Mistral | AA TTS leaderboard (`Voxtral 3 TTS`) | `[x]` |
+| 116 | Lyria 3.5 | Google | fal `google/lyria-3.5` | `[x]` successor to Lyria 3 (#73) |
+| 117 | MiniMax Music 3 | MiniMax | fal `minimax/music-3` | `[x]` successor to Music 2.6 (#67) |
+| 118 | Stable Audio 3 | Stability AI | fal `fal-ai/stable-audio-3/medium/text-to-audio` | `[x]` |
+| 119 | ElevenLabs Scribe v2 | ElevenLabs | fal `fal-ai/elevenlabs/speech-to-text/scribe-v2`; AA STT leaderboard | `[x]` STT |
+| 120 | Voxtral Transcribe 3 | Mistral | AA STT leaderboard (`Voxtral Small Transcribe 3`, `Mini Transcribe 3`) | `[x]` STT |
 
 ## Batch 13 — Text: remaining frontier tiers, fast reasoning, and open weights (10)
 
@@ -227,16 +227,16 @@ or notable architectural outlier) with both first-party documentation and OpenRo
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 121 | Claude Fable 5.1 | Anthropic | Claude docs `claude-fable-5-1`; OpenRouter; AA leaderboard | `[ ]` $10/$50 tier above Opus 5.5 |
-| 122 | GPT-6.1 Terra | OpenAI | OpenAI `gpt-6.1-terra`; OpenRouter; AA leaderboard | `[ ]` fast/efficient tier below Sol |
-| 123 | GPT-6 Luna | OpenAI | OpenAI `gpt-6-luna`; OpenRouter; AA leaderboard | `[ ]` high-volume low-cost tier |
-| 124 | Meta Muse Wonder | Meta | OpenRouter `meta/muse-wonder`; AA leaderboard | `[ ]` |
-| 125 | Meta Muse Spark Open | Meta | OpenRouter `meta/muse-spark-open`; AA leaderboard | `[ ]` open-weight Muse tier |
-| 126 | Xiaomi MiMo-V2.6-Pro | Xiaomi | OpenRouter `xiaomi/mimo-v2.6-pro`; AA leaderboard | `[ ]` Index 46 at $0.13/task; cover `MiMo-V2.6-Flash` on page if not split |
-| 127 | StepFun Step 5 Preview | StepFun | OpenRouter `stepfun/step-5-preview`; AA leaderboard | `[ ]` |
-| 128 | InclusionAI Ling 3.1 Flash | InclusionAI (Ant) | OpenRouter `inclusionai/ling-3.1-flash`; AA leaderboard | `[ ]` check `1019` checkpoint split during curation |
-| 129 | DeepSeek V4 Pro 0813 | DeepSeek | OpenRouter `deepseek/deepseek-v4-pro-0813`; AA leaderboard | `[ ]` Pro sibling to V4.1 Flash |
-| 130 | Inception Mercury 3 | Inception Labs | OpenRouter `inception/mercury-3`; AA (`Mercury 2.5`) | `[ ]` diffusion LLM |
+| 121 | Claude Fable 5.1 | Anthropic | Claude docs `claude-fable-5-1`; OpenRouter; AA leaderboard | `[x]` $10/$50 tier above Opus 5.5 |
+| 122 | GPT-6.1 Terra | OpenAI | OpenAI `gpt-6.1-terra`; OpenRouter; AA leaderboard | `[x]` fast/efficient tier below Sol |
+| 123 | GPT-6 Luna | OpenAI | OpenAI `gpt-6-luna`; OpenRouter; AA leaderboard | `[x]` high-volume low-cost tier |
+| 124 | Meta Muse Wonder | Meta | OpenRouter `meta/muse-wonder`; AA leaderboard | `[x]` |
+| 125 | Meta Muse Spark Open | Meta | OpenRouter `meta/muse-spark-open`; AA leaderboard | `[x]` open-weight Muse tier |
+| 126 | Xiaomi MiMo-V2.6-Pro | Xiaomi | OpenRouter `xiaomi/mimo-v2.6-pro`; AA leaderboard | `[x]` Index 46 at $0.13/task; cover `MiMo-V2.6-Flash` on page if not split |
+| 127 | StepFun Step 5 Preview | StepFun | OpenRouter `stepfun/step-5-preview`; AA leaderboard | `[x]` |
+| 128 | InclusionAI Ling 3.1 Flash | InclusionAI (Ant) | OpenRouter `inclusionai/ling-3.1-flash`; AA leaderboard | `[x]` check `1019` checkpoint split during curation |
+| 129 | DeepSeek V4 Pro 0813 | DeepSeek | OpenRouter `deepseek/deepseek-v4-pro-0813`; AA leaderboard | `[x]` Pro sibling to V4.1 Flash |
+| 130 | Inception Mercury 3 | Inception Labs | OpenRouter `inception/mercury-3`; AA (`Mercury 2.5`) | `[x]` diffusion LLM |
 
 ## Upper-bound assessment — why we recommend stopping at 130
 
