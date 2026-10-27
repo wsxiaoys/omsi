@@ -1,0 +1,20 @@
+{
+  "source": "https://huggingface.co/api/models?author=xai-org&limit=100",
+  "captured": "2026-10-26",
+  "data": [
+    {
+      "modelId": "xai-org/grok-2",
+      "createdAt": "2025-08-22T21:16:24.000Z",
+      "downloads": 9296,
+      "likes": 1198,
+      "pipeline_tag": null
+    },
+    {
+      "modelId": "xai-org/grok-1",
+      "createdAt": "2024-03-17T05:47:21.000Z",
+      "downloads": 2125,
+      "likes": 2482,
+      "pipeline_tag": "text-generation"
+    }
+  ]
+}
