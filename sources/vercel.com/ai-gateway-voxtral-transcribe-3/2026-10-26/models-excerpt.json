@@ -1,0 +1,94 @@
+{
+  "object": "list",
+  "captured_from": "https://ai-gateway.vercel.sh/v1/models",
+  "total_models_in_response": 496,
+  "voxtral_entries": [
+    {
+      "id": "mistral/voxtral-mini-transcribe-3",
+      "object": "model",
+      "created": 1755815280,
+      "released": 1792454400,
+      "owned_by": "mistral",
+      "name": "Voxtral Mini Transcribe 3",
+      "description": "Fast, cost-efficient multilingual transcription with speaker diarization and vocabulary biasing, designed for high-volume audio processing.",
+      "type": "transcription",
+      "zdr": "all",
+      "no_training": "all",
+      "supported_specifications": [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "modalities": {
+        "input": [
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "input": "0",
+        "transcription_duration_cost_per_second": "0.00005834"
+      }
+    },
+    {
+      "id": "mistral/voxtral-mini-tts-3",
+      "object": "model",
+      "created": 1755815280,
+      "released": 1792454400,
+      "owned_by": "mistral",
+      "name": "Voxtral TTS 3",
+      "description": "Generates natural, expressive speech with preset or cloned voices and inline controls for emotion and pace.",
+      "type": "speech",
+      "zdr": "all",
+      "no_training": "all",
+      "supported_specifications": [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "input": "0.000016",
+        "speech_input_character_cost": "0.000016"
+      }
+    },
+    {
+      "id": "mistral/voxtral-small-transcribe-3",
+      "object": "model",
+      "created": 1755815280,
+      "released": 1792454400,
+      "owned_by": "mistral",
+      "name": "Voxtral Small Transcribe 3",
+      "description": "Mistral\u2019s flagship transcription model, optimized for multilingual accuracy, speaker diarization, and domain-specific vocabulary.",
+      "type": "transcription",
+      "zdr": "all",
+      "no_training": "all",
+      "supported_specifications": [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "modalities": {
+        "input": [
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "input": "0",
+        "transcription_duration_cost_per_second": "0.00006667"
+      }
+    }
+  ]
+}

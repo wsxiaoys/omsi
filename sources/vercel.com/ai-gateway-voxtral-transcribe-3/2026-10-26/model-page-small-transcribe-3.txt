@@ -1,0 +1,117 @@
+Voxtral Small Transcribe 3
+
+Mistral’s flagship transcription model, optimized for multilingual accuracy, speaker diarization, and domain-specific vocabulary. Your use is subject to Mistral's [Terms](https://mistral.ai/terms) & [Privacy](https://mistral.ai/terms#privacy-policy) Policies.
+
+PricePrice
+    $0.24, Per hour of audio
+
+$0.24per hour of audio
+
+[Get API key](https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fai-gateway%2Fquick-start%3FshowCreateKeyModal%3Dauto%26utm_source%3Dgateway-model-page%26utm_campaign%3Dai-gateway-models&title=Get%20API%20key)[Read the docs](https://vercel.com/docs/ai-gateway)
+    
+    
+    1
+    
+    // Requires ai@7 and @ai-sdk/gateway@4.
+    
+    2
+    
+    import { experimental_transcribe as transcribe } from 'ai';
+    
+    3
+    
+    import { gateway } from '@ai-sdk/gateway';
+    
+    4
+    
+    import { readFile } from 'node:fs/promises';
+    
+    5
+    
+    
+    
+    
+    6
+    
+    const result = await transcribe({
+    
+    7
+    
+      model: gateway.transcriptionModel('mistral/voxtral-small-transcribe-3'),
+    
+    8
+    
+      audio: await readFile('audio.mp3'),
+    
+    9
+    
+    });
+
+Copy for agent[Read docs](https://vercel.com/docs/ai-gateway/sdks-and-apis/ai-sdk)
+
+OverviewPlaygroundProvidersSimilar
+
+## Copy link to headingPlayground
+
+Try out Voxtral Small Transcribe 3 by Mistral. Usage is billed to your team at API rates. Free users (those who haven't made a payment) get $5 of credits every 30 days.
+
+Voxtral Small Transcribe 3
+
+### Speech to text
+
+Record a short clip from your microphone and the model transcribes it to text.
+
+Start recordingIdle
+
+Record a clip to see the transcript here.
+
+## Copy link to headingProviders
+
+Route requests across multiple providers. Copy a provider slug to set your preference. Visit the [docs](/docs/ai-gateway/provider-options) for more info. Using a provider means you agree to their terms, listed under Legal.
+
+Checking availability for your team
+
+Columns (6)
+
+Provider  
+---  
+  
+Input
+
+| 
+
+Capabilities
+
+| 
+
+ZDR
+
+| 
+
+No Training
+
+| 
+
+Free AI Gateway Credit
+
+| 
+
+Release Date
+
+|   
+---|---|---|---|---|---|---  
+  
+[Mistral](/ai-gateway/models/providers/mistral)
+
+Legal:[Terms](https://mistral.ai/terms)•[Privacy](https://mistral.ai/terms#privacy-policy)
+
+| 
+
+$0.24/hr
+
+| 
+
+| | | | 10/20/2026|   
+---|---|---|---|---|---|---|---  
+  
+## Copy link to heading
