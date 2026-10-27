@@ -31,7 +31,10 @@ type Kind = "model" | "draft" | "source";
 interface Doc {
   path: string;
   kind: Kind;
+  /** Display title: the canonical id for model pages, the H1 for everything else. */
   title: string;
+  /** The document's own H1, kept for search and secondary display. */
+  heading: string;
   summary: string;
   words: number;
   links: string[];
@@ -180,7 +183,8 @@ async function buildWiki(): Promise<Wiki> {
           .find((part) => /^\d{4}-\d{2}-\d{2}$/.test(part)) ??
         undefined;
       const summary = stripMd(firstParagraph(content));
-      const title = extractTitle(content, rel);
+      const heading = extractTitle(content, rel);
+      const title = kind === "model" ? path.basename(rel, ".md") : heading;
       const origin = meta.origin ?? "";
       const originUrl = /(https?:\/\/[^\s)]+)/.exec(origin)?.[1] ?? "";
 
@@ -188,7 +192,8 @@ async function buildWiki(): Promise<Wiki> {
         path: rel,
         kind,
         title,
-        summary: summary || title,
+        heading,
+        summary: summary || heading,
         words: content.split(/\s+/).filter(Boolean).length,
         links: extractLinks(content),
         sourceLinks: 0,
@@ -269,6 +274,7 @@ function publicDoc(doc: Doc, wiki: Wiki) {
     path: doc.path,
     kind: doc.kind,
     title: doc.title,
+    heading: doc.heading,
     summary: doc.summary,
     words: doc.words,
     sourceLinks: doc.sourceLinks,
@@ -1585,7 +1591,8 @@ const HTML = String.raw`<!doctype html>
 
     function match(doc) {
       if (!query) return true;
-      var haystack = doc.title + ' ' + doc.path + ' ' + (doc.publisher || '') + ' ' + (doc.slug || '');
+      var haystack = doc.title + ' ' + (doc.heading || '') + ' ' + doc.path + ' ' +
+        (doc.publisher || '') + ' ' + (doc.slug || '');
       return haystack.toLowerCase().indexOf(query) !== -1;
     }
 
@@ -1615,7 +1622,7 @@ const HTML = String.raw`<!doctype html>
 
   function modelCard(doc) {
     return '<a class="card" href="' + fileHref(doc.path) + '">' +
-      '<div class="card-kicker">' + esc(doc.path.replace(/^wiki\/models\//, '').replace(/\.md$/, '')) + '</div>' +
+      '<div class="card-kicker">' + esc(doc.heading || doc.title) + '</div>' +
       '<h3>' + esc(doc.title) + '</h3>' +
       '<p>' + esc(doc.summary) + '</p>' +
       '<div class="card-meta"><span>' + doc.sourceLinks + ' sources</span>' +
@@ -1840,6 +1847,14 @@ const HTML = String.raw`<!doctype html>
 
   function renderArticle(doc, rendered) {
     var body = rendered.html;
+    if (doc.kind === 'model') {
+      // The viewer names model pages by their canonical id, not the H1 wording.
+      if (/<h1[^>]*>[\s\S]*?<\/h1>/.test(body)) {
+        body = body.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/, '<h1$1>' + esc(doc.title) + '</h1>');
+      } else {
+        body = '<h1>' + esc(doc.title) + '</h1>' + body;
+      }
+    }
     if (doc.kind === 'source') {
       var meta = sourceMeta(doc);
       var headingEnd = body.indexOf('</h1>');
