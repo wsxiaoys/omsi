@@ -70,7 +70,7 @@ rows are marked `[ ]`.
 | 26 | Leffa | Meta research | fal `fal-ai/leffa` | `[ ]` |
 | 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[ ]` |
 | 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[ ]` |
-| 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[ ]` |
+| 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[x]` |
 | 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[ ]` |
 
 ## Batch 4 — Video: frontier (10)
