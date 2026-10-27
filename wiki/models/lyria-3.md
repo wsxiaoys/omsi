@@ -48,7 +48,7 @@ wants full songs needs a different endpoint ID on every surface.
 
 | Model | Status at capture | Relationship to Lyria 3 |
 | --- | --- | --- |
-| **Lyria 3.5** | Newest per DeepMind; reachable only via `google/lyria-3.5` on fal | Distinct model. Google's page title is literally "Lyria 3.5 — Google DeepMind" and lists it above "Lyria" in the family list. **No Google model card, model ID, price, or release date was found for it.** |
+| **[Lyria 3.5](lyria-3.5.md)** | Newest per DeepMind; reachable only via `google/lyria-3.5` on fal | Distinct model with its own page. Google's page title is literally "Lyria 3.5 — Google DeepMind" and lists it above "Lyria" in the family list. **No Google model card, model ID, price, or release date was found for it.** |
 | **Lyria 2** (`lyria-002`) | GA | Predecessor. Instrumental only, no vocals, no image input, no watermarking, 48 kHz WAV, four clips per request. See below. |
 | Lyria RealTime | Product listing only | Interactive/streaming music, separate product entry, no model card captured. |
 | Magenta RealTime | "Our Lyria open model" | The open-weights branch of the family. Nothing about Lyria 3's weights. |
@@ -202,7 +202,9 @@ No per-second, batch, or Provisioned Throughput price is listed for any Lyria mo
 1. **Is Lyria 3.5 a Lyria 3 successor, and is it API-served?** DeepMind calls 3.5 the newest model and
    fal sells `google/lyria-3.5` at $0.10, but Google publishes no model card, ID, date, or price for
    it, and Replicate has no 3.5 page. Either 3.5 is app-only and fal is proxying an internal surface,
-   or the documentation lags. Unresolved.
+   or the documentation lags. Unresolved; the successor question is now tracked on
+   [the Lyria 3.5 page](lyria-3.5.md), where AA's music boards put the two models within noise of
+   each other (3.5 1051 Elo vs 3 Pro 1047 on vocals).
 2. **44.1 kHz or 48 kHz?** Google's model card and fal say 44.1 kHz / 192 kbps MP3; Replicate says
    48 kHz stereo. If Replicate is resampling, the output files differ between hosts. Not measured.
 3. **Does negative prompting work on Lyria 3 or not?** Model card and fal say no; the prompt guide
