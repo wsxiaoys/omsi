@@ -31,6 +31,55 @@ hierarchies, capability matrices, databases, or generated catalogs without a
 concrete need and user agreement. Keep knowledge in prose rather than a fixed
 use-case taxonomy.
 
+### Source layout
+
+Organize `sources/` as `sources/<publisher-domain>/<document-slug>/<capture-date>.md`.
+The **document** is the directory; each **retrieval** is a dated file inside it:
+
+```
+sources/bfl.ai/flux2-overview/2026-10-26.md
+sources/bfl.ai/flux2-pricing/2026-10-26.md
+sources/bfl.ai/flux2-pricing/2027-01-20.md
+sources/fal.ai/flux-2-pro/2026-10-26.md
+sources/replicate.com/flux-2-pro/2026-10-26.md
+```
+
+- **Publisher, not hostname.** Use the registrable domain (`bfl.ai`, not
+  `docs.bfl.ai`), so one publisher stays in one directory when it moves
+  subdomains or serves the same docs from several hosts.
+- **The document slug is the canonical identity.** One external page gets one
+  directory, permanently. Re-fetching appends a dated file rather than creating a
+  parallel directory, so the history of a single page stays in one place and
+  `diff sources/bfl.ai/flux2-pricing/{2026-10-26,2027-01-20}.md` shows what
+  changed. Slug for stability, not for the date: `flux2-pricing`, never
+  `pricing-2026-10`.
+- **Capture date in the filename**, `YYYY-MM-DD`. This is the date the material
+  was retrieved, not the publication date; the publication date belongs inside
+  the record. A later retrieval is a new file, never an overwrite.
+- **Slug names the subject**, not the page's nav label: `flux2-pricing`, not
+  `pricing`, so several pages from one publisher stay distinct.
+- Do not mirror the site's URL path. The full original URL belongs in the
+  record's Origin line, so a vendor renaming or moving a page does not force a
+  slug change.
+- When a capture needs artifacts (JSON dumps, screenshots, saved HTML), the
+  capture becomes a directory: `sources/<domain>/<slug>/<date>/index.md` plus the
+  artifacts beside it. Text-only captures stay flat as `<date>.md`.
+
+Link to records with relative paths from the model page, e.g.
+`../../sources/bfl.ai/flux2-overview/2026-10-26.md`.
+
+**Cite a dated capture, never "latest".** A link to a directory or to a
+`latest.md` alias looks pinned while silently changing meaning as the vendor
+edits the page. A citation must name the capture it was read from.
+
+### Evidence floor
+
+Before a model page is considered started, it needs at least one first-party
+(publisher or model-developer) source **and** at least one independent host
+record. Two host pages alone do not satisfy the floor, because hosts restate
+each other and vendor marketing. If only host material exists, say so in the
+page's evidence status rather than implying vendor confirmation.
+
 ## Model identity
 
 Maintain one canonical Markdown page per distinct model entity, using a stable,
@@ -43,7 +92,42 @@ readable filename such as `wiki/models/gemini-2.5-flash-image.md`.
   model page. Do not create a separate model entity merely for each endpoint.
 - If identity or version is unclear, record the ambiguity rather than guessing.
 
-A model page may discuss many activities. It is not one page per use case.
+**Dated checkpoints.** A new snapshot under the same model ID is not automatically a new
+entity. Split only when all three hold:
+
+1. **Both are obtainable.** If the older snapshot is delisted *and* its weights are
+   withdrawn, keep one page with a checkpoint history. Published weights count — an
+   open-weights checkpoint no API serves is still a real option.
+2. **The difference changes the recommendation.** Quality, price, context, latency, or
+   policy must diverge enough that one verdict would mislead a reader of the other.
+3. **Variant-specific evidence exists.** Some source must describe the checkpoint itself.
+   If every source covers both, a split yields two pages that drift.
+
+**Materiality.** Raw points are the wrong unit — 11 points means different things on a
+pass rate and on an Elo. Judge the delta against, best first: an independent
+re-measurement of the delta; the benchmark's own equivalence band (a card treating ≤0.3
+as equivalent makes +0.4 noise and +11 signal); the harness spread for the same model
+(if one checkpoint moves 4–7 points across scaffolds, a smaller delta is not the
+version).
+
+Worked case: DeepSeek called V4.1-Flash-1017 a "minor update" and claimed +11.1 on
+Terminal-Bench 4.0. Independent runs measured +7.0 and +12.1. The delta survived; the
+absolute scores did not — both put the model 8.5–10.5 points below the vendor's row.
+Verify the delta and the level separately, and read "minor update" as a claim about the
+training change, not the effect size. Record the delta, the harness, and who measured it;
+"improved" without a number, or a number without a harness, is not evidence.
+
+**Addressability is a caveat, not a test.** Any host can pin a snapshot under a stable
+slug, so a working endpoint proves only that a host chose to serve it. What matters is
+whether the vendor gives it its own identity, pricing, and support window, and whether
+both stay obtainable. Provenance-only differences merge; a choice the reader must make
+at request time splits. A merged page carries a checkpoint history and says which
+checkpoint each claim was observed on; a split page must not imply the parent's findings
+transfer.
+
+Leaderboard granularity is not identity. Aggregators split entries whenever scores
+diverge; their labels are leads, not canonical IDs. A model page may discuss many
+activities; it is not one page per use case.
 
 ## Evidence records
 
