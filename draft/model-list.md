@@ -66,7 +66,7 @@ rows are marked `[ ]`.
 | 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[ ]` |
 | 23 | BRIA Fibo Edit 1.5 | BRIA AI | fal `bria/fibo-edit-1.5` | `[ ]` |
 | 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[ ]` |
-| 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[ ]` |
+| 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[x]` |
 | 26 | Leffa | Meta research | fal `fal-ai/leffa` | `[ ]` |
 | 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[ ]` |
 | 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[ ]` |
