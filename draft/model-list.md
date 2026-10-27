@@ -58,7 +58,7 @@ questions. They make no capability, pricing, or policy claims.
 | 17 | FLUX 3 Image | Black Forest Labs | fal `blackforestlabs/flux-3` | `[s]` |
 | 18 | FLUX 3 Max | Black Forest Labs | fal `blackforestlabs/flux-3-max` | `[ ]` |
 | 19 | FLUX 3 [klein] | Black Forest Labs | fal `blackforestlabs/flux-3/klein` | `[ ]` |
-| 20 | Qwen Image 3 | Alibaba | fal `alibaba/qwen-image-3` | `[s]` |
+| 20 | Qwen Image 3 | Alibaba | fal `alibaba/qwen-image-3` | `[x]` |
 
 ## Batch 3 — Image: specialists and utilities (10)
 
