@@ -1,0 +1,131 @@
+{
+  "id": "mistralai/mistral-large-4-0",
+  "canonical_slug": "mistralai/mistral-large-4-0-20261006",
+  "hugging_face_id": null,
+  "name": "Mistral: Mistral Large 4",
+  "created": 1791294122,
+  "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
+  "context_length": 1048576,
+  "architecture": {
+    "modality": "text+image->text",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "output_modalities": [
+      "text"
+    ],
+    "tokenizer": "Mistral",
+    "instruct_type": null
+  },
+  "pricing": {
+    "prompt": "0.00000136",
+    "completion": "0.00000418",
+    "input_cache_read": "0.00000014"
+  },
+  "top_provider": {
+    "context_length": 1048576,
+    "max_completion_tokens": 262144,
+    "is_moderated": false
+  },
+  "per_request_limits": null,
+  "supported_parameters": [
+    "frequency_penalty",
+    "include_reasoning",
+    "logprobs",
+    "max_tokens",
+    "presence_penalty",
+    "reasoning",
+    "reasoning_effort",
+    "response_format",
+    "seed",
+    "stop",
+    "structured_outputs",
+    "temperature",
+    "tool_choice",
+    "tools",
+    "top_logprobs",
+    "top_p"
+  ],
+  "default_parameters": {},
+  "supported_voices": null,
+  "knowledge_cutoff": null,
+  "expiration_date": null,
+  "links": {
+    "details": "/api/v1/models/mistralai/mistral-large-4-0-20261006/endpoints"
+  },
+  "benchmarks": {
+    "design_arena": [
+      {
+        "arena": "models",
+        "category": "3d",
+        "elo": 1248,
+        "win_rate": 45,
+        "rank": 33
+      },
+      {
+        "arena": "models",
+        "category": "asciiart",
+        "elo": 1206,
+        "win_rate": 43.5,
+        "rank": 21
+      },
+      {
+        "arena": "models",
+        "category": "codecategories",
+        "elo": 1258,
+        "win_rate": 46.7,
+        "rank": 40
+      },
+      {
+        "arena": "models",
+        "category": "dataviz",
+        "elo": 1275,
+        "win_rate": 51,
+        "rank": 25
+      },
+      {
+        "arena": "models",
+        "category": "gamedev",
+        "elo": 1226,
+        "win_rate": 42.3,
+        "rank": 45
+      },
+      {
+        "arena": "models",
+        "category": "svg",
+        "elo": 1229,
+        "win_rate": 45.3,
+        "rank": 20
+      },
+      {
+        "arena": "models",
+        "category": "uicomponent",
+        "elo": 1269,
+        "win_rate": 47.6,
+        "rank": 32
+      },
+      {
+        "arena": "models",
+        "category": "website",
+        "elo": 1256,
+        "win_rate": 47.3,
+        "rank": 40
+      }
+    ],
+    "artificial_analysis": {
+      "intelligence_index": 38.4,
+      "coding_index": null,
+      "agentic_index": null
+    }
+  },
+  "reasoning": {
+    "mandatory": false,
+    "default_enabled": true,
+    "supported_efforts": [
+      "high",
+      "none"
+    ],
+    "default_effort": "high"
+  }
+}
