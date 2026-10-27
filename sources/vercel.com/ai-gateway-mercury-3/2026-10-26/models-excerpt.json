@@ -1,0 +1,184 @@
+[
+ {
+  "id": "inception/mercury-2",
+  "object": "model",
+  "created": 1755815280,
+  "released": 1771891200,
+  "owned_by": "inception",
+  "name": "Mercury 2",
+  "description": "A diffusion-based reasoning LLM that generates text via parallel refinement (not token-by-token), delivering real-time latency with ~1k tokens/sec plus 128K context and built-in tool/JSON support.",
+  "context_window": 128000,
+  "max_tokens": 128000,
+  "type": "language",
+  "zdr": "none",
+  "no_training": "all",
+  "tags": [
+   "reasoning",
+   "tool-use",
+   "structured-output"
+  ],
+  "supported_specifications": [
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "modalities": {
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ]
+  },
+  "supported_parameters": [
+   "max_tokens",
+   "temperature",
+   "stop",
+   "tools",
+   "tool_choice",
+   "reasoning",
+   "include_reasoning",
+   "response_format",
+   "structured_outputs"
+  ],
+  "temperature": true,
+  "reasoning_options": [
+   {
+    "type": "effort",
+    "values": [
+     "instant",
+     "low",
+     "medium",
+     "high"
+    ]
+   }
+  ],
+  "pricing": {
+   "input": "0.00000025",
+   "output": "0.00000075",
+   "input_cache_read": "0.000000025"
+  }
+ },
+ {
+  "id": "inception/mercury-2.5",
+  "object": "model",
+  "created": 1755815280,
+  "released": 1788825600,
+  "owned_by": "inception",
+  "name": "Mercury 2.5",
+  "description": "Mercury 2.5 is Inception\u2019s diffusion-based reasoning model for chat, agents, and structured workflows, with tool calling, structured outputs, and a 260K context window.",
+  "context_window": 260000,
+  "max_tokens": 65536,
+  "type": "language",
+  "zdr": "none",
+  "no_training": "all",
+  "tags": [
+   "implicit-caching",
+   "reasoning",
+   "tool-use",
+   "structured-output"
+  ],
+  "supported_specifications": [
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "modalities": {
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ]
+  },
+  "supported_parameters": [
+   "max_tokens",
+   "temperature",
+   "stop",
+   "tools",
+   "tool_choice",
+   "reasoning",
+   "include_reasoning",
+   "response_format",
+   "structured_outputs"
+  ],
+  "temperature": true,
+  "reasoning_options": [
+   {
+    "type": "effort",
+    "values": [
+     "instant",
+     "low",
+     "medium",
+     "high"
+    ]
+   }
+  ],
+  "pricing": {
+   "input": "0.00000004",
+   "output": "0.00000015",
+   "input_cache_read": "0.000000004"
+  }
+ },
+ {
+  "id": "inception/mercury-3",
+  "object": "model",
+  "created": 1755815280,
+  "released": 1792368000,
+  "owned_by": "inception",
+  "name": "Mercury 3",
+  "description": "Mercury 3 is Inception\u2019s most capable model for agentic workflows and real-time applications. It is one of the world\u2019s fastest models, powered by diffusion.",
+  "context_window": 1000000,
+  "max_tokens": 131072,
+  "type": "language",
+  "zdr": "none",
+  "no_training": "all",
+  "tags": [
+   "implicit-caching",
+   "reasoning",
+   "structured-output",
+   "tool-use"
+  ],
+  "supported_specifications": [
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "modalities": {
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ]
+  },
+  "supported_parameters": [
+   "max_tokens",
+   "temperature",
+   "stop",
+   "tools",
+   "tool_choice",
+   "reasoning",
+   "include_reasoning",
+   "response_format",
+   "structured_outputs"
+  ],
+  "temperature": true,
+  "reasoning_options": [
+   {
+    "type": "effort",
+    "values": [
+     "instant",
+     "low",
+     "medium",
+     "high"
+    ]
+   }
+  ],
+  "pricing": {
+   "input": "0.0000001",
+   "output": "0.00000035",
+   "input_cache_read": "0.00000001"
+  }
+ }
+]
