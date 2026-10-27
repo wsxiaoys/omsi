@@ -1454,6 +1454,12 @@ const HTML = String.raw`<!doctype html>
   function linkify(text) {
     return text.replace(/(https?:\/\/[^\s<]+)/g, function (url) {
       var trail = '';
+      // Angle brackets around a URL are markdown autolink syntax, and esc() has
+      // already turned them into entities; keep them out of the href.
+      if (url.slice(-4) === '&gt;') {
+        trail = '&gt;';
+        url = url.slice(0, -4);
+      }
       while (/[.,;:)]$/.test(url)) {
         trail = url.slice(-1) + trail;
         url = url.slice(0, -1);
