@@ -77,7 +77,7 @@ rows are marked `[ ]`.
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 31 | Seedance 2.0 | ByteDance | fal `bytedance/seedance-2.0` | `[ ]` |
+| 31 | Seedance 2.0 | ByteDance | fal `bytedance/seedance-2.0` | `[x]` |
 | 32 | Seedance 2.5 | ByteDance | fal `bytedance/seedance-2.5` | `[ ]` |
 | 33 | Wan 3.0 | Alibaba | fal `alibaba/wan-3.0` | `[ ]` |
 | 34 | Wan 3.0 Prime | Alibaba | fal `alibaba/wan-3.0-prime` | `[ ]` |
