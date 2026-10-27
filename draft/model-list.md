@@ -84,105 +84,105 @@ Topaz Upscale (2024 API, with newer model releases in the window) and Pixelcut B
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 31 | Seedance 2.0 | ByteDance | fal `bytedance/seedance-2.0` | `[x]` |
-| 32 | Seedance 2.5 | ByteDance | fal `bytedance/seedance-2.5` | `[ ]` |
-| 33 | Wan 3.0 | Alibaba | fal `alibaba/wan-3.0` | `[ ]` |
-| 34 | Wan 3.0 Prime | Alibaba | fal `alibaba/wan-3.0-prime` | `[ ]` |
-| 35 | Happy Horse 1.1 | Alibaba | fal `alibaba/happy-horse/v1.1` | `[ ]` |
-| 36 | Kling 3.0 | Kuaishou | fal `fal-ai/kling-video/v3` | `[ ]` |
-| 37 | Kling 4.0 | Kuaishou | fal `kling/v4` | `[ ]` |
-| 38 | Veo 3.1 | Google | fal `fal-ai/veo3.1` | `[ ]` |
-| 39 | MiniMax H3 | MiniMax | fal `minimax/h3` | `[ ]` |
-| 40 | MiniMax H3 Max | MiniMax | fal `minimax/h3-max` | `[ ]` |
+| 32 | Seedance 2.5 | ByteDance | fal `bytedance/seedance-2.5` | `[x]` |
+| 33 | Wan 3.0 | Alibaba | fal `alibaba/wan-3.0` | `[x]` |
+| 34 | Wan 3.0 Prime | Alibaba | fal `alibaba/wan-3.0-prime` | `[x]` |
+| 35 | Happy Horse 1.1 | Alibaba | fal `alibaba/happy-horse/v1.1` | `[x]` |
+| 36 | Kling 3.0 | Kuaishou | fal `fal-ai/kling-video/v3` | `[x]` |
+| 37 | Kling 4.0 | Kuaishou | fal `kling/v4` | `[x]` |
+| 38 | Veo 3.1 | Google | fal `fal-ai/veo3.1` | `[x]` |
+| 39 | MiniMax H3 | MiniMax | fal `minimax/h3` | `[x]` |
+| 40 | MiniMax H3 Max | MiniMax | fal `minimax/h3-max` | `[x]` |
 
 ## Batch 5 — Video: specialists (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 41 | PixVerse V6 | PixVerse | fal `fal-ai/pixverse/v6` | `[ ]` |
-| 42 | Grok Imagine Video 1.5 | xAI | fal `xai/grok-imagine-video/v1.5` | `[ ]` |
-| 43 | LTX 2.5 | Lightricks | fal `lightricks/ltx-2.5` | `[ ]` |
-| 44 | P-Video 2 Pro | Pruna | draft discovery | `[ ]` |
-| 45 | Gemini Omni 1.1 | Google | draft discovery | `[ ]` |
-| 46 | Hunyuan Motion | Tencent | fal `fal-ai/hunyuan-motion` | `[ ]` |
-| 47 | OmniHuman 1.5 | ByteDance | fal `fal-ai/bytedance/omnihuman/v1.5` | `[ ]` |
-| 48 | Sync Lipsync 3 | Sync | fal `fal-ai/sync-lipsync/v3` | `[ ]` |
-| 49 | Kling Lip Sync | Kuaishou | fal `fal-ai/kling-video/lipsync` | `[ ]` |
-| 50 | Aurora | Creatify | fal `fal-ai/creatify/aurora` | `[ ]` |
+| 41 | PixVerse V6 | PixVerse | fal `fal-ai/pixverse/v6` | `[x]` |
+| 42 | Grok Imagine Video 1.5 | xAI | fal `xai/grok-imagine-video/v1.5` | `[x]` |
+| 43 | LTX 2.5 | Lightricks | fal `lightricks/ltx-2.5` | `[x]` |
+| 44 | P-Video 2 Pro | Pruna | draft discovery | `[x]` |
+| 45 | Gemini Omni 1.1 | Google | draft discovery | `[x]` |
+| 46 | Hunyuan Motion | Tencent | fal `fal-ai/hunyuan-motion` | `[x]` |
+| 47 | OmniHuman 1.5 | ByteDance | fal `fal-ai/bytedance/omnihuman/v1.5` | `[x]` |
+| 48 | Sync Lipsync 3 | Sync | fal `fal-ai/sync-lipsync/v3` | `[x]` |
+| 49 | Kling Lip Sync | Kuaishou | fal `fal-ai/kling-video/lipsync` | `[x]` |
+| 50 | Aurora | Creatify | fal `fal-ai/creatify/aurora` | `[x]` |
 
 ## Batch 6 — Video: avatars and world models, plus 3D (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 51 | HeyGen Avatar 5 | HeyGen | fal `fal-ai/heygen/avatar5` | `[ ]` |
-| 52 | ABot-World 0 | Alibaba | fal `alibaba/abot-world-0` | `[ ]` |
-| 53 | LingBot World 2 | Robbyant | fal `robbyant/lingbot-world-2` | `[ ]` |
-| 54 | Mirage Avatar X | Mirage | fal `mirage-api/avatar-x` | `[ ]` |
-| 55 | VEED Fabric 1.0 | VEED | fal `veed/fabric-1.0` | `[ ]` |
-| 56 | Eden Live 5B | Vast | fal `vast/eden-live-5b` | `[ ]` |
-| 57 | Decart Lucy 2 VTON | Decart | fal `decart/lucy2-vton` | `[ ]` |
-| 58 | Hunyuan3D 3.1 | Tencent | fal `fal-ai/hunyuan-3d/v3.1` | `[ ]` |
-| 59 | Hyper3D Rodin 2.5 | Deemos | fal `fal-ai/hyper3d/rodin/v2.5` | `[ ]` |
-| 60 | Meshy 7.1 | Meshy | fal `meshy/v7.1` | `[ ]` |
+| 51 | HeyGen Avatar 5 | HeyGen | fal `fal-ai/heygen/avatar5` | `[x]` |
+| 52 | ABot-World 0 | Alibaba | fal `alibaba/abot-world-0` | `[x]` |
+| 53 | LingBot World 2 | Robbyant | fal `robbyant/lingbot-world-2` | `[x]` |
+| 54 | Mirage Avatar X | Mirage | fal `mirage-api/avatar-x` | `[x]` |
+| 55 | VEED Fabric 1.0 | VEED | fal `veed/fabric-1.0` | `[x]` |
+| 56 | Eden Live 5B | Vast | fal `vast/eden-live-5b` | `[x]` |
+| 57 | Decart Lucy 2 VTON | Decart | fal `decart/lucy2-vton` | `[x]` |
+| 58 | Hunyuan3D 3.1 | Tencent | fal `fal-ai/hunyuan-3d/v3.1` | `[x]` |
+| 59 | Hyper3D Rodin 2.5 | Deemos | fal `fal-ai/hyper3d/rodin/v2.5` | `[x]` |
+| 60 | Meshy 7.1 | Meshy | fal `meshy/v7.1` | `[x]` |
 
 ## Batch 7 — Audio (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 61 | Eleven v4 | ElevenLabs | draft discovery | `[ ]` |
-| 62 | Eleven v3 | ElevenLabs | fal `fal-ai/elevenlabs/tts/eleven-v3` | `[ ]` |
-| 63 | ElevenLabs Multilingual v2 | ElevenLabs | fal `fal-ai/elevenlabs/tts/multilingual-v2` | `[ ]` |
-| 64 | ElevenLabs Turbo v2.5 | ElevenLabs | fal `fal-ai/elevenlabs/tts/turbo-v2.5` | `[ ]` |
-| 65 | ElevenLabs Music | ElevenLabs | fal `fal-ai/elevenlabs/music` | `[ ]` |
-| 66 | ElevenLabs Sound Effects v2 | ElevenLabs | fal `fal-ai/elevenlabs/sound-effects/v2` | `[ ]` |
-| 67 | MiniMax Music 2.6 | MiniMax | fal `fal-ai/minimax-music/v2.6` | `[ ]` |
-| 68 | MiniMax Speech 2.8 HD | MiniMax | fal `fal-ai/minimax/speech-2.8-hd` | `[ ]` |
-| 69 | Inworld TTS | Inworld | fal `fal-ai/inworld-tts` | `[ ]` |
-| 70 | Chatterbox | Resemble AI | fal `fal-ai/chatterbox` | `[ ]` |
+| 61 | Eleven v4 | ElevenLabs | draft discovery | `[x]` |
+| 62 | Eleven v3 | ElevenLabs | fal `fal-ai/elevenlabs/tts/eleven-v3` | `[x]` |
+| 63 | ElevenLabs Multilingual v2 | ElevenLabs | fal `fal-ai/elevenlabs/tts/multilingual-v2` | `[x]` |
+| 64 | ElevenLabs Turbo v2.5 | ElevenLabs | fal `fal-ai/elevenlabs/tts/turbo-v2.5` | `[x]` |
+| 65 | ElevenLabs Music | ElevenLabs | fal `fal-ai/elevenlabs/music` | `[x]` |
+| 66 | ElevenLabs Sound Effects v2 | ElevenLabs | fal `fal-ai/elevenlabs/sound-effects/v2` | `[x]` |
+| 67 | MiniMax Music 2.6 | MiniMax | fal `fal-ai/minimax-music/v2.6` | `[x]` |
+| 68 | MiniMax Speech 2.8 HD | MiniMax | fal `fal-ai/minimax/speech-2.8-hd` | `[x]` |
+| 69 | Inworld TTS | Inworld | fal `fal-ai/inworld-tts` | `[x]` |
+| 70 | Chatterbox | Resemble AI | fal `fal-ai/chatterbox` | `[x]` |
 
 ## Batch 8 — Audio and 3D (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 71 | Dia TTS | Nari Labs | fal `fal-ai/dia-tts` | `[ ]` |
-| 72 | Qwen3 TTS | Alibaba | fal `fal-ai/qwen-3-tts` | `[ ]` |
-| 73 | Lyria 3 | Google | fal `fal-ai/lyria3` | `[ ]` |
-| 74 | ACE-Step | ACE Studio | fal `fal-ai/ace-step` | `[ ]` |
-| 75 | Seed Audio 1.0 | ByteDance | fal `bytedance/seed-audio-1.0` | `[ ]` |
-| 76 | Gemini 3.1 Flash TTS | Google | fal `fal-ai/gemini-3.1-flash-tts` | `[ ]` |
-| 77 | Gemini 3.8 Flash TTS | Google | draft discovery | `[ ]` |
-| 78 | Gemini 3.8 Flash Lite TTS | Google | draft discovery | `[ ]` |
-| 79 | TRELLIS 2 | Microsoft | fal `fal-ai/trellis-2` | `[ ]` |
-| 80 | Tripo 3D H3.1 | Tripo AI | fal `tripo3d/h3.1` | `[ ]` |
+| 71 | Dia TTS | Nari Labs | fal `fal-ai/dia-tts` | `[x]` |
+| 72 | Qwen3 TTS | Alibaba | fal `fal-ai/qwen-3-tts` | `[x]` |
+| 73 | Lyria 3 | Google | fal `fal-ai/lyria3` | `[x]` |
+| 74 | ACE-Step | ACE Studio | fal `fal-ai/ace-step` | `[x]` |
+| 75 | Seed Audio 1.0 | ByteDance | fal `bytedance/seed-audio-1.0` | `[x]` |
+| 76 | Gemini 3.1 Flash TTS | Google | fal `fal-ai/gemini-3.1-flash-tts` | `[x]` |
+| 77 | Gemini 3.8 Flash TTS | Google | draft discovery | `[x]` |
+| 78 | Gemini 3.8 Flash Lite TTS | Google | draft discovery | `[x]` |
+| 79 | TRELLIS 2 | Microsoft | fal `fal-ai/trellis-2` | `[x]` |
+| 80 | Tripo 3D H3.1 | Tripo AI | fal `tripo3d/h3.1` | `[x]` |
 
 ## Batch 9 — Text frontier (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 81 | Claude Opus 5.5 | Anthropic | Artificial Analysis leaderboard | `[ ]` |
-| 82 | Claude Sonnet 5.5 | Anthropic | Artificial Analysis leaderboard | `[ ]` |
-| 83 | Claude Haiku 5.5 | Anthropic | Artificial Analysis leaderboard | `[ ]` |
-| 84 | GPT-6 Astra | OpenAI | Artificial Analysis leaderboard | `[ ]` |
-| 85 | GPT-6.1 Sol | OpenAI | Artificial Analysis leaderboard | `[ ]` |
-| 86 | Gemini 4 Argon | Google | Artificial Analysis leaderboard | `[ ]` |
-| 87 | Gemini 3.8 Flash | Google | Artificial Analysis leaderboard | `[ ]` |
-| 88 | Grok 4.7 | xAI | Artificial Analysis leaderboard | `[ ]` |
-| 89 | Kimi K3.1 Pro | Moonshot AI | Artificial Analysis leaderboard | `[ ]` |
-| 90 | Qwen3.8 Max | Alibaba | Artificial Analysis leaderboard | `[ ]` |
+| 81 | Claude Opus 5.5 | Anthropic | Artificial Analysis leaderboard | `[x]` |
+| 82 | Claude Sonnet 5.5 | Anthropic | Artificial Analysis leaderboard | `[x]` |
+| 83 | Claude Haiku 5.5 | Anthropic | Artificial Analysis leaderboard | `[x]` |
+| 84 | GPT-6 Astra | OpenAI | Artificial Analysis leaderboard | `[x]` |
+| 85 | GPT-6.1 Sol | OpenAI | Artificial Analysis leaderboard | `[x]` |
+| 86 | Gemini 4 Argon | Google | Artificial Analysis leaderboard | `[x]` |
+| 87 | Gemini 3.8 Flash | Google | Artificial Analysis leaderboard | `[x]` |
+| 88 | Grok 4.7 | xAI | Artificial Analysis leaderboard | `[x]` |
+| 89 | Kimi K3.1 Pro | Moonshot AI | Artificial Analysis leaderboard | `[x]` |
+| 90 | Qwen3.8 Max | Alibaba | Artificial Analysis leaderboard | `[x]` |
 
 ## Batch 10 — Text mid-tier and open weights (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 91 | DeepSeek V4.1 Flash | DeepSeek | Artificial Analysis leaderboard | `[x]` split: `deepseek-v4.1-flash`, `deepseek-v4.1-flash-1017` |
-| 92 | GLM-5.3 | Z AI | Artificial Analysis leaderboard | `[ ]` |
-| 93 | MiniMax M3.1 Flash | MiniMax | Artificial Analysis leaderboard | `[ ]` |
-| 94 | Mistral Large 4 | Mistral | Artificial Analysis leaderboard | `[ ]` |
-| 95 | Qwen3.8 Flash-Next | Alibaba | Artificial Analysis leaderboard | `[ ]` |
-| 96 | Nemotron 3.5 | NVIDIA | Artificial Analysis leaderboard | `[ ]` |
-| 97 | Gemma 4 | Google | Artificial Analysis leaderboard | `[ ]` |
-| 98 | gpt-oss-120b | OpenAI | Artificial Analysis leaderboard | `[ ]` |
-| 99 | OLMo 3.1 | AI2 | Artificial Analysis leaderboard | `[ ]` |
-| 100 | Granite 4.2 | IBM | Artificial Analysis leaderboard | `[ ]` |
+| 92 | GLM-5.3 | Z AI | Artificial Analysis leaderboard | `[x]` |
+| 93 | MiniMax M3.1 Flash | MiniMax | Artificial Analysis leaderboard | `[x]` |
+| 94 | Mistral Large 4 | Mistral | Artificial Analysis leaderboard | `[x]` |
+| 95 | Qwen3.8 Flash-Next | Alibaba | Artificial Analysis leaderboard | `[x]` |
+| 96 | Nemotron 3.5 | NVIDIA | Artificial Analysis leaderboard | `[x]` |
+| 97 | Gemma 4 | Google | Artificial Analysis leaderboard | `[x]` |
+| 98 | gpt-oss-120b | OpenAI | Artificial Analysis leaderboard | `[x]` |
+| 99 | OLMo 3.1 | AI2 | Artificial Analysis leaderboard | `[x]` |
+| 100 | Granite 4.2 | IBM | Artificial Analysis leaderboard | `[x]` |
 
 ## Deliberately excluded (older than the window, or fully superseded)
 
