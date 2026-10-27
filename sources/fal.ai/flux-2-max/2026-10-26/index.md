@@ -1,0 +1,68 @@
+# fal.ai: FLUX.2 [max] text-to-image endpoint
+
+- Origin: fal.ai, "Flux 2 Max (Text to Image) API on fal",
+  https://fal.ai/models/fal-ai/flux-2-max
+- Evidence kind: provider documentation (third-party hosting page written by the host)
+- Publication date: model metadata `publishedAt` / `date` = **2025-12-16T13:55:00.993Z**
+- Capture date: 2026-10-26
+- Relevant models: FLUX.2 [max] (fal endpoint `fal-ai/flux-2-max`)
+
+Artifact: [`openapi-queue.json`](openapi-queue.json) — the endpoint's published queue OpenAPI
+document, `https://fal.ai/api/openapi/queue/openapi.json?endpoint_id=fal-ai/flux-2-max`.
+
+## Captured content
+
+Page title: "Flux 2 Max (Text to Image) API on fal". Page description (verbatim):
+
+> FLUX.2 \[max] delivers state-of-the-art image generation and advanced image editing with
+> exceptional realism, precision, and consistency.
+
+Model metadata on the page (verbatim field values): `title` "Flux 2 Max", `category`
+`text-to-image`, `tags` `["flux2","max"]`, `modelLab` "Black Forest Labs", `modelFamily`
+"Flux 2 Max", `hostingType` `proxy`, `kind` `inference`, `licenseType` `commercial`,
+`status` `public`, `deprecated` false, `publishedAt` 2025-12-16T13:55:00.993Z.
+
+Pricing (verbatim, `pricingInfoOverride`):
+
+> The first processed megapixel will cost **$0.07**. Each additional megapixel will cost
+> **$0.03**
+
+Billing record (`endpointBilling`, verbatim): `billing_unit` `megapixels`, `price` `0.07`,
+`provider_type` `partner`, `is_partner_api` `true`.
+
+### Input schema (from the artifact, verbatim descriptions)
+
+| Field | Type / constraint | Description |
+| --- | --- | --- |
+| `prompt` | string, required | "The prompt to generate an image from." |
+| `image_size` | preset enum or `{width,height}` | "The size of the generated image." Default `landscape_4_3`. Presets: `square_hd`, `square`, `portrait_4_3`, `portrait_16_9`, `landscape_4_3`, `landscape_16_9`. Bounds: `max_area` 4 194 304, `max_width`/`max_height` 2560, `min_width`/`min_height` 256, `multiple_of` 16 |
+| `seed` | integer, nullable | "The seed to use for the generation." |
+| `safety_tolerance` | **string**, default `"2"` | "The safety tolerance level for the generated image. 1 being the most strict and 5 being the most permissive." |
+| `enable_safety_checker` | boolean, default `true` | "Whether to enable the safety checker. Disabling it requires account authorization; unauthorized requests are always checked." |
+| `output_format` | string, default `jpeg` | "The format of the generated image." |
+| `sync_mode` | boolean, default `false` | data-URI response mode |
+
+Output schema: `{images: ImageFile[], seed: integer}`, both required.
+
+## Findings worth carrying to the model page
+
+- **This endpoint takes no image input at all.** There is no `image_urls`, `input_image`, or
+  equivalent field in the schema, despite the page description claiming "advanced image
+  editing". Editing is a separate fal endpoint — see
+  [`../../flux-2-max-edit/2026-10-26/index.md`](../../flux-2-max-edit/2026-10-26/index.md).
+- **fal's `safety_tolerance` is a string 1–5**, where BFL's API uses an integer 0–7. Same name,
+  different domain and type.
+- **No prompt-upsampling control.** BFL's `disable_pup` has no fal equivalent here, so a fal
+  caller cannot turn upsampling off.
+- **No grounding-search control**, and the page never mentions grounding search.
+- `hostingType: proxy` with `provider_type: partner` suggests fal forwards to BFL rather than
+  running its own deployment. fal does not say this in prose; treat the reading as inference.
+- Resolution ceiling: `max_area` 4 194 304 px is exactly 4MP, matching BFL's family figure, and
+  the per-side maximum of 2560 px means 4MP is only reachable near a square aspect ratio.
+
+## Gaps
+
+- No long-form documentation, limitations, or prompting guidance on the page.
+- No latency, rate limit, or concurrency figures.
+- No statement of which BFL snapshot is served, or whether it tracks a pinned or moving version.
+- No commercial-use statement in prose; `licenseType: commercial` is a metadata flag only.

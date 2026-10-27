@@ -1,0 +1,300 @@
+{
+ "_note": "Projection of https://huggingface.co/api/models?author=black-forest-labs&limit=100 retrieved 2026-10-26. Only id/createdAt/pipeline_tag/downloads/likes are kept; the full API response also carries siblings, tags and config blobs.",
+ "source_url": "https://huggingface.co/api/models?author=black-forest-labs&limit=100",
+ "models": [
+  {
+   "id": "black-forest-labs/flux-3-image-klein-comfy",
+   "createdAt": "2026-10-14T12:00:13.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 1707,
+   "downloads": 700652
+  },
+  {
+   "id": "black-forest-labs/flux-3-image-klein",
+   "createdAt": "2026-10-13T10:58:40.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 719,
+   "downloads": 119172
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-schnell",
+   "createdAt": "2024-07-31T19:58:05.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 6459,
+   "downloads": 495064
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-dev",
+   "createdAt": "2024-07-31T21:13:44.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 15770,
+   "downloads": 622299
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-9b-fp8",
+   "createdAt": "2026-01-14T22:32:42.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 1479,
+   "downloads": 35639
+  },
+  {
+   "id": "black-forest-labs/flux-3-image-klein-base",
+   "createdAt": "2026-10-13T10:19:46.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 186,
+   "downloads": 110083
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-9b-fp8",
+   "createdAt": "2026-01-14T22:32:43.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 862,
+   "downloads": 46746
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-9B",
+   "createdAt": "2026-01-14T13:24:26.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 1747,
+   "downloads": 184885
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-4B",
+   "createdAt": "2026-01-14T13:42:59.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 1071,
+   "downloads": 436382
+  },
+  {
+   "id": "black-forest-labs/flux-3-image-klein-pup",
+   "createdAt": "2026-10-14T20:40:29.000Z",
+   "pipeline_tag": "image-text-to-text",
+   "likes": 68,
+   "downloads": 50169
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Fill-dev",
+   "createdAt": "2024-11-20T19:45:33.000Z",
+   "pipeline_tag": null,
+   "likes": 1284,
+   "downloads": 100001
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-dev",
+   "createdAt": "2025-11-22T15:07:08.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 2450,
+   "downloads": 329202
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Kontext-dev",
+   "createdAt": "2025-05-28T22:23:43.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 2917,
+   "downloads": 333004
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-9B",
+   "createdAt": "2026-01-14T13:40:35.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 411,
+   "downloads": 85153
+  },
+  {
+   "id": "black-forest-labs/flux-3-action-base",
+   "createdAt": "2026-09-22T10:36:43.000Z",
+   "pipeline_tag": "robotics",
+   "likes": 160,
+   "downloads": 3060
+  },
+  {
+   "id": "black-forest-labs/flux-3-action-so101",
+   "createdAt": "2026-09-22T10:39:06.000Z",
+   "pipeline_tag": "robotics",
+   "likes": 60,
+   "downloads": 2544
+  },
+  {
+   "id": "black-forest-labs/flux-3-action-droid",
+   "createdAt": "2026-09-22T10:39:28.000Z",
+   "pipeline_tag": "robotics",
+   "likes": 44,
+   "downloads": 2614
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Krea-dev",
+   "createdAt": "2025-07-07T10:39:11.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 953,
+   "downloads": 29827
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-4B",
+   "createdAt": "2026-01-14T13:42:28.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 187,
+   "downloads": 579453
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-9b-kv-fp8",
+   "createdAt": "2026-03-09T17:39:43.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 104,
+   "downloads": 41759
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Redux-dev",
+   "createdAt": "2024-11-20T19:46:40.000Z",
+   "pipeline_tag": null,
+   "likes": 684,
+   "downloads": 5370
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-dev-FP8",
+   "createdAt": "2026-01-01T15:08:52.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 180,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-9b-kv",
+   "createdAt": "2026-03-09T17:39:05.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 239,
+   "downloads": 7816
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-small-decoder",
+   "createdAt": "2026-04-06T16:08:58.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 187,
+   "downloads": 178653
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Kontext-dev-onnx",
+   "createdAt": "2025-06-25T04:46:38.000Z",
+   "pipeline_tag": null,
+   "likes": 102,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-4b-fp8",
+   "createdAt": "2026-01-14T22:32:43.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 94,
+   "downloads": 436666
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Canny-dev",
+   "createdAt": "2024-11-20T19:46:58.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 242,
+   "downloads": 4851
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Depth-dev",
+   "createdAt": "2024-11-20T19:47:13.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 243,
+   "downloads": 3896
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Canny-dev-lora",
+   "createdAt": "2024-11-20T19:47:28.000Z",
+   "pipeline_tag": null,
+   "likes": 230,
+   "downloads": 2930
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Depth-dev-lora",
+   "createdAt": "2024-11-20T19:47:40.000Z",
+   "pipeline_tag": null,
+   "likes": 264,
+   "downloads": 5907
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-dev-onnx",
+   "createdAt": "2025-01-18T01:59:38.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 109,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-schnell-onnx",
+   "createdAt": "2025-01-28T00:14:17.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 55,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Canny-dev-onnx",
+   "createdAt": "2025-01-28T00:16:13.000Z",
+   "pipeline_tag": null,
+   "likes": 11,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Depth-dev-onnx",
+   "createdAt": "2025-01-28T00:16:53.000Z",
+   "pipeline_tag": null,
+   "likes": 21,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-dev-NVFP4",
+   "createdAt": "2025-12-31T08:58:30.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 110,
+   "downloads": 38535
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-dev-NVFP4",
+   "createdAt": "2026-01-01T15:05:22.000Z",
+   "pipeline_tag": "text-to-image",
+   "likes": 18,
+   "downloads": 0
+  },
+  {
+   "id": "black-forest-labs/FLUX.1-Kontext-dev-NVFP4",
+   "createdAt": "2026-01-01T15:09:54.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 12,
+   "downloads": 176
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-4b-fp8",
+   "createdAt": "2026-01-14T22:32:41.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 55,
+   "downloads": 104311
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-9b-nvfp4",
+   "createdAt": "2026-01-14T22:32:42.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 29,
+   "downloads": 279
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-9b-nvfp4",
+   "createdAt": "2026-01-14T22:32:44.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 91,
+   "downloads": 2118
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-4b-nvfp4",
+   "createdAt": "2026-01-14T22:32:45.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 47,
+   "downloads": 8524
+  },
+  {
+   "id": "black-forest-labs/FLUX.2-klein-base-4b-nvfp4",
+   "createdAt": "2026-01-14T22:32:45.000Z",
+   "pipeline_tag": "image-to-image",
+   "likes": 22,
+   "downloads": 4120
+  }
+ ]
+}
