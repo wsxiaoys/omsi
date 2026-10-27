@@ -1,0 +1,88 @@
+{
+ "source": "https://artificialanalysis.ai/models/gpt-6-luna-{xhigh,high,medium,low,non-reasoning}",
+ "captured": "2026-10-26",
+ "note": "Intelligence Index and effort metadata extracted programmatically from each variant page's embedded model record.",
+ "variants": {
+  "gpt-6-luna-xhigh": {
+   "slug": "gpt-6-luna-xhigh",
+   "name": "GPT-6 Luna (Xhigh)",
+   "shortName": "GPT-6 Luna (xhigh)",
+   "releaseDate": "2026-09-22",
+   "intelligenceIndex": 34.5587320217785,
+   "effort": {
+    "slug": "xhigh",
+    "label": "xhigh",
+    "level": 50
+   },
+   "isReasoning": true,
+   "deprecated": false,
+   "price1mInputTokens": 0.1,
+   "price1mOutputTokens": 0.5,
+   "contextWindowTokens": 1000000
+  },
+  "gpt-6-luna-high": {
+   "slug": "gpt-6-luna-high",
+   "name": "GPT-6 Luna (High)",
+   "shortName": "GPT-6 Luna (high)",
+   "releaseDate": "2026-09-22",
+   "intelligenceIndex": 32.9282054150837,
+   "effort": {
+    "slug": "high",
+    "label": "high",
+    "level": 40
+   },
+   "isReasoning": true,
+   "deprecated": false,
+   "price1mInputTokens": 0.1,
+   "price1mOutputTokens": 0.5,
+   "contextWindowTokens": 1000000
+  },
+  "gpt-6-luna-medium": {
+   "slug": "gpt-6-luna-medium",
+   "name": "GPT-6 Luna (Medium)",
+   "shortName": "GPT-6 Luna (medium)",
+   "releaseDate": "2026-09-22",
+   "intelligenceIndex": 29.9251773515762,
+   "effort": {
+    "slug": "medium",
+    "label": "medium",
+    "level": 30
+   },
+   "isReasoning": true,
+   "deprecated": false,
+   "price1mInputTokens": 0.1,
+   "price1mOutputTokens": 0.5,
+   "contextWindowTokens": 1000000
+  },
+  "gpt-6-luna-low": {
+   "slug": "gpt-6-luna-low",
+   "name": "GPT-6 Luna (Low)",
+   "shortName": "GPT-6 Luna (low)",
+   "releaseDate": "2026-09-22",
+   "intelligenceIndex": 21.5261980080866,
+   "effort": {
+    "slug": "low",
+    "label": "low",
+    "level": 20
+   },
+   "isReasoning": true,
+   "deprecated": false,
+   "price1mInputTokens": 0.1,
+   "price1mOutputTokens": 0.5,
+   "contextWindowTokens": 1000000
+  },
+  "gpt-6-luna-non-reasoning": {
+   "slug": "gpt-6-luna-non-reasoning",
+   "name": "GPT-6 Luna (Non-reasoning)",
+   "shortName": "GPT-6 Luna (non-reasoning)",
+   "releaseDate": "2026-09-22",
+   "intelligenceIndex": 18.4678465935701,
+   "effort": null,
+   "isReasoning": false,
+   "deprecated": false,
+   "price1mInputTokens": 0.1,
+   "price1mOutputTokens": 0.5,
+   "contextWindowTokens": 1000000
+  }
+ }
+}
