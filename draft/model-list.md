@@ -6,12 +6,12 @@ records exist under `wiki/models/` and `sources/`.
 
 Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[ ]` planned, no page
 
-14 pages exist. Image: nine from batch 1 (Nano Banana 2 is still missing) and three from batch 2.
-Text: the two DeepSeek V4.1 Flash pages from batch 10. Three pages are curated with source
-records — `flux-2-pro`, `deepseek-v4.1-flash`, `deepseek-v4.1-flash-1017` — and the other eleven
-are stubs. Batches 3–9 have no pages yet. Stub pages carry identity scaffolding only: canonical
-name, vendor, related pages, and open questions. They make no capability, pricing, or policy
-claims.
+15 pages exist. Image: all ten batch 1 pages and three from batch 2. Text: the two DeepSeek
+V4.1 Flash pages from batch 10. Eight pages are curated with source records — GPT Image 2,
+GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, Nano Banana 2, Nano Banana 2.1, `flux-2-pro`,
+`deepseek-v4.1-flash`, `deepseek-v4.1-flash-1017` — and the other seven are stubs. Batches 3–9
+have no pages yet. Stub pages carry identity scaffolding only: canonical name, vendor, related
+pages, and open questions. They make no capability, pricing, or policy claims.
 
 ## How this roster was built
 
@@ -27,7 +27,8 @@ claims.
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist only for the FLUX.2 [pro] family and the two DeepSeek V4.1 Flash pages.
+- Source records exist for the five curated batch 1 models, the FLUX.2 [pro] family, and the two
+  DeepSeek V4.1 Flash pages.
 
 ## Batch 1 — Image frontier (10)
 
@@ -195,10 +196,12 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
 
 ## Open questions for the roster itself
 
-1. Several pages are version tiers whose identity is unverified: GPT Image 2.5 Flare vs
-   Sunburst, Nano Banana 2 vs 2.1 vs Pro, FLUX 3 Image vs Max vs [klein], Kling 3.0 vs 4.0,
-   MiniMax H3 vs H3 Max. Each page records the ambiguity; curation should settle it before
-   writing capability claims.
+1. Curation on 2026-10-26 settled two identity questions. GPT Image 2.5 Flare and Sunburst are
+   distinct first-party OpenAI model IDs with separate snapshots, but no captured evidence
+   measures a behavioural difference; Nano Banana 2.1 is a distinct successor model, and Google
+   has deprecated Nano Banana 2 in its favour. Still unverified: FLUX 3 Image vs Max vs [klein],
+   Kling 3.0 vs 4.0, MiniMax H3 vs H3 Max. Each page records the ambiguity; curation should
+   settle it before writing capability claims.
 2. **DeepSeek V4.1 Flash** (#91) is the first dated-checkpoint case, and it was **split** on
    2026-10-26. Resolved since: `1017` is a **separate MIT weights repository** (~510 GB, fp8),
    not an API-only refresh; both checkpoints are therefore obtainable artifacts, so the
