@@ -474,6 +474,9 @@ async function main(): Promise<void> {
 /* Embedded single-page app                                            */
 /* ------------------------------------------------------------------ */
 
+// Non-ASCII characters must be written as escapes (\u00b7, \2026, ...) inside this
+// String.raw template: Bun's transpiler escapes them to \uXXXX in the emitted
+// string, and String.raw would then keep that escape as literal text in the page.
 const HTML = String.raw`<!doctype html>
 <html lang="en">
 <head>
@@ -693,7 +696,7 @@ const HTML = String.raw`<!doctype html>
     text-decoration-color: #b3261e;
   }
   .article a.external::after {
-    content: "↗";
+    content: "\2197";
     margin-left: 2px;
     font-size: .7em;
     color: var(--faint);
@@ -1393,7 +1396,7 @@ const HTML = String.raw`<!doctype html>
     renderToolbarHome();
     el.tocRail.style.display = 'none';
     el.body.classList.add('home');
-    el.content.innerHTML = '<div class="loading">Loading index…</div>';
+    el.content.innerHTML = '<div class="loading">Loading index\u2026</div>';
 
     loadIndex().then(function (index) {
       var curated = index.models.filter(function (doc) { return doc.curated; });
@@ -1401,7 +1404,7 @@ const HTML = String.raw`<!doctype html>
       var html = '';
 
       html += '<div class="hero">';
-      html += '<div class="kicker">omsi · model knowledge base</div>';
+      html += '<div class="kicker">omsi \u00b7 model knowledge base</div>';
       html += '<h1>What we know about the models.</h1>';
       html += '<p class="lede">Evidence-backed pages for AI models. Each page separates documented ' +
         'capability from reported experience, and links every substantive claim to a dated capture ' +
@@ -1600,7 +1603,7 @@ const HTML = String.raw`<!doctype html>
     state.raw = false;
     state.rawText = '';
     el.body.classList.remove('home');
-    el.content.innerHTML = '<div class="loading">Loading ' + esc(path) + '…</div>';
+    el.content.innerHTML = '<div class="loading">Loading ' + esc(path) + '\u2026</div>';
     el.tocRail.style.display = 'none';
 
     fetch(encodePath(path))
@@ -1616,7 +1619,7 @@ const HTML = String.raw`<!doctype html>
         state.rawText = text;
         renderToolbar(doc);
         renderArticle(doc, rendered);
-        document.title = doc.title + ' · Model Wiki';
+        document.title = doc.title + ' \u00b7 Model Wiki';
         window.scrollTo(0, 0);
         if (anchor) {
           setTimeout(function () {
@@ -1630,7 +1633,7 @@ const HTML = String.raw`<!doctype html>
           '<p class="mono">' + esc(path) + '</p>' +
           '<p class="muted">' + esc(error.message) + '</p>' +
           '<p><a href="#/">Back to index</a></p></div>';
-        document.title = 'Not found · Model Wiki';
+        document.title = 'Not found \u00b7 Model Wiki';
       });
   }
 
