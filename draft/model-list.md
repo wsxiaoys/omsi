@@ -63,7 +63,7 @@ rows are marked `[ ]`.
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 21 | Recraft V4 Pro | Recraft | fal `fal-ai/recraft/v4/pro/text-to-image` | `[x]` |
-| 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[ ]` |
+| 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[x]` |
 | 23 | BRIA Fibo Edit 1.5 | BRIA AI | fal `bria/fibo-edit-1.5` | `[ ]` |
 | 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[ ]` |
 | 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[ ]` |
