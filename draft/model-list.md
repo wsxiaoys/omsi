@@ -68,7 +68,7 @@ rows are marked `[ ]`.
 | 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[ ]` |
 | 25 | FASHN Try-On 1.6 | FASHN | fal `fal-ai/fashn/tryon/v1.6` | `[ ]` |
 | 26 | Leffa | Meta research | fal `fal-ai/leffa` | `[ ]` |
-| 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[ ]` |
+| 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[x]` |
 | 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[ ]` |
 | 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[ ]` |
 | 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[ ]` |
