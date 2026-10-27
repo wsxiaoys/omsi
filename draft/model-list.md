@@ -6,12 +6,10 @@ records exist under `wiki/models/` and `sources/`.
 
 Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[ ]` planned, no page
 
-15 pages exist. Image: all ten batch 1 pages and three from batch 2. Text: the two DeepSeek
-V4.1 Flash pages from batch 10. Thirteen pages are curated with source records — the ten batch 1
-image models, `flux-2-pro`, `deepseek-v4.1-flash`, `deepseek-v4.1-flash-1017` — and the other two
-(`flux-3-image`, `qwen-image-3`) are stubs. Rows in batches 2–9 without a page are marked
-`[ ]`. Stub pages carry identity scaffolding only: canonical name, vendor, related pages, and open
-questions. They make no capability, pricing, or policy claims.
+23 pages exist. Image: all ten Batch 1 pages, all ten Batch 2 pages (FLUX 3 Max is a video
+derivative, not an image tier), and Recraft V4 Pro from Batch 3. Text: the two DeepSeek V4.1 Flash
+pages from Batch 10. All 23 pages are curated with source records; no stubs remain. Rows in
+batches 4–9 without a page are marked `[ ]`.
 
 ## How this roster was built
 
@@ -27,7 +25,7 @@ questions. They make no capability, pricing, or policy claims.
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist for the ten curated batch 1 models, the FLUX.2 [pro] family, and the two
+- Source records exist for every curated page: the 21 image models in Batches 1–3 and the two
   DeepSeek V4.1 Flash pages.
 
 ## Batch 1 — Image frontier (10)
@@ -50,21 +48,21 @@ questions. They make no capability, pricing, or policy claims.
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
 | 11 | FLUX.2 [pro] | Black Forest Labs | BFL docs; fal `fal-ai/flux-2-pro` | `[x]` |
-| 12 | FLUX.2 [max] | Black Forest Labs | BFL docs | `[ ]` |
-| 13 | FLUX.2 [flex] | Black Forest Labs | fal `fal-ai/flux-2-flex` | `[ ]` |
-| 14 | FLUX.2 [klein] 4B | Black Forest Labs | fal `fal-ai/flux-2-klein-4b-base-trainer` | `[ ]` |
-| 15 | FLUX.2 [klein] 9B | Black Forest Labs | fal `fal-ai/flux-2-klein-9b-base-trainer` | `[ ]` |
-| 16 | FLUX.2 [dev] | Black Forest Labs | BFL docs | `[ ]` |
-| 17 | FLUX 3 Image | Black Forest Labs | fal `blackforestlabs/flux-3` | `[s]` |
-| 18 | FLUX 3 Max | Black Forest Labs | fal `blackforestlabs/flux-3-max` | `[ ]` |
-| 19 | FLUX 3 [klein] | Black Forest Labs | fal `blackforestlabs/flux-3/klein` | `[ ]` |
-| 20 | Qwen Image 3 | Alibaba | fal `alibaba/qwen-image-3` | `[s]` |
+| 12 | FLUX.2 [max] | Black Forest Labs | BFL docs; fal `fal-ai/flux-2-max` | `[x]` |
+| 13 | FLUX.2 [flex] | Black Forest Labs | fal `fal-ai/flux-2-flex` | `[x]` |
+| 14 | FLUX.2 [klein] 4B | Black Forest Labs | BFL docs; fal `fal-ai/flux-2/klein/4b` | `[x]` |
+| 15 | FLUX.2 [klein] 9B | Black Forest Labs | BFL docs; fal `fal-ai/flux-2/klein/9b` | `[x]` |
+| 16 | FLUX.2 [dev] | Black Forest Labs | BFL docs; Hugging Face `black-forest-labs/FLUX.2-dev` | `[x]` |
+| 17 | FLUX 3 Image | Black Forest Labs | fal `blackforestlabs/flux-3/text-to-image` | `[x]` |
+| 18 | FLUX 3 Max | Black Forest Labs | fal `blackforestlabs/flux-3-max/text-to-video` | `[x]` video, not image: fal post-trained derivative of FLUX 3 Video |
+| 19 | FLUX 3 Image Klein | Black Forest Labs | fal `blackforestlabs/flux-3/klein/text-to-image` | `[x]` |
+| 20 | Qwen Image 3 | Alibaba | fal `alibaba/qwen-image-3/text-to-image`; Model Studio | `[x]` |
 
 ## Batch 3 — Image: specialists and utilities (10)
 
 | # | Model | Vendor | Discovery path | Status |
 | --- | --- | --- | --- | --- |
-| 21 | Recraft V4 Pro | Recraft | fal `fal-ai/recraft/v4/pro` | `[ ]` |
+| 21 | Recraft V4 Pro | Recraft | fal `fal-ai/recraft/v4/pro/text-to-image` | `[x]` |
 | 22 | BRIA Fibo 2 | BRIA AI | fal `bria/fibo-2` | `[ ]` |
 | 23 | BRIA Fibo Edit 1.5 | BRIA AI | fal `bria/fibo-edit-1.5` | `[ ]` |
 | 24 | Grok Imagine Image | xAI | fal `xai/grok-imagine-image` | `[ ]` |
@@ -196,12 +194,12 @@ the correct answer (cheapest, on-prem, deterministic) — otherwise they stay ou
 
 ## Open questions for the roster itself
 
-1. Curation on 2026-10-26 settled two identity questions. GPT Image 2.5 Flare and Sunburst are
-   distinct first-party OpenAI model IDs with separate snapshots, but no captured evidence
-   measures a behavioural difference; Nano Banana 2.1 is a distinct successor model, and Google
-   has deprecated Nano Banana 2 in its favour. Still unverified: FLUX 3 Image vs Max vs [klein],
-   Kling 3.0 vs 4.0, MiniMax H3 vs H3 Max. Each page records the ambiguity; curation should
-   settle it before writing capability claims.
+1. Curation on 2026-10-26 settled the FLUX 3 grouping: FLUX 3 Max is a video model post-trained by
+   fal, not an image tier, and FLUX 3 Image / FLUX 3 Image Klein are distinct. It also settled
+   GPT Image 2.5 Flare vs Sunburst (separate IDs, no measured behavioural difference) and Nano
+   Banana 2 vs 2.1 (distinct successor, with 2 deprecated). Still unverified: Kling 3.0 vs 4.0 and
+   MiniMax H3 vs H3 Max. Each page records the ambiguity; curation should settle it before writing
+   capability claims.
 2. **DeepSeek V4.1 Flash** (#91) is the first dated-checkpoint case, and it was **split** on
    2026-10-26. Resolved since: `1017` is a **separate MIT weights repository** (~510 GB, fp8),
    not an API-only refresh; both checkpoints are therefore obtainable artifacts, so the
