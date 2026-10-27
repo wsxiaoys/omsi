@@ -15,7 +15,7 @@ Key details:
 
 ### Datasets
 
-  1. **AA-AgentTalk** _(proprietary, held-out)_ : A proprietary evaluation dataset developed by Artificial Analysis, focused on speech relevant to voice agent use cases. See our [blog post](/articles/aa-wer-v2) for more details.
+  1. **AA-AgentTalk** _(proprietary, held-out)_ : A proprietary evaluation dataset developed by Artificial Analysis, focused on speech relevant to voice agent use cases. See our [blog post](https://artificialanalysis.ai/articles/aa-wer-v2) for more details.
 
     * Number of samples: 469
     * Sample duration range: 8–109 seconds
@@ -32,9 +32,9 @@ Key details:
     * Sample duration range: ~14–22 minutes
     * Total duration: ~115 minutes
 
-For details on VoxPopuli-Cleaned-AA and Earnings22-Cleaned-AA, see our [blog post](/articles/aa-wer-v2). The current cleaned transcript release in both repositories is Version 1.0, used in AA-WER v2.
+For details on VoxPopuli-Cleaned-AA and Earnings22-Cleaned-AA, see our [blog post](https://artificialanalysis.ai/articles/aa-wer-v2). The current cleaned transcript release in both repositories is Version 1.0, used in AA-WER v2.
 
-These cleaned transcripts reflect our best effort at verbatim ground truth, informed by manual review and cross-validation across the dataset. Future refinements will be released as subsequent versions. If you spot issues, we'd welcome feedback via our [contact page](/contact) or [Discord](https://discord.gg/Mk298GPZ7V).
+These cleaned transcripts reflect our best effort at verbatim ground truth, informed by manual review and cross-validation across the dataset. Future refinements will be released as subsequent versions. If you spot issues, we'd welcome feedback via our [contact page](https://artificialanalysis.ai/contact) or [Discord](https://discord.gg/Mk298GPZ7V).
 
 ### Audio chunking (Earnings22)
 
