@@ -1,0 +1,143 @@
+{
+ "_note": "Projection of the pricing dataset served to https://docs.bfl.ai/quick_start/pricing and https://bfl.ai/pricing, retrieved 2026-10-26. Only the FLUX.2 cards are kept. Monetary values are integer credits; 1 credit = $0.01 USD (per the pricing page's own note). Everything else in the source document is omitted.",
+ "source_query": "*[_type == \"pricing\"][0]{pricingCards[]{title,apiEndpoint,priceUnit,firstMpPrice,mpPrice,inputMpPrice,videoRates,mpSecondPrice,secondPrice,imageTierRates}}",
+ "source_endpoint": "https://2gpum2i6.api.sanity.io/v2025-02-19/data/query/production?perspective=published",
+ "credit_value_usd": 0.01,
+ "pricingCards": [
+  {
+   "apiEndpoint": "/v1/flux-2-max",
+   "firstMpPrice": 7,
+   "imageTierRates": null,
+   "inputMpPrice": 3,
+   "mpPrice": 3,
+   "mpSecondPrice": null,
+   "priceUnit": "0.07",
+   "secondPrice": null,
+   "title": [
+    {
+     "_key": "3813092bb1f4",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "b09455fea3bc",
+       "_type": "span",
+       "marks": [],
+       "text": "FLUX.2 [max]"
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ],
+   "videoRates": null
+  },
+  {
+   "apiEndpoint": "/v1/flux-2-klein-9b",
+   "firstMpPrice": 1.5,
+   "imageTierRates": null,
+   "inputMpPrice": 0.2,
+   "mpPrice": 0.2,
+   "mpSecondPrice": null,
+   "priceUnit": "0.015",
+   "secondPrice": null,
+   "title": [
+    {
+     "_key": "3813092bb1f4",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "b09455fea3bc",
+       "_type": "span",
+       "marks": [],
+       "text": "FLUX.2 [klein] 9B"
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ],
+   "videoRates": null
+  },
+  {
+   "apiEndpoint": "/v1/flux-2-klein-4b",
+   "firstMpPrice": 1.4,
+   "imageTierRates": null,
+   "inputMpPrice": 0.1,
+   "mpPrice": 0.1,
+   "mpSecondPrice": null,
+   "priceUnit": "0.014",
+   "secondPrice": null,
+   "title": [
+    {
+     "_key": "3813092bb1f4",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "b09455fea3bc",
+       "_type": "span",
+       "marks": [],
+       "text": "FLUX.2 [klein] 4B"
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ],
+   "videoRates": null
+  },
+  {
+   "apiEndpoint": "/v1/flux-2-pro",
+   "firstMpPrice": 3,
+   "imageTierRates": null,
+   "inputMpPrice": 1.5,
+   "mpPrice": 1.5,
+   "mpSecondPrice": null,
+   "priceUnit": "0.03",
+   "secondPrice": null,
+   "title": [
+    {
+     "_key": "3a7d0c079113",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "9f6ddcd3db1f",
+       "_type": "span",
+       "marks": [],
+       "text": "FLUX.2 [pro]"
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ],
+   "videoRates": null
+  },
+  {
+   "apiEndpoint": "/v1/flux-2-flex",
+   "firstMpPrice": 5,
+   "imageTierRates": null,
+   "inputMpPrice": 5,
+   "mpPrice": 5,
+   "mpSecondPrice": null,
+   "priceUnit": "0.05",
+   "secondPrice": null,
+   "title": [
+    {
+     "_key": "3a7d0c079113",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "9f6ddcd3db1f",
+       "_type": "span",
+       "marks": [],
+       "text": "FLUX.2 [flex]"
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ],
+   "videoRates": null
+  }
+ ]
+}
