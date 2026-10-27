@@ -15,7 +15,8 @@ are separate roster rows and separate models.
 ## Identity
 
 - **Canonical name:** Eleven v4. **Model ID:** `eleven_v4`. **Variant:** Eleven v4 Turbo,
-  `eleven_v4_turbo`. Both IDs are first-party
+  `eleven_v4_turbo` — tracked on its own page ([Eleven v4 Turbo](eleven-v4-turbo.md)) because its
+  price, socket constraints and default-role differ. Both IDs are first-party
   ([models overview](../../sources/elevenlabs.com/eleven-v4-models-overview/2026-10-26.md)).
 - **Vendor:** ElevenLabs (model lab; no third-party developer is credited).
 - **Release:** 2026-09-28, both variants on the same day
