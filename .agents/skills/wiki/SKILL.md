@@ -1,9 +1,9 @@
 ---
 name: wiki
 description: >-
-  Maintain this repository's model knowledge base. Use when ingesting
-  sources, updating model pages, or reviewing evidence, citations,
-  contradictions, and stale claims in sources/ and wiki/models/.
+  Maintain this repository's model knowledge base. Use when sourcing new
+  models, ingesting sources, updating model pages, or reviewing evidence,
+  citations, contradictions, and stale claims in sources/ and wiki/models/.
 ---
 
 # Model knowledge base maintainer
@@ -25,6 +25,8 @@ create a root `AGENTS.md` or duplicate these instructions unless requested.
   Preserve evidence and its provenance here.
 - `wiki/models/`: maintained Markdown pages synthesizing what we currently know about
   each model. Link claims to evidence in `sources/`.
+- `references/`: maintenance references for this skill, not content. The model
+  sourcing criteria are in `references/model-sourcing.md`.
 
 Start with these two content layers. Do not introduce topic pages, collection
 hierarchies, capability matrices, databases, or generated catalogs without a
@@ -128,6 +130,18 @@ transfer.
 Leaderboard granularity is not identity. Aggregators split entries whenever scores
 diverge; their labels are leads, not canonical IDs. A model page may discuss many
 activities; it is not one page per use case.
+
+## Sourcing new models
+
+Use [`references/model-sourcing.md`](references/model-sourcing.md) for the discovery
+feeds and inclusion criteria. It records the one-year window, the evidence floor,
+the identity and materiality tests, the decision-value rule, and the stopping
+rule. The criteria are not evidence: a model earns a page only when its page and
+source records exist. Do not cite the criteria file from a model page.
+
+When a new model appears, record its discovery path and date, then apply the
+criteria; do not create a page until the evidence floor is met. Re-check launch
+dates per model — the discovery feeds do not publish them.
 
 ## Evidence records
 

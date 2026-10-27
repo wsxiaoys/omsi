@@ -10,7 +10,7 @@
  *   HOST=0.0.0.0 PORT=8080 bun scripts/view.ts
  *
  * The shell is one HTML file. It fetches index.json for navigation and fetches
- * each .md file directly from /wiki/, /sources/ or /draft/; markdown is never
+ * each .md file directly from /wiki/ or /sources/; markdown is never
  * embedded in the shell or pre-rendered by the server.
  */
 
@@ -26,7 +26,7 @@ const BUILD = process.argv.includes("--build");
 const DIST = process.argv.includes("--dist");
 const SERVE_ROOT = DIST ? OUT : ROOT;
 
-type Kind = "model" | "draft" | "source";
+type Kind = "model" | "source";
 
 interface Doc {
   path: string;
@@ -153,11 +153,7 @@ async function buildWiki(): Promise<Wiki> {
   const glob = new Bun.Glob("**/*.md");
   for await (const rel of glob.scan({ cwd: ROOT, onlyFiles: true })) {
     if (rel.startsWith("dist/")) continue;
-    if (
-      rel.startsWith("wiki/models/") ||
-      rel.startsWith("sources/") ||
-      rel.startsWith("draft/")
-    ) {
+    if (rel.startsWith("wiki/models/") || rel.startsWith("sources/")) {
       paths.push(rel);
     }
   }
@@ -167,11 +163,7 @@ async function buildWiki(): Promise<Wiki> {
     paths.map(async (rel) => {
       const content = await Bun.file(path.join(ROOT, rel)).text();
       const meta = parseHeaderMeta(content);
-      const kind: Kind = rel.startsWith("wiki/models/")
-        ? "model"
-        : rel.startsWith("draft/")
-          ? "draft"
-          : "source";
+      const kind: Kind = rel.startsWith("wiki/models/") ? "model" : "source";
       const parts = rel.split("/");
       const slug = kind === "source" ? parts[2] : undefined;
       const publisher = kind === "source" ? parts[1] : undefined;
@@ -348,7 +340,7 @@ async function serveFile(rel: string, root: string): Promise<Response> {
   if (
     normalized.startsWith("..") ||
     path.posix.isAbsolute(normalized) ||
-    !/^(wiki|sources|draft)\//.test(normalized)
+    !/^(wiki|sources)\//.test(normalized)
   ) {
     return new Response("Not found", { status: 404 });
   }
@@ -382,7 +374,7 @@ async function buildSite(): Promise<void> {
   await Bun.write(path.join(OUT, "index.html"), HTML);
   await Bun.write(path.join(OUT, "index.json"), JSON.stringify(indexPayload(wiki), null, 2));
 
-  for (const dir of ["wiki", "sources", "draft"]) {
+  for (const dir of ["wiki", "sources"]) {
     const source = path.join(ROOT, dir);
     const info = await stat(source).catch(() => null);
     if (info?.isDirectory()) {
@@ -556,145 +548,8 @@ const HTML = String.raw`<!doctype html>
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 286px minmax(0, 1fr);
     min-height: 100vh;
   }
-
-  /* Sidebar ------------------------------------------------------- */
-  #sidebar {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    border-right: 1px solid var(--line);
-    background: var(--panel);
-    padding: 0 14px 48px;
-    scrollbar-width: thin;
-  }
-  .brand {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    padding: 18px 4px 10px;
-    background: var(--panel);
-  }
-  .brand a {
-    font-family: var(--serif);
-    font-size: 19px;
-    font-weight: 600;
-    letter-spacing: -.01em;
-    color: var(--ink);
-  }
-  .brand a:hover { text-decoration: none; color: var(--accent); }
-  .brand-sub {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: var(--faint);
-  }
-  .search-wrap {
-    position: sticky;
-    top: 47px;
-    z-index: 2;
-    padding: 4px 0 10px;
-    background: var(--panel);
-  }
-  #search {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid var(--line-strong);
-    border-radius: 8px;
-    background: var(--panel-2);
-    color: var(--ink);
-    font: 13px var(--sans);
-    outline: none;
-  }
-  #search::placeholder { color: var(--faint); }
-  #search:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--accent-soft);
-  }
-  .search-meta {
-    min-height: 0;
-    padding: 6px 2px 0;
-    font: 11px var(--mono);
-    color: var(--faint);
-  }
-
-  .nav-sec { margin: 14px 0 4px; }
-  .nav-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 0 8px 6px;
-    font: 600 10px var(--sans);
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--faint);
-  }
-  .nav-count {
-    font: 10px var(--mono);
-    letter-spacing: 0;
-    color: var(--faint);
-    background: var(--panel-2);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 0 6px;
-  }
-  .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px 8px;
-    border-radius: 6px;
-    color: var(--ink);
-    font-size: 13px;
-    line-height: 1.35;
-  }
-  .nav-item:hover { background: var(--panel-2); text-decoration: none; }
-  .nav-item.active {
-    background: var(--accent-soft);
-    color: var(--accent-ink);
-    font-weight: 600;
-  }
-  .nav-label {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .dot {
-    flex: none;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--line-strong);
-  }
-  .dot.ok { background: var(--ok); }
-  .dot.stub { background: var(--line-strong); }
-  .nav-empty { padding: 6px 8px; font-size: 12px; color: var(--faint); }
-
-  .result {
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
-    color: var(--ink);
-  }
-  .result:hover { background: var(--panel-2); text-decoration: none; }
-  .result-title { font-size: 13px; font-weight: 600; }
-  .result-path {
-    margin: 2px 0 4px;
-    font: 10px var(--mono);
-    color: var(--faint);
-    word-break: break-all;
-  }
-  .result-snippet { font-size: 12px; line-height: 1.45; color: var(--muted); }
-  mark { background: var(--warn-soft); color: inherit; border-radius: 2px; padding: 0 1px; }
 
   /* Main ---------------------------------------------------------- */
   #main { min-width: 0; }
@@ -727,7 +582,7 @@ const HTML = String.raw`<!doctype html>
   .crumb-file { overflow: hidden; text-overflow: ellipsis; color: var(--ink); font-weight: 600; }
   .sep { color: var(--line-strong); }
   .tools { display: flex; gap: 6px; margin-left: auto; }
-  .tool-btn, .icon-btn {
+  .tool-btn {
     padding: 5px 10px;
     border: 1px solid var(--line-strong);
     border-radius: 6px;
@@ -736,12 +591,11 @@ const HTML = String.raw`<!doctype html>
     font: 12px var(--sans);
     cursor: pointer;
   }
-  .tool-btn:hover, .icon-btn:hover {
+  .tool-btn:hover {
     border-color: var(--accent);
     background: var(--accent-soft);
     color: var(--accent-ink);
   }
-  .icon-btn { display: none; padding: 5px 9px; }
 
   #body {
     display: grid;
@@ -930,7 +784,7 @@ const HTML = String.raw`<!doctype html>
   .chip:hover { border-color: var(--accent); color: var(--accent-ink); text-decoration: none; }
   .chip.kind-model { border-color: transparent; background: var(--accent-soft); color: var(--accent-ink); }
   .chip.kind-source { border-color: transparent; background: var(--ok-soft); color: var(--ok); }
-  .chip.kind-draft { border-color: transparent; background: var(--warn-soft); color: var(--warn); }
+
   .chip.broken-chip { border-color: transparent; background: #fbe9e7; color: #b3261e; }
 
   .page-foot {
@@ -1017,14 +871,6 @@ const HTML = String.raw`<!doctype html>
     text-decoration: none;
     transform: translateY(-1px);
   }
-  .card-kicker {
-    margin-bottom: 6px;
-    overflow: hidden;
-    font: 10px var(--mono);
-    color: var(--faint);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
   .card h3 { margin: 0 0 6px; font: 600 15px var(--sans); }
   .card p {
     display: -webkit-box;
@@ -1052,20 +898,13 @@ const HTML = String.raw`<!doctype html>
     color: var(--muted);
   }
   .stub-row:hover { color: var(--accent); text-decoration: none; }
-  .note-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
+  .dot {
+    flex: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--line-strong);
   }
-  .note {
-    padding: 2px 0 2px 14px;
-    border-left: 2px solid var(--line-strong);
-    font-size: 12.5px;
-    line-height: 1.55;
-    color: var(--muted);
-  }
-  .note b { display: block; margin-bottom: 2px; font-size: 12px; color: var(--ink); }
-
   /* States -------------------------------------------------------- */
   .loading, .error { padding: 60px 0; color: var(--muted); }
   .error h1 { margin: 0 0 10px; font-size: 22px; color: var(--ink); }
@@ -1099,53 +938,24 @@ const HTML = String.raw`<!doctype html>
     transition: opacity .18s, transform .18s;
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-  #backdrop { display: none; }
 
   @media (max-width: 1100px) {
     #body { grid-template-columns: minmax(0, 1fr); }
     #toc-rail { display: none !important; }
   }
   @media (max-width: 900px) {
-    #app { grid-template-columns: 1fr; }
-    #sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 50;
-      width: 286px;
-      transform: translateX(-100%);
-      transition: transform .2s ease;
-      box-shadow: var(--shadow);
-    }
-    #sidebar.open { transform: none; }
-    #backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 40;
-      background: rgba(0, 0, 0, .35);
-    }
-    #backdrop.show { display: block; }
-    .icon-btn { display: inline-flex; }
     #body { padding: 24px 20px 80px; }
     #toolbar { padding: 0 14px; }
     #toolbar > .chip { display: none; }
     .crumbs .crumb-dir, .crumbs .crumb-dir + .sep { display: none; }
     .tools { flex: none; }
-    .tool-btn, .icon-btn { white-space: nowrap; }
+    .tool-btn { white-space: nowrap; }
     .article { font-size: 16px; }
   }
 </style>
 </head>
 <body>
 <div id="app">
-  <aside id="sidebar">
-    <div class="brand"><a href="#/">Model Wiki</a><span class="brand-sub">omsi</span></div>
-    <div class="search-wrap">
-      <input id="search" type="search" placeholder="Search pages and sources" autocomplete="off" spellcheck="false">
-      <div id="search-meta" class="search-meta"></div>
-    </div>
-    <nav id="nav"></nav>
-  </aside>
   <div id="main">
     <header id="toolbar"></header>
     <div id="body">
@@ -1154,7 +964,6 @@ const HTML = String.raw`<!doctype html>
     </div>
   </div>
 </div>
-<div id="backdrop"></div>
 <div id="toast"></div>
 <script>
 (function () {
@@ -1166,24 +975,14 @@ const HTML = String.raw`<!doctype html>
     page: null,
     rawText: '',
     raw: false,
-    query: '',
-    timer: 0,
-    seq: 0,
-    observer: null,
-    corpus: null,
-    corpusPromise: null
+    observer: null
   };
 
   var el = {
-    nav: document.getElementById('nav'),
     content: document.getElementById('content'),
     toc: document.getElementById('toc'),
     tocRail: document.getElementById('toc-rail'),
-    search: document.getElementById('search'),
-    searchMeta: document.getElementById('search-meta'),
     toolbar: document.getElementById('toolbar'),
-    sidebar: document.getElementById('sidebar'),
-    backdrop: document.getElementById('backdrop'),
     body: document.getElementById('body'),
     toast: document.getElementById('toast')
   };
@@ -1212,21 +1011,6 @@ const HTML = String.raw`<!doctype html>
     toastTimer = setTimeout(function () {
       el.toast.classList.remove('show');
     }, 2200);
-  }
-
-  function openSidebar() {
-    el.sidebar.classList.add('open');
-    el.backdrop.classList.add('show');
-  }
-
-  function closeSidebar() {
-    el.sidebar.classList.remove('open');
-    el.backdrop.classList.remove('show');
-  }
-
-  function bindMenu() {
-    var button = document.getElementById('menu-btn');
-    if (button) button.onclick = openSidebar;
   }
 
   /* Markdown ------------------------------------------------------- */
@@ -1554,7 +1338,7 @@ const HTML = String.raw`<!doctype html>
     return { html: html, toc: ctx.toc, broken: ctx.broken };
   }
 
-  /* Index and navigation ------------------------------------------- */
+  /* Index ---------------------------------------------------------- */
 
   function loadIndex() {
     if (state.index) return Promise.resolve(state.index);
@@ -1565,49 +1349,8 @@ const HTML = String.raw`<!doctype html>
       })
       .then(function (index) {
         state.index = index;
-        renderNav();
         return index;
       });
-  }
-
-  function navSection(title, items, total, shown, query) {
-    var count = query ? shown + '/' + total : String(total);
-    return '<div class="nav-sec"><div class="nav-head"><span>' + title + '</span>' +
-      '<span class="nav-count">' + count + '</span></div>' +
-      (items || '<div class="nav-empty">No matches</div>') + '</div>';
-  }
-
-  function modelItem(doc) {
-    return '<a class="nav-item" href="' + fileHref(doc.path) + '" data-path="' + esc(doc.path) + '">' +
-      '<span class="dot ' + (doc.curated ? 'ok' : 'stub') + '"></span>' +
-      '<span class="nav-label">' + esc(doc.title) + '</span>' +
-    '</a>';
-  }
-
-  function renderNav() {
-    var index = state.index;
-    if (!index) return;
-    var query = state.query.toLowerCase();
-
-    function match(doc) {
-      if (!query) return true;
-      var haystack = doc.title + ' ' + (doc.heading || '') + ' ' + doc.path + ' ' +
-        (doc.publisher || '') + ' ' + (doc.slug || '');
-      return haystack.toLowerCase().indexOf(query) !== -1;
-    }
-
-    var models = index.models.filter(match);
-    var html = '';
-    html += navSection('Models', models.map(modelItem).join(''), index.models.length, models.length, query);
-
-    el.nav.innerHTML = html;
-    setActive(state.page ? state.page.path : '');
-  }
-
-  function setActive(path) {
-    el.nav.querySelectorAll('.nav-item').forEach(function (item) {
-      item.classList.toggle('active', item.getAttribute('data-path') === path);
-    });
   }
 
   /* Home ----------------------------------------------------------- */
@@ -1616,13 +1359,8 @@ const HTML = String.raw`<!doctype html>
     return '<div class="stat"><b>' + esc(value) + '</b><span>' + esc(label) + '</span></div>';
   }
 
-  function note(title, text) {
-    return '<div class="note"><b>' + title + '</b>' + text + '</div>';
-  }
-
   function modelCard(doc) {
     return '<a class="card" href="' + fileHref(doc.path) + '">' +
-      '<div class="card-kicker">' + esc(doc.heading || doc.title) + '</div>' +
       '<h3>' + esc(doc.title) + '</h3>' +
       '<p>' + esc(doc.summary) + '</p>' +
       '<div class="card-meta"><span>' + doc.sourceLinks + ' sources</span>' +
@@ -1636,10 +1374,9 @@ const HTML = String.raw`<!doctype html>
   }
 
   function renderToolbarHome() {
-    el.toolbar.innerHTML = '<button id="menu-btn" class="icon-btn" title="Menu">☰</button>' +
+    el.toolbar.innerHTML =
       '<div class="crumbs"><span class="crumb-file">Index</span></div>' +
       '<div class="tools"><button id="random-btn" class="tool-btn">Random page</button></div>';
-    bindMenu();
     document.getElementById('random-btn').onclick = function () {
       var index = state.index;
       if (!index) return;
@@ -1688,17 +1425,7 @@ const HTML = String.raw`<!doctype html>
           stubs.map(stubRow).join('') + '</div></section>';
       }
 
-      html += '<section class="home-sec"><div class="sec-head"><h2>How to read this</h2></div>' +
-        '<div class="note-grid">' +
-        note('Model pages', 'A synthesis: identity, assessment, documented capabilities, limitations, access, contradictions and open questions.') +
-        note('Source records', 'Dated captures under <code>sources/&lt;publisher&gt;/&lt;doc&gt;/&lt;date&gt;.md</code>. Evidence is preserved, not rewritten.') +
-        note('Static files', 'Markdown is served at its real path under <code>/wiki/</code>, <code>/sources/</code> and <code>/draft/</code>, then rendered in the browser. Nothing is embedded in this page.') +
-        note('Search', 'Press <kbd>/</kbd> to search titles and full text. The first search indexes the markdown files on demand. <kbd>Esc</kbd> clears.') +
-        '</div></section>';
-
       el.content.innerHTML = html;
-      setActive('');
-      renderNav();
     });
   }
 
@@ -1708,7 +1435,7 @@ const HTML = String.raw`<!doctype html>
     var parts = page.path.split('/');
     var file = parts.pop();
     var dir = parts.join('/');
-    el.toolbar.innerHTML = '<button id="menu-btn" class="icon-btn" title="Menu">☰</button>' +
+    el.toolbar.innerHTML =
       '<span class="chip kind-' + page.kind + '">' + page.kind + '</span>' +
       '<div class="crumbs"><a href="#/">Wiki</a><span class="sep">/</span>' +
       '<span class="crumb-dir">' + esc(dir) + '</span><span class="sep">/</span>' +
@@ -1717,7 +1444,6 @@ const HTML = String.raw`<!doctype html>
         '<button id="raw-btn" class="tool-btn">' + (state.raw ? 'Rendered' : 'Raw') + '</button>' +
         '<button id="copy-btn" class="tool-btn">Copy path</button>' +
       '</div>';
-    bindMenu();
     document.getElementById('raw-btn').onclick = toggleRaw;
     document.getElementById('copy-btn').onclick = copyPath;
   }
@@ -1833,9 +1559,8 @@ const HTML = String.raw`<!doctype html>
     el.content.querySelectorAll('a').forEach(function (link) {
       var href = link.getAttribute('href') || '';
       if (link.classList.contains('broken') || link.classList.contains('external')) return;
-      if (href.indexOf('#/') === 0) {
-        link.addEventListener('click', closeSidebar);
-      } else if (href.charAt(0) === '#') {
+      if (href.indexOf('#/') === 0) return;
+      if (href.charAt(0) === '#') {
         link.addEventListener('click', function (event) {
           event.preventDefault();
           var target = document.getElementById(href.slice(1));
@@ -1871,7 +1596,6 @@ const HTML = String.raw`<!doctype html>
   }
 
   function openFile(path, anchor) {
-    closeSidebar();
     state.page = null;
     state.raw = false;
     state.rawText = '';
@@ -1892,7 +1616,6 @@ const HTML = String.raw`<!doctype html>
         state.rawText = text;
         renderToolbar(doc);
         renderArticle(doc, rendered);
-        setActive(path);
         document.title = doc.title + ' · Model Wiki';
         window.scrollTo(0, 0);
         if (anchor) {
@@ -1944,140 +1667,6 @@ const HTML = String.raw`<!doctype html>
     }
   }
 
-  /* Search --------------------------------------------------------- */
-
-  function escapeRe(value) {
-    return value.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-  }
-
-  function highlight(text, query) {
-    var safe = esc(text);
-    if (!query) return safe;
-    var re = new RegExp('(' + escapeRe(query) + ')', 'ig');
-    return safe.replace(re, '<mark>$1</mark>');
-  }
-
-  function cleanSnippet(text) {
-    return text
-      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
-      .replace(/\[([^\]]*)\]\([^)]*\)?/g, '$1')
-      .replace(/\]\([^)]*\)?/g, ' ')
-      .replace(/\.{0,2}\/[^\s)]*\.md\)*/g, ' ')
-      .replace(/^[ \t]*>[ \t]?/gm, '')
-      .replace(/^[ \t]*#{1,6}[ \t]+/gm, '')
-      .replace(/^[ \t]*[-*+][ \t]+/gm, '')
-      .replace(/^[ \t]*\d+\.[ \t]+/gm, '')
-      .replace(/\*\*|__/g, '')
-      .replace(/\x60/g, '')
-      .replace(/\s*\|\s*/g, ' · ')
-      .replace(/·\s*·/g, '·')
-      .replace(/\s+/g, ' ')
-      .replace(/\s+([.,;:!?])/g, '$1')
-      .trim();
-  }
-
-  function ensureCorpus() {
-    if (state.corpus) return Promise.resolve(state.corpus);
-    if (state.corpusPromise) return state.corpusPromise;
-    var paths = Object.keys(state.index.docs);
-    var corpus = [];
-    var cursor = 0;
-    var total = paths.length;
-    if (state.query) el.searchMeta.textContent = 'Indexing ' + total + ' files…';
-
-    function worker() {
-      if (cursor >= paths.length) return Promise.resolve();
-      var path = paths[cursor++];
-      return fetch(encodePath(path))
-        .then(function (response) { return response.ok ? response.text() : ''; })
-        .then(function (text) {
-          if (text) corpus.push({ path: path, text: text });
-          if (state.query) {
-            el.searchMeta.textContent = 'Indexing ' + corpus.length + '/' + total + '…';
-          }
-          return worker();
-        })
-        .catch(function () { return worker(); });
-    }
-
-    var workers = [];
-    for (var i = 0; i < 6; i++) workers.push(worker());
-    state.corpusPromise = Promise.all(workers).then(function () {
-      state.corpus = corpus;
-      return corpus;
-    });
-    return state.corpusPromise;
-  }
-
-  function runSearch(query) {
-    var seq = ++state.seq;
-    ensureCorpus().then(function (corpus) {
-      if (seq !== state.seq || state.query !== query) return;
-      var needle = query.toLowerCase();
-      var results = [];
-      corpus.forEach(function (doc) {
-        var haystack = doc.text.toLowerCase();
-        var first = haystack.indexOf(needle);
-        if (first === -1) return;
-        var count = 0;
-        var cursor = 0;
-        while ((cursor = haystack.indexOf(needle, cursor)) !== -1) {
-          count++;
-          cursor += needle.length;
-        }
-        var start = Math.max(0, first - 70);
-        var end = Math.min(doc.text.length, first + needle.length + 120);
-        var snippet = (start > 0 ? '…' : '') + cleanSnippet(doc.text.slice(start, end)) +
-          (end < doc.text.length ? '…' : '');
-        var meta = state.index.docs[doc.path];
-        results.push({
-          path: doc.path,
-          title: meta ? meta.title : doc.path,
-          count: count,
-          snippet: snippet
-        });
-      });
-      results.sort(function (a, b) {
-        return b.count - a.count || a.title.localeCompare(b.title);
-      });
-      if (seq !== state.seq || state.query !== query) return;
-      el.searchMeta.textContent = results.length + ' result' + (results.length === 1 ? '' : 's');
-      var html = '<div class="nav-sec"><div class="nav-head"><span>Search</span>' +
-        '<span class="nav-count">' + results.length + '</span></div>';
-      if (!results.length) {
-        html += '<div class="nav-empty">No matches for “' + esc(query) + '”</div>';
-      } else {
-        html += results.slice(0, 40).map(function (item) {
-          return '<a class="result" href="' + fileHref(item.path) + '">' +
-            '<div class="result-title">' + highlight(item.title, query) + '</div>' +
-            '<div class="result-path">' + esc(item.path) + ' · ' + item.count +
-            ' hit' + (item.count === 1 ? '' : 's') + '</div>' +
-            '<div class="result-snippet">' + highlight(item.snippet, query) + '</div>' +
-          '</a>';
-        }).join('');
-      }
-      el.nav.innerHTML = html + '</div>';
-    }).catch(function () {});
-  }
-
-  function onSearch() {
-    var query = el.search.value.trim();
-    state.query = query;
-    clearTimeout(state.timer);
-    if (!query) {
-      el.searchMeta.textContent = '';
-      state.seq++;
-      renderNav();
-      return;
-    }
-    renderNav();
-    if (query.length < 2) {
-      el.searchMeta.textContent = '';
-      return;
-    }
-    state.timer = setTimeout(function () { runSearch(query); }, 180);
-  }
-
   /* Routing and boot ----------------------------------------------- */
 
   function route() {
@@ -2093,22 +1682,6 @@ const HTML = String.raw`<!doctype html>
     }
   }
 
-  el.search.addEventListener('input', onSearch);
-  el.search.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') {
-      el.search.value = '';
-      onSearch();
-      el.search.blur();
-    }
-  });
-  document.addEventListener('keydown', function (event) {
-    var tag = document.activeElement ? document.activeElement.tagName : '';
-    if (event.key === '/' && tag !== 'INPUT' && tag !== 'TEXTAREA') {
-      event.preventDefault();
-      el.search.focus();
-    }
-  });
-  el.backdrop.addEventListener('click', closeSidebar);
   window.addEventListener('hashchange', route);
 
   window.__wiki = { renderMarkdown: renderMarkdown, state: state };
