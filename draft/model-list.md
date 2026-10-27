@@ -42,7 +42,7 @@ pages, and open questions. They make no capability, pricing, or policy claims.
 | 6 | Nano Banana Pro | Google | fal `fal-ai/nano-banana-pro` | `[s]` |
 | 7 | Seedream 5.0 | ByteDance | draft discovery; full-model slug unverified | `[s]` |
 | 8 | Seedream 5.0 Lite | ByteDance | Replicate `bytedance/seedream-5-lite` | `[s]` |
-| 9 | Ideogram 4.5 | Ideogram | Replicate `ideogram-ai/ideogram-4-5` | `[s]` |
+| 9 | Ideogram 4.5 | Ideogram | Replicate `ideogram-ai/ideogram-4-5` | `[x]` |
 | 10 | Krea 3 | Krea | fal `krea/v3` | `[s]` |
 
 ## Batch 2 — Image: FLUX family and Qwen (10)
