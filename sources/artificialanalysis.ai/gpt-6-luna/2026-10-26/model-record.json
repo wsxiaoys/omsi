@@ -1,0 +1,450 @@
+{
+ "source": "https://artificialanalysis.ai/models/gpt-6-luna",
+ "captured": "2026-10-26",
+ "note": "Field values extracted programmatically from the embedded model record in the page's Next.js flight data; key order preserved. Not a hand-typed transcription.",
+ "modelRecord": {
+  "id": "6fb13851-40ce-4bda-ad3f-6b38e0c5daa7",
+  "slug": "gpt-6-luna",
+  "name": "GPT-6 Luna (Max)",
+  "shortName": "GPT-6 Luna (max)",
+  "suffix": "Max",
+  "chartDefaultSelected": true,
+  "chartHighlighted": false,
+  "releaseDate": "2026-09-22",
+  "knowledgeCutoffDate": null,
+  "isReasoning": true,
+  "reasoningTokens": 0,
+  "effort": {
+   "slug": "max",
+   "label": "max",
+   "level": 60
+  },
+  "release": {
+   "slug": "gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "deprecatedTo": null
+  },
+  "deprecated": false,
+  "isOpenWeights": false,
+  "openSourceCategorization": "proprietary",
+  "parameters": null,
+  "inferenceParametersActiveBillions": null,
+  "sizeClass": "medium",
+  "contextWindowTokens": 1000000,
+  "licenseName": null,
+  "licenseUrl": null,
+  "modelWeightsSourceUrl": null,
+  "microevalsEnabled": true,
+  "intelligenceIndex": 38.1245186869738,
+  "intelligenceIndexIsEstimated": false,
+  "capabilities": {
+   "financeAndAccounting": 40.2967547784778,
+   "strategyAndOps": 45.7388446388429,
+   "legal": 40.2779942332056,
+   "healthcareAndMedical": 38.897572885301,
+   "engineering": 37.0938567579007,
+   "economics": 45.2162363492431
+  },
+  "omniscience": 0.65,
+  "omniscienceAccuracy": 0.43783333333333335,
+  "omniscienceHallucinationRate": 0.7672694930329084,
+  "mlcrOverall": 0.261111111111111,
+  "harveyLab": 0.03333333333333333,
+  "gdpPdfAllPass": 0.228,
+  "gdpval": 1444.72,
+  "gdpvalInterval": {
+   "lower": 1424,
+   "upper": 1465
+  },
+  "itBenchSre": null,
+  "tau2": null,
+  "tauBanking": null,
+  "terminalbenchHard": null,
+  "terminalBench21": null,
+  "terminalBench40": 0.126262626262626,
+  "frontierCode": 0.419269666666667,
+  "frontierCode20": null,
+  "terminalBenchScience": 0.0857142857142857,
+  "healthbench": 0.5457844450559368,
+  "healthbenchProfessional": 0.6189434003955461,
+  "hleDiamond": null,
+  "critptAgenticHard": null,
+  "scicode": 0.546296296296296,
+  "lcr": 0.833333333333333,
+  "ifbench": null,
+  "hle": 0.385078776645042,
+  "gpqa": null,
+  "critpt": 0.194285714285714,
+  "apexAgents": null,
+  "mmmuPro": 0.796531791907514,
+  "livecodebench": null,
+  "aime25": null,
+  "analystAgent": 0.4375,
+  "automationBenchPartialScore": 0.5316814034483175,
+  "price1mInputTokens": 0.1,
+  "price1mOutputTokens": 0.5,
+  "cacheHitPrice": 0.01,
+  "cacheHitDiscountPercent": 0.9,
+  "cacheWritePrice": 0.125,
+  "pricePer1k1mpImages": null,
+  "price1mBlended0To3To1": 0.2,
+  "price1mBlended7To2To1": 0.077,
+  "price1mBlended0To1To1": 0.3,
+  "price1mBlended100To1To1": 0.01568627450980392,
+  "price1mBlended0To100To1": 0.10396039603960396,
+  "intelligenceIndexTimePerTask": 421.37444174672197,
+  "intelligenceIndexCost": {
+   "total": 122.05438368649308,
+   "input": 49.86388668649309,
+   "nonCacheInput": 2.7855760000000003,
+   "cacheRead": 29.803356157696253,
+   "cacheWrite": 17.274954528796837,
+   "output": 72.190497,
+   "reasoning": 64.1183085,
+   "answer": 8.0721885
+  },
+  "intelligenceIndexCostPerTask": {
+   "cost": {
+    "total": 0.06782295669812205,
+    "input": 0.042817111482851916,
+    "nonCacheInput": 0.0021451124657073345,
+    "cacheRead": 0.02897687860847939,
+    "cacheWrite": 0.011695120408665187,
+    "output": 0.025005845215270134,
+    "reasoning": 0.019444840229640766,
+    "answer": 0.005561004985629364
+   },
+   "evaluations": [
+    {
+     "slug": "aa-briefcase",
+     "weightedCostPerTask": 0.025498811110892392
+    },
+    {
+     "slug": "gdpval-aa",
+     "weightedCostPerTask": 0.008935398436610915
+    },
+    {
+     "slug": "automationbench-aa",
+     "weightedCostPerTask": 0.0018199822210224262
+    },
+    {
+     "slug": "terminalbench-4-0",
+     "weightedCostPerTask": 0.023621085607736896
+    },
+    {
+     "slug": "scicode",
+     "weightedCostPerTask": 0.0003676580208333334
+    },
+    {
+     "slug": "humanitys-last-exam",
+     "weightedCostPerTask": 0.0011812253938832252
+    },
+    {
+     "slug": "gdp-pdf",
+     "weightedCostPerTask": 0.0028547064
+    },
+    {
+     "slug": "critpt",
+     "weightedCostPerTask": 0.002656206857142857
+    },
+    {
+     "slug": "omniscience",
+     "weightedCostPerTask": 0.00037850605
+    },
+    {
+     "slug": "artificial-analysis-long-context-reasoning",
+     "weightedCostPerTask": 0.0005093766000000001
+    }
+   ]
+  },
+  "canonicalIntelligenceIndexTokenCount": {
+   "input": 3146391012,
+   "output": 144380994,
+   "answer": 16144377,
+   "reasoning": 128236617
+  },
+  "intelligenceIndexOutputTokensPerTask": {
+   "reasoning": 38889.68045928154,
+   "answer": 11122.009971258729,
+   "output": 50011.69043054027
+  },
+  "intelligenceIndexEvaluations": [
+   {
+    "slug": "aa-briefcase",
+    "score": 1336.19,
+    "outputTokensPerTask": 110018.61538461539,
+    "costPerTask": 0.16999207407261596,
+    "timePerTask": 926.9639206422405
+   },
+   {
+    "slug": "gdpval-aa",
+    "score": 1444.72,
+    "outputTokensPerTask": 61046.85,
+    "costPerTask": 0.08935398436610914,
+    "timePerTask": 514.3513869996573
+   },
+   {
+    "slug": "automationbench-aa",
+    "score": 0.5316814034483175,
+    "outputTokensPerTask": 34034.07305936073,
+    "costPerTask": 0.03639964442044852,
+    "timePerTask": 286.7547249912135
+   },
+   {
+    "slug": "terminalbench-4-0",
+    "score": 0.126262626262626,
+    "outputTokensPerTask": 140973.75757575757,
+    "costPerTask": 0.23621085607736897,
+    "timePerTask": 1187.7770554851618
+   },
+   {
+    "slug": "scicode",
+    "score": 0.546296296296296,
+    "outputTokensPerTask": 6905.854166666667,
+    "costPerTask": 0.0036765802083333337,
+    "timePerTask": 58.18540463664157
+   },
+   {
+    "slug": "humanitys-last-exam",
+    "score": 0.385078776645042,
+    "outputTokensPerTask": 23561.930027803523,
+    "costPerTask": 0.011812253938832253,
+    "timePerTask": 198.52148620591586
+   },
+   {
+    "slug": "gdp-pdf",
+    "score": 0.228,
+    "outputTokensPerTask": 24831.15,
+    "costPerTask": 0.028547064,
+    "timePerTask": 209.21532303954325
+   },
+   {
+    "slug": "critpt",
+    "score": 0.194285714285714,
+    "outputTokensPerTask": 52465.07142857143,
+    "costPerTask": 0.02656206857142857,
+    "timePerTask": 442.0454496558267
+   },
+   {
+    "slug": "omniscience",
+    "score": 0.65,
+    "outputTokensPerTask": 5022.047666666666,
+    "costPerTask": 0.0025233736666666665,
+    "timePerTask": 42.31335741202687
+   },
+   {
+    "slug": "artificial-analysis-long-context-reasoning",
+    "score": 0.833333333333333,
+    "outputTokensPerTask": 1508.52,
+    "costPerTask": 0.010187532000000001,
+    "timePerTask": 12.71006373493019
+   }
+  ],
+  "briefcaseBreakdown": {
+   "overall": {
+    "elo": 1336.19,
+    "lower95ci": 1327.5,
+    "upper95ci": 1345.77
+   },
+   "rubricPassRate": 0.4121212121212121,
+   "analyticalQuality": {
+    "elo": 1376.09,
+    "lower95ci": 1358.18,
+    "upper95ci": 1395.26
+   },
+   "presentation": {
+    "elo": 1395.16,
+    "lower95ci": 1379.49,
+    "upper95ci": 1409.96
+   }
+  },
+  "briefcaseTotalCost": 15.46927874060805,
+  "aa3dElo": 1000,
+  "aa3dEloInterval": {
+   "lower": 1000,
+   "upper": 1000
+  },
+  "code2videoElo": 1029.65,
+  "code2videoEloInterval": {
+   "lower": 1010,
+   "upper": 1049
+  },
+  "personalityBench": {
+   "scores": {
+    "lexicallyVaried": 890.59,
+    "eloquent": 914.94,
+    "literate": 904.02,
+    "naturalSounding": 1115.22,
+    "metaphorical": 891.58,
+    "structured": 808.74,
+    "scannable": 577.13,
+    "summarizesBottomLine": 941.45,
+    "answerFirst": 1045.3,
+    "informationDense": 865.37,
+    "evidenceBased": 860.38,
+    "resourceSpecific": 1080.33,
+    "providesActionableGuidance": 902.17,
+    "pragmatic": 893.78,
+    "truthful": 885.85,
+    "admitsUncertainty": 765.77,
+    "disclaimsWithAssumptions": 868.83,
+    "flagsNuances": 789.75,
+    "sycophantic": 1012.56,
+    "friendly": 867.12,
+    "humorous": 824.12,
+    "sincere": 992.55,
+    "emotionallyIntelligent": 893.72,
+    "direct": 1027.16,
+    "confident": 1015.48,
+    "opinionated": 1016.92,
+    "constructivelyPushesBack": 857.85,
+    "creative": 673.41,
+    "openEnded": 731.46,
+    "slop": 793.72
+   },
+   "indexScores": {
+    "expressiveness": 33.175000000000004,
+    "organization": 18.325,
+    "informativeness": 13.375,
+    "transparency": 57.925,
+    "warmth": 40.6,
+    "conviction": 45.550000000000004,
+    "imagination": 15.85,
+    "slop": 3.475
+   },
+   "indexIntervals": {
+    "expressiveness": {
+     "lower": 30,
+     "upper": 35
+    },
+    "organization": {
+     "lower": 17,
+     "upper": 36
+    },
+    "informativeness": {
+     "lower": 13,
+     "upper": 14
+    },
+    "transparency": {
+     "lower": 51,
+     "upper": 66
+    },
+    "warmth": {
+     "lower": 33,
+     "upper": 45
+    },
+    "conviction": {
+     "lower": 37,
+     "upper": 52
+    },
+    "imagination": {
+     "lower": 13,
+     "upper": 22
+    },
+    "slop": {
+     "lower": 3,
+     "upper": 4
+    }
+   }
+  },
+  "personalityBenchMeans": {
+   "charCount": 1736.29111111111,
+   "wordCount": 270.467777777778,
+   "sentenceCount": 18.1733333333333,
+   "paragraphCount": 4.95666666666667,
+   "avgSentenceLength": 15.4100150241841,
+   "listCount": 0.728888888888889,
+   "headingCount": 0.585555555555556,
+   "tableCount": 0.0633333333333333,
+   "emDashCount": 2.49555555555556,
+   "contractionCount": 5.25333333333333,
+   "exclamationCount": 0.01,
+   "questionCount": 1.08333333333333,
+   "parentheticalCount": 0.425555555555556,
+   "quoteCount": 3.26777777777778,
+   "colonCount": 3.24333333333333,
+   "ellipsisCount": 0.0344444444444444,
+   "boldCount": 5.17555555555556,
+   "italicsCount": 0.524444444444444,
+   "emojiCount": 0,
+   "acronymCount": 1.28333333333333,
+   "endsWithQuestion": 0.05
+  },
+  "timescaleData": {
+   "medianOutputSpeed": 118.565683410898,
+   "medianTimeToFirstChunk": 97.6983882035
+  },
+  "outputSpeedVariance": {
+   "p05": 96.720651560116,
+   "q25": 108.558366561613,
+   "median": 118.565683410898,
+   "q75": 135.339751290794,
+   "p95": 167.461287141062
+  },
+  "timeToFirstChunkVariance": {
+   "p05": 24.9137065054501,
+   "q25": 65.4939408017501,
+   "median": 97.6983882035,
+   "q75": 138.862098976,
+   "p95": 241.4222492701
+  },
+  "performanceByPromptType": {
+   "medium": {
+    "medianOutputSpeed": 120.647440112146,
+    "medianTimeToFirstChunk": 81.2074592535,
+    "medianTimeToFirstAnswerToken": 81.2074592535,
+    "medianEndToEndResponseTime": 85.35176599996088
+   },
+   "long": {
+    "medianOutputSpeed": 118.565683410898,
+    "medianTimeToFirstChunk": 97.6983882035,
+    "medianTimeToFirstAnswerToken": 97.6983882035,
+    "medianEndToEndResponseTime": 101.91546000383883
+   },
+   "hundredK": {
+    "medianOutputSpeed": 116.021352362136,
+    "medianTimeToFirstChunk": 185.2345974475,
+    "medianTimeToFirstAnswerToken": 185.2345974475,
+    "medianEndToEndResponseTime": 189.544149006935
+   },
+   "mediumParallel": {
+    "medianOutputSpeed": 108.545208896569,
+    "medianTimeToFirstChunk": 103.913145349,
+    "medianTimeToFirstAnswerToken": 103.913145349,
+    "medianEndToEndResponseTime": 108.51952093280345
+   }
+  },
+  "endToEndResponseTime": {
+   "input": 97.6983882035,
+   "reasoning": 0,
+   "answer": 4.217071800338835,
+   "total": 101.91546000383883
+  },
+  "timeToFirstAnswerToken": {
+   "input": 97.6983882035,
+   "reasoning": 0,
+   "total": 97.6983882035
+  },
+  "performanceDataSource": {
+   "type": "firstParty",
+   "providerName": "OpenAI"
+  },
+  "hostModelCount": 8,
+  "creator": {
+   "id": "e67e56e3-15cd-43db-b679-da4660a69f41",
+   "slug": "openai",
+   "name": "OpenAI",
+   "logo": "/img/logos/openai.svg",
+   "color": "#1f1f1f",
+   "country": "us"
+  },
+  "inputModalityText": true,
+  "inputModalityImage": true,
+  "inputModalitySpeech": false,
+  "inputModalityVideo": false,
+  "outputModalityText": true,
+  "outputModalityImage": false,
+  "outputModalitySpeech": false,
+  "outputModalityVideo": false
+ }
+}
