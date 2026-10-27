@@ -53,7 +53,7 @@ questions. They make no capability, pricing, or policy claims.
 | 12 | FLUX.2 [max] | Black Forest Labs | BFL docs | `[ ]` |
 | 13 | FLUX.2 [flex] | Black Forest Labs | fal `fal-ai/flux-2-flex` | `[ ]` |
 | 14 | FLUX.2 [klein] 4B | Black Forest Labs | fal `fal-ai/flux-2-klein-4b-base-trainer` | `[ ]` |
-| 15 | FLUX.2 [klein] 9B | Black Forest Labs | fal `fal-ai/flux-2-klein-9b-base-trainer` | `[ ]` |
+| 15 | FLUX.2 [klein] 9B | Black Forest Labs | fal `fal-ai/flux-2-klein-9b-base-trainer` | `[x]` |
 | 16 | FLUX.2 [dev] | Black Forest Labs | BFL docs | `[ ]` |
 | 17 | FLUX 3 Image | Black Forest Labs | fal `blackforestlabs/flux-3` | `[s]` |
 | 18 | FLUX 3 Max | Black Forest Labs | fal `blackforestlabs/flux-3-max` | `[ ]` |
