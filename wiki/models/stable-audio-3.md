@@ -278,7 +278,7 @@ Vendor, paper and host documentation only. **No direct tests were run for this p
   ([licence FAQ](../../sources/stability.ai/stable-audio-community-license-faq/2026-10-26.md)).
 - **Host gaps.** fal is the only general-purpose third-party host; Replicate hosts Stable Audio 2.5
   officially (115.2K runs) but has **no** Stable Audio 3 endpoint, not even a community repackage
-  ([Replicate](../../sources/replicate.com/stable-audio-3-not-listed/2026-10-26.md)). The vendor's
+  (checked 2026-10-26). The vendor's
   "will be available on ComfyUI" claim from the launch post is unverified.
 - **Schema narrowness versus the paper.** The vendor API exposes no negative prompt, no prompt
   expansion, no outpaint, two output formats, and `steps` 4–8; the paper's base checkpoints need ~50

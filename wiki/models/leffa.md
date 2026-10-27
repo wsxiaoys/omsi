@@ -37,8 +37,8 @@ prompt-driven generators elsewhere in this roster — not as a model that launch
   [weights](../../sources/huggingface.co/leffa-model-card/2026-10-26.md),
   [Space](../../sources/huggingface.co/leffa-demo-space/2026-10-26.md)).
 - Host endpoints: `fal-ai/leffa/virtual-tryon` and `fal-ai/leffa/pose-transfer` on fal, grouped under
-  `fal-ai/leffa` ([fal](../../sources/fal.ai/leffa/2026-10-26.md)). No Replicate listing was found
-  ([Replicate search](../../sources/replicate.com/leffa-not-listed/2026-10-26.md)).
+  `fal-ai/leffa` ([fal](../../sources/fal.ai/leffa/2026-10-26.md)). No Replicate listing was found in
+  a search on 2026-10-26.
 - Aliases: "Leffa Virtual TryOn" and "Leffa Pose Transfer" are fal's endpoint titles; "Leffa Predict
   Vt" and "Leffa Predict Pt" are fal's internal `about` strings for the same two endpoints. Neither is
   a separate model ([fal](../../sources/fal.ai/leffa/2026-10-26.md)).

@@ -331,8 +331,8 @@ fal does not offer the 8K texture tier, so the $0.40/$0.50 vendor tops are unrea
 ### Replicate
 
 Not hosted. Replicate's 3D collection lists no Tripo model, the string "tripo" does not appear on that page,
-and the plausible owner paths return 404
-([negative record](../../sources/replicate.com/tripo-h3-1-not-listed/2026-10-26.md)). fal is the only
+and the plausible owner paths return 404 (checked 2026-10-26). fal is the
+only
 independent host found.
 
 ### Licence

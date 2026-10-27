@@ -43,7 +43,6 @@ of an avatar engine.
 
 Sources: [API reference](../../sources/heygen.com/heygen-video-create-reference/2026-10-26.md),
 [fal catalogue](../../sources/fal.ai/heygen-video-catalogue/2026-10-26.md),
-[Replicate absence](../../sources/replicate.com/heygen-video-not-listed/2026-10-26.md),
 [AA](../../sources/artificialanalysis.ai/heygen-video-1-text-to-video/2026-10-26.md).
 
 ### Distinct from Avatar 5 / Avatar V
@@ -210,7 +209,7 @@ above for what the board actually shows.
   not enforce "at least one reference" for reference-to-video
   ([fal schemas](../../sources/fal.ai/heygen-video-endpoint-schemas/2026-10-26.md)).
 - **Replicate does not carry it.** Six HeyGen models are listed there; none is HeyGen Video
-  ([Replicate absence](../../sources/replicate.com/heygen-video-not-listed/2026-10-26.md)).
+  (checked 2026-10-26).
 - **Consent is contractual, not enforced.** No captured source documents a consent step for reference
   images of people; the Terms prohibit "uploading images of individuals … without their consent" and impersonation
   without authorization, and the moderation policy forbids representing "real individuals, including

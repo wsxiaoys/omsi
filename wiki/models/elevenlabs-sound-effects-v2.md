@@ -34,7 +34,7 @@ current-window launch. The only recent change is additive: WAV output arrived on
 | --- | --- | --- |
 | ElevenLabs | `POST https://api.elevenlabs.io/v1/sound-generation` | regional hosts `api.us.`, `api.eu.residency.`, `api.in.residency.`, `api.sg.residency.elevenlabs.io` |
 | fal | `fal-ai/elevenlabs/sound-effects/v2` | `hostingType: "proxy"`, `licenseType: "commercial"`, $0.002/second |
-| Replicate | none | `/elevenlabs/sound-effects` and `/elevenlabs/sound-effects-v2` return 404; the ElevenLabs org page lists seven models, none of them sound effects ([negative record](../../sources/replicate.com/elevenlabs-sound-effects-not-listed/2026-10-26.md)) |
+| Replicate | none | `/elevenlabs/sound-effects` and `/elevenlabs/sound-effects-v2` return 404; the ElevenLabs org page lists seven models, none of them sound effects (checked 2026-10-26) |
 
 Unlike row 61 in this roster, the row-66 discovery label is **correct**: the live fal endpoint ID is
 exactly `fal-ai/elevenlabs/sound-effects/v2`.

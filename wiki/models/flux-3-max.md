@@ -152,8 +152,7 @@ overlapping intervals.
 - **One host, no first-party access.** fal only. BFL has no endpoint, no docs page, no pricing row
   and no changelog entry for it ([release notes](../../sources/bfl.ai/flux-3-max-release-notes/2026-10-26.md),
   [pricing docs](../../sources/bfl.ai/flux-3-max-pricing-docs/2026-10-26.md)). Replicate does not
-  list it and `/black-forest-labs/flux-3-max` returns 404
-  ([Replicate check](../../sources/replicate.com/flux-3-max-not-listed/2026-10-26.md)). A fal
+  list it and `/black-forest-labs/flux-3-max` returns 404 (checked 2026-10-26). A fal
   outage or a delisting removes the model entirely.
 - **Lower resolution ceiling than its own base model.** Max offers 720p/1080p; FLUX 3 Video offers
   `hd`/`fhd`/`qhd`/`uhd`, i.e. up to 3840 × 2176 at 16:9. If you need 2K/4K, Max cannot deliver.

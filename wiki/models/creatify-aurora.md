@@ -36,7 +36,7 @@ custom-avatar products on the same API.
 | fal | `fal-ai/creatify/aurora` | `hostingType: serverless` | [fal record](../../sources/fal.ai/creatify-aurora/2026-10-26.md) |
 | Runware | `creatify:aurora@0`, `creatify:aurora@fast` | `hosted: false` | [Runware record](../../sources/runware.ai/creatify-aurora/2026-10-26.md) |
 | ElevenLabs | in-product "AI avatar" model | application integration | [ElevenLabs post](../../sources/creatify.ai/aurora-elevenlabs-integration/2026-10-26.md) |
-| Replicate | — | **not hosted** (404, absent from search) | [Replicate check](../../sources/replicate.com/creatify-aurora-not-listed/2026-10-26.md) |
+| Replicate | — | **not hosted** (404, absent from search) | checked 2026-10-26 |
 
 - **Release timeline:**
 
@@ -171,8 +171,8 @@ diffusion transformer — appears only in marketing copy.
   [Runware](../../sources/runware.ai/creatify-aurora/2026-10-26.md)).
 - **Output is retained 7 days** on Creatify's API; "Download any video you want to keep"
   ([overview](../../sources/creatify.ai/aurora-api-overview/2026-10-26.md)). Host retention is not stated.
-- **Host coverage is shallow.** Replicate does not host Aurora at all
-  ([Replicate check](../../sources/replicate.com/creatify-aurora-not-listed/2026-10-26.md)). fal caps at 720p
+- **Host coverage is shallow.** Replicate does not host Aurora at all (checked 2026-10-26). fal caps
+  at 720p
   with no duration limit documented. No host serves Aurora 2.0, so 1080p/2k is Creatify-only. Runware lists
   only v1 and v1 Fast.
 - **Documented specs stop at the interesting boundary.** No frame rate, codec, bitrate, aspect-ratio rule, or

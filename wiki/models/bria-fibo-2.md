@@ -33,8 +33,7 @@ evidence that it is a new model rather than a relabel
   ([fal](../../sources/fal.ai/fibo-2/2026-10-26/index.md)). The roster's discovery path
   `bria/fibo-2` is fal's **group key** (`group.key: "bria-fibo-2"`), not a callable endpoint.
   Replicate does not host Fibo 2: the three plausible paths return 404 and the BRIA organization
-  page lists only FIBO and FIBO Edit
-  ([Replicate](../../sources/replicate.com/fibo-2-not-listed/2026-10-26.md)).
+  page lists only FIBO and FIBO Edit (checked 2026-10-26).
 - Weights: `briaai/Fibo-2.0-dev` (generate) and `briaai/Fibo-2.0-edit-turbo` (edit), both gated,
   both ~8.13B parameters, both `BriaFibo2Pipeline` diffusers classes, edit tagged as a finetune of
   dev ([weights](../../sources/huggingface.co/fibo-2-weights/2026-10-26.md)).
@@ -58,8 +57,8 @@ evidence that it is a new model rather than a relabel
   - **BRIA's other lines are separate products.** fal lists `Bria Text-to-Image Base` (proxy,
     2024-12-19), `Bria RMBG 2.0` (proxy, 2024-12-19) and `Bria's VRMBG 3.0` (serverless,
     2026-06-08); Replicate lists `bria/image-3.2` and `bria/remove-background`
-    ([fal](../../sources/fal.ai/fibo-2/2026-10-26/index.md),
-    [Replicate](../../sources/replicate.com/fibo-2-not-listed/2026-10-26.md)). Those are BRIA's
+    ([fal](../../sources/fal.ai/fibo-2/2026-10-26/index.md); Replicate checked 2026-10-26). Those are
+    BRIA's
     older text-to-image and background-removal lines, not Fibo tiers, and none of the Fibo evidence
     on this page transfers to them.
 
@@ -295,7 +294,7 @@ values.
   cannot be pinned ([fal](../../sources/fal.ai/fibo-2/2026-10-26/index.md)). fal's `style`
   description also refers to a `negative_prompt` field that is not in its schema.
 - **No second independent host.** Replicate hosts FIBO and FIBO Edit but not Fibo 2; the only host
-  record is fal ([Replicate](../../sources/replicate.com/fibo-2-not-listed/2026-10-26.md)).
+  record is fal (Replicate checked 2026-10-26).
 - **No Fibo 2 technical report.** Both weight repos tag `arXiv:2511.06876`, which is the FIBO v1
   paper on structured captions (submitted 2025-11-10), not a Fibo 2 paper; no architecture, training
   or evaluation report for Fibo 2 was found

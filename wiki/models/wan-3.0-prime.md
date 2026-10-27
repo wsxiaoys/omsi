@@ -28,8 +28,7 @@ It is inside the roster's one-year window: 2026-08-20 is after 2025-10-26.
   ([fal catalogue](../../sources/fal.ai/wan-3.0-prime-catalogue/2026-10-26/index.md)).
 - **Siblings:** `wan3.0-video` (the standard tier, roster row 33), the earlier Wan 2.7 / 2.6 / 2.5 /
   2.2 families, and the `-flash` / `-turbo` speed variants inside those families. Replicate carries
-  the Wan family only up to Wan 2.7 and does not host Prime
-  ([Replicate search](../../sources/replicate.com/wan-3-0-prime-not-listed/2026-10-26.md)).
+  the Wan family only up to Wan 2.7 and does not host Prime (checked 2026-10-26).
 
 ### Is Prime a tier, a checkpoint, or a host label?
 
@@ -236,8 +235,7 @@ From Model Studio's changelog and pages, with no numbers or methodology:
   authorisation ("unauthorized requests are always checked"), and Model Studio's price list notes that
   failed requests are not billed — but no moderation policy, threshold or refusal taxonomy was captured
   on any route.
-- **Replicate does not host it**, so there is no third independent price point
-  ([Replicate search](../../sources/replicate.com/wan-3-0-prime-not-listed/2026-10-26.md)).
+- **Replicate does not host it**, so there is no third independent price point (checked 2026-10-26).
 
 ## Access, pricing, licensing
 

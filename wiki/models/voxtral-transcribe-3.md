@@ -50,10 +50,8 @@ lists them.
   (`mistral/voxtral-small-transcribe-3`, `mistral/voxtral-mini-transcribe-3`), whose provider table
   lists exactly one provider — Mistral
   ([gateway](../../sources/vercel.com/ai-gateway-voxtral-transcribe-3/2026-10-26/index.md)).
-  Negative checks: no fal entry for any Voxtral model
-  ([fal](../../sources/fal.ai/voxtral-transcribe-3-not-listed/2026-10-26.md)), no OpenRouter entry
-  beyond the 2025 `mistralai/voxtral-small-24b-2507`
-  ([OpenRouter](../../sources/openrouter.ai/voxtral-transcribe-3-not-listed/2026-10-26.md)), and no
+  Negative checks on 2026-10-26: no fal entry for any Voxtral model, no OpenRouter entry
+  beyond the 2025 `mistralai/voxtral-small-24b-2507`, and no
   Voxtral row in Azure's "Mistral models sold directly by Azure" table
   ([Azure](../../sources/microsoft.com/azure-foundry-mistral-models/2026-10-26.md)).
 
@@ -214,9 +212,7 @@ use runs through Mistral's general terms; nothing in the corpus grants weight ri
 weights are published.
 
 **Distribution is Mistral-only.** One aggregator proxies to Mistral; fal, OpenRouter, Azure and the
-Hugging Face Hub have no Voxtral transcription entry
-([fal](../../sources/fal.ai/voxtral-transcribe-3-not-listed/2026-10-26.md),
-[OpenRouter](../../sources/openrouter.ai/voxtral-transcribe-3-not-listed/2026-10-26.md),
+Hugging Face Hub have no Voxtral transcription entry (fal and OpenRouter checked 2026-10-26;
 [Azure](../../sources/microsoft.com/azure-foundry-mistral-models/2026-10-26.md)). A reader who needs a
 second provider, a data-residency alternative, or on-premises weights has none.
 

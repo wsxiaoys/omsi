@@ -31,8 +31,7 @@ checkpoint.
   `hostingType: "proxy"` and `licenseType: "commercial"`
   ([fal](../../sources/fal.ai/meta-muse-image/2026-10-26.md)); OpenRouter `meta/muse-image`
   ([OpenRouter](../../sources/openrouter.ai/muse-image/2026-10-26.md)). Meta's model page also lists
-  **Runway** as a host, not captured here. **Replicate does not list it**
-  ([absence record](../../sources/replicate.com/meta-muse-image-not-listed/2026-10-26.md)).
+  **Runway** as a host, not captured here. **Replicate does not list it** (checked 2026-10-26).
 - **Dates:** 2026-07-07 announcement, but the launch post only describes consumer surfaces (Meta AI
   app, meta.ai, Instagram Stories in the US, WhatsApp in limited countries). API access dates from
   **2026-08-26**: fal published both endpoints that day and OpenRouter's endpoint record has

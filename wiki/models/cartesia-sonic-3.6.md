@@ -11,9 +11,7 @@ to: the TTS request schema's `TTSModelID` enum defaults to `sonic-3.6`
 The launch is inside the roster's one-year window (≥ 2025-10-26) — ten months after it opened — so
 no out-of-window exception applies. The model is closed-weight and sold per character. Cartesia's own
 API is the primary route; LiveKit Inference is the only independent host captured. **fal and Replicate
-do not serve Cartesia at all**
-([fal negative record](../../sources/fal.ai/cartesia-sonic-not-listed/2026-10-26.md),
-[Replicate negative record](../../sources/replicate.com/cartesia-sonic-not-listed/2026-10-26.md)).
+do not serve Cartesia at all** (checked 2026-10-26).
 
 ## Identity
 

@@ -35,8 +35,7 @@ inference code were released 2025-12-30, both after 2025-10-26
 - **Host endpoints:** fal only — `fal-ai/hunyuan-motion` (labelled 1B, $0.08 per generation) and
   `fal-ai/hunyuan-motion/fast` (labelled 0.46B, $0.06 per generation)
   ([fal catalogue](../../sources/fal.ai/hunyuan-motion/2026-10-26.md)). Replicate hosts Tencent's
-  Hunyuan video, image and 3D families but has no HY-Motion endpoint
-  ([Replicate search](../../sources/replicate.com/hy-motion-not-listed/2026-10-26.md)).
+  Hunyuan video, image and 3D families but has no HY-Motion endpoint (checked 2026-10-26).
 - **Release timeline:**
 
 | Date | Event | Source |
@@ -181,8 +180,7 @@ motion model ([README](../../sources/github.com/hy-motion-1-0-readme/2026-10-26.
   Tencent licence, and outputs may not be used to improve any other AI model
   ([licence](../../sources/huggingface.co/hy-motion-1-0-license/2026-10-26.md)).
 - **One host only.** fal is the sole independent host found; Replicate has no endpoint, so there is no
-  second price point or independent parameter surface to cross-check
-  ([Replicate search](../../sources/replicate.com/hy-motion-not-listed/2026-10-26.md)).
+  second price point or independent parameter surface to cross-check (Replicate searched 2026-10-26).
 - **No independent quality evidence.** No benchmark, arena or third-party measurement of HY-Motion 1.0
   was captured. The paper's human-evaluation tables were not transcribed, so even the vendor's
   comparison is unquantified on this page.
@@ -256,8 +254,8 @@ Evidence floor: **met.** First-party: the Tencent repository README (with model 
 stated limitations), the Hugging Face model card and repository metadata, the licence text, and the
 arXiv technical report — all Tencent-published, all captured 2026-10-26. Independent host: one fal
 record covering catalogue metadata, both endpoint schemas and both published price strings. No second
-host exists to corroborate: Replicate's catalogue was searched and has no HY-Motion endpoint
-([Replicate search](../../sources/replicate.com/hy-motion-not-listed/2026-10-26.md)).
+host exists to corroborate: Replicate's catalogue was searched on 2026-10-26 and has no HY-Motion
+endpoint.
 
 **No direct tests have been run for this page.** Nothing here is a measurement made by this knowledge
 base. Capability statements are vendor or host documentation; the frame rate and length cap are read

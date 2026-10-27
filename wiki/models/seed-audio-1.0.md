@@ -43,8 +43,7 @@ first-party technical doc captured (Volcengine API reference) was last updated 2
 
 Sources: [Volcengine API](../../sources/volcengine.com/seed-audio-1-0-api/2026-10-26.md),
 [model page](../../sources/bytedance.com/seed-audio-1-0-model-page/2026-10-26.md),
-[fal catalogue](../../sources/fal.ai/seed-audio-1-0-catalogue/2026-10-26.md),
-[Replicate](../../sources/replicate.com/seed-audio-1-0-not-listed/2026-10-26.md).
+[fal catalogue](../../sources/fal.ai/seed-audio-1-0-catalogue/2026-10-26.md).
 
 ### Identity ambiguity: one model or a TTS/T2A pair?
 
@@ -230,8 +229,8 @@ independent corroborates them.
   an enrollment review for this model
   ([launch blog](../../sources/bytedance.com/seed-audio-1-0-launch-blog/2026-10-26.md),
   [Volcengine API](../../sources/volcengine.com/seed-audio-1-0-api/2026-10-26.md)).
-- **Replicate does not serve it**, so there is no cheap community-hosted alternative and no
-  cross-host price check ([Replicate](../../sources/replicate.com/seed-audio-1-0-not-listed/2026-10-26.md)).
+- **Replicate does not serve it** (checked 2026-10-26), so there is no cheap community-hosted
+  alternative and no cross-host price check.
 - **The BytePlus English doc body could not be captured** (client-rendered), so the international
   parameter set is verified only through the Chinese Volcengine doc and fal's proxy schema.
 

@@ -42,8 +42,7 @@ half right: fal's slug stops at 2.5, but that is a hosting gap, not an identity.
   ([product page](../../sources/microsoft.ai/mai-image-2-6-model-page/2026-10-26.md)).
 - Host endpoints: **none found.** fal serves 2.5 and 2.5-Pro only and has no 2.6 endpoint
   ([fal](../../sources/fal.ai/mai-image-2.5/2026-10-26.md)); Replicate's Microsoft account carries
-  only open models (Phi, VibeVoice, OmniParser) and no MAI-Image entry
-  ([Replicate check](../../sources/replicate.com/mai-image-not-listed/2026-10-26.md)).
+  only open models (Phi, VibeVoice, OmniParser) and no MAI-Image entry (checked 2026-10-26).
 - Siblings: **MAI-Image-2.6-Flash** — "an optimized version of MAI-Image.2.6", sold as
   "production-ready quality at less than half the price of our flagship model"
   ([model card](../../sources/microsoft.ai/mai-image-2-6-model-card/2026-10-26.md),

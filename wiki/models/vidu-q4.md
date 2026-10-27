@@ -45,8 +45,8 @@ the documentation's section title.
 | Replicate | — | not listed; `/vidu/q4` returns 404 |
 | Artificial Analysis | — | not ranked on either video board |
 
-Replicate hosts only `vidu/q3-pro` and `vidu/q3-turbo`
-([Replicate absence record](../../sources/replicate.com/vidu-q4-not-listed/2026-10-26.md)), and
+Replicate hosts only `vidu/q3-pro` and `vidu/q3-turbo` (checked 2026-10-26),
+and
 Artificial Analysis lists only Q3 variants on the Vidu family page
 ([AA record](../../sources/artificialanalysis.ai/vidu-q4-not-ranked/2026-10-26.md)).
 
@@ -284,8 +284,7 @@ host differs in latency or model version. fal and WaveSpeedAI add their own rout
 Sources: [model map](../../sources/vidu.com/vidu-api-model-map/2026-10-26.md),
 [pricing](../../sources/vidu.com/vidu-api-pricing/2026-10-26.md),
 [fal catalogue](../../sources/fal.ai/vidu-q4-catalogue/2026-10-26/index.md),
-[AA record](../../sources/artificialanalysis.ai/vidu-q4-not-ranked/2026-10-26.md),
-[Replicate absence](../../sources/replicate.com/vidu-q4-not-listed/2026-10-26.md).
+[AA record](../../sources/artificialanalysis.ai/vidu-q4-not-ranked/2026-10-26.md).
 
 The honest summary of the trade: Q4 buys resolution, references and voice at the cost of two generation
 modes, the 360p rung, off-peak pricing, tier choice and host breadth. It is not a superset of Q3, and

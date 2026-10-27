@@ -23,15 +23,14 @@ same wire format at a higher price
   `luma/agent/uni-1/v1/max` and `luma/agent/uni-1/v1/max/edit` on fal, all active and
   commercial-use, live since 2026-06-09
   ([fal](../../sources/fal.ai/luma-uni-1/2026-10-26.md)). Replicate hosts Luma's Ray 3.2 video and
-  the older Photon image models but **not** Uni-1
-  ([negative record](../../sources/replicate.com/luma-uni-1-not-listed/2026-10-26.md)).
+  the older Photon image models but **not** Uni-1 (checked 2026-10-26).
 - **Other hosts (vendor claim, unverified):** Luma lists Envato, Comfy, Runware, Flora, Krea,
   Magnific (formerly Freepik), Fal and LovArt as Uni-1.1 API partners
   ([post](../../sources/lumalabs.ai/uni-1-1-api/2026-10-26.md)); only fal was checked here.
 - **Siblings:** Ray 3.2 (video, same API) and the older Photon / Photon Flash image models, which
   are a different family and not Uni-1 checkpoints
-  ([Replicate listing](../../sources/replicate.com/luma-uni-1-not-listed/2026-10-26.md),
-  [AA](../../sources/artificialanalysis.ai/luma-uni-1/2026-10-26.md)). Luma describes "Uni-fied" as
+  ([AA](../../sources/artificialanalysis.ai/luma-uni-1/2026-10-26.md); Replicate checked 2026-10-26).
+  Luma describes "Uni-fied" as
   the family name and says audio/video output from it is future work
   ([technical report](../../sources/lumalabs.ai/uni-1-tech-specs/2026-10-26.md),
   [TechCrunch](../../sources/techcrunch.com/luma-uni-1-launch/2026-10-26.md)).
@@ -166,7 +165,7 @@ Vendor and host documentation, not tests.
 - **No public weights.** No Luma organization or Uni-1 repository on Hugging Face, and AA records
   `openWeightsUrl: null` ([negative record](../../sources/huggingface.co/luma-uni-1-weights-search/2026-10-26.md),
   [AA](../../sources/artificialanalysis.ai/luma-uni-1/2026-10-26.md)).
-- **Host gap:** no Replicate endpoint ([negative record](../../sources/replicate.com/luma-uni-1-not-listed/2026-10-26.md)).
+- **Host gap:** no Replicate endpoint (checked 2026-10-26).
 
 ## Access, pricing, licensing
 

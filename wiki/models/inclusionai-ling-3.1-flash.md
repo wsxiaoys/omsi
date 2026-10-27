@@ -86,8 +86,8 @@ Against the wiki's three-part split test:
 3. **Variant-specific evidence — yes.** Separate AA measurements and a separate model card.
 
 The material therefore *is* per-checkpoint, and this page carries it per checkpoint rather than
-folding it into one verdict. **But the page is not split, because a standalone `1019` page would
-fail the evidence floor:** no independent host record exists for it. OpenRouter pins the earlier
+folding it into one verdict. **But the page is not split:** a standalone `1019` page would rest on
+one evaluator whose figures are vendor-supplied and on no host at all. OpenRouter pins the earlier
 checkpoint (`canonical_slug …-20261002`), DeepInfra's listing predates it, Novita's entry predates
 the model's own announcement, and the vendor's docs, pricing page, changelog and deprecation page
 name only `Ling-3.1-flash` — one SKU, one price, no `1019` line item
@@ -98,9 +98,9 @@ name only `Ling-3.1-flash` — one SKU, one price, no `1019` line item
 `performanceDataSource: firstParty / InclusionAI` with `hostModelCount: 1` — that is the vendor's
 own endpoint, not a host.
 
-**What would flip it:** a host listing a `1019` SKU, or the vendor giving the checkpoint its own
-model ID, price or support window. Either would make a second page defensible; today it would be
-one page citing one evaluator.
+**What would flip it:** an independent measurement of the `1019` checkpoint, a host listing it as a
+`1019` SKU, or the vendor giving it its own model ID, price or support window. Any of those would
+make a second page defensible; today it would be one page citing one evaluator.
 
 **Practical consequence for a reader:** if you call `inclusionai/ling-3.1-flash` on OpenRouter you
 are getting the **`20261002`** checkpoint and the 41-level scores, not the 44-level ones. If you

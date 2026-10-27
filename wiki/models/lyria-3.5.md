@@ -30,7 +30,7 @@ from Lyria 3 Pro on both its music boards
 
 | Route | Identifier | Dated evidence | Status |
 | --- | --- | --- | --- |
-| Google Cloud / Agent Platform | **none** | model card, pricing, API guide, prompt guide, release notes and model-versions index all searched; zero hits for "3.5"; candidate `lyria-3-5`-style URLs 404 ([absence record](../../sources/cloud.google.com/lyria-3-5-not-listed/2026-10-26.md)) | not documented |
+| Google Cloud / Agent Platform | **none** | model card, pricing, API guide, prompt guide, release notes and model-versions index all searched on 2026-10-26; zero hits for "3.5"; candidate `lyria-3-5`-style URLs 404 | not documented |
 | DeepMind product page | "Lyria 3.5" | undated; no `datePublished` in the markup ([DeepMind](../../sources/deepmind.google/lyria-model-page/2026-10-26.md)) | product entry only |
 | fal | `google/lyria-3.5` | catalogue `date` **2026-09-19**, `updated_at` **2026-09-30** ([fal](../../sources/fal.ai/lyria-3-5/2026-10-26.md)) | active, proxy |
 | Replicate | none | `replicate.com/google/lyria-3.5` returns 404 ([Replicate](../../sources/replicate.com/lyria-3/2026-10-26.md)) | not listed |
@@ -168,8 +168,8 @@ or musicality measurement exists in any captured source.
 
 **Billing basis: per generation, flat — not per second, and not per output minute.** fal lists
 `$0.1 per generations` for `google/lyria-3.5`
-([fal](../../sources/fal.ai/lyria-3-5/2026-10-26.md)). Google Cloud lists no 3.5 row at all
-([absence record](../../sources/cloud.google.com/lyria-3-5-not-listed/2026-10-26.md)), so fal's number
+([fal](../../sources/fal.ai/lyria-3-5/2026-10-26.md)). Google Cloud lists no 3.5 row at all (searched
+2026-10-26), so fal's number
 is the only price that exists.
 
 | Surface | Price | Basis | Per-second, at documented length |

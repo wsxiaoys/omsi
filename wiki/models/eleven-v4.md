@@ -33,7 +33,7 @@ are separate roster rows and separate models.
 | ElevenLabs | `POST /v1/text-to-dialogue` with `model_id: eleven_v4` | the route the launch changelog recommends ([Text to Dialogue](../../sources/elevenlabs.com/eleven-v4-text-to-dialogue/2026-10-26.md)) |
 | fal | `elevenlabs/tts/eleven-v4`, `elevenlabs/tts/eleven-v4-turbo` | **not** `fal-ai/elevenlabs/tts/eleven-v4` ([fal](../../sources/fal.ai/eleven-v4/2026-10-26.md)) |
 | WaveSpeedAI | `POST https://api.wavespeed.ai/api/v3/elevenlabs/eleven-v4` (+ `-turbo`) | ([WaveSpeed](../../sources/wavespeed.ai/eleven-v4/2026-10-26.md)) |
-| Replicate | none | `/elevenlabs/v4` and `/elevenlabs/v4-turbo` return 404 at capture ([negative record](../../sources/replicate.com/eleven-v4-not-listed/2026-10-26.md)) |
+| Replicate | none | `/elevenlabs/v4` and `/elevenlabs/v4-turbo` return 404 at capture (checked 2026-10-26) |
 
 The fal endpoint-ID detail matters: ElevenLabs v4 is the first TTS family fal lists under the new
 `elevenlabs/` namespace and the `text-to-speech` category, while v3, Multilingual v2 and Turbo v2.5

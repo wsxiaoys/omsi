@@ -8,9 +8,9 @@ Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `
 
 130 pages exist on `master`: rows 1–100 are complete (row 91 is split into
 `deepseek-v4.1-flash` and `deepseek-v4.1-flash-1017`), and 29 of the 30 rows in Batches 11–13 are
-curated. Row 114 (Qwen-Audio 3.1 TTS Plus) remains `[ ]`: its first-party docs are captured, but
-no independent host serves it, so the evidence floor is unmet. Row 131 (Gemini 3.5 Flash Lite) is
-the proposed Batch 14 lite tier and remains planned.
+curated. Row 114 (Qwen-Audio 3.1 TTS Plus) remains `[ ]`: its first-party docs are captured and it
+has an AA TTS leaderboard row, so the floor is met, but the page has not been written. Row 131
+(Gemini 3.5 Flash Lite) is the proposed Batch 14 lite tier and remains planned.
 
 Eighteen rows predate the one-year window and are retained as specialist/utility or baseline
 exceptions: rows 25–27, 29–30, 38, 47, 49–50, 55, 63–66, 70–71, 74 and 98. Their pages state
@@ -218,7 +218,7 @@ TTS and music releases that now lead the Artificial Analysis TTS board and fal a
 | 111 | Eleven v4 Turbo | ElevenLabs | ElevenLabs `eleven_v4_turbo`; AA TTS leaderboard (#1) | `[x]` half price of `eleven_v4`, ~100ms WebSocket tier |
 | 112 | Inworld Realtime TTS-2 | Inworld | AA TTS leaderboard (`Realtime TTS-2`, `TTS-2 Flash`) | `[x]` successor to TTS-1.5 (#69) |
 | 113 | Cartesia Sonic 3.6 | Cartesia | AA TTS leaderboard (`Sonic 3.6`) | `[x]` |
-| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[ ]` blocked: first-party docs captured, no independent host; evidence floor unmet |
+| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[ ]` sources captured, floor met; page not written |
 | 115 | Voxtral 3 TTS | Mistral | AA TTS leaderboard (`Voxtral 3 TTS`) | `[x]` |
 | 116 | Lyria 3.5 | Google | fal `google/lyria-3.5` | `[x]` successor to Lyria 3 (#73) |
 | 117 | MiniMax Music 3 | MiniMax | fal `minimax/music-3` | `[x]` successor to Music 2.6 (#67) |

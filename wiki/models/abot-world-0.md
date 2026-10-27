@@ -227,8 +227,7 @@ ranking or a lead.
   or SLA for ABot-World-0; the only first-party hosted route is a login-gated, credit-billed Chinese
   playground ([Studio](../../sources/amap.com/abot-world-studio/2026-10-26.md)).
 - **No Replicate listing.** A search of Replicate's catalogue on capture found nothing under "abot",
-  "amap" or "abotworld", and no world-models collection
-  ([Replicate search](../../sources/replicate.com/abot-world-0-not-listed/2026-10-26.md)).
+  "amap" or "abotworld", and no world-models collection (checked 2026-10-26).
 - **Documentation is thin on the numbers that matter.** Resolution is given as "720P" in prose and
   `1280×704` in the host contract; context length, chunk size, maximum blocks, aspect-ratio handling,
   and codec are undocumented or runtime-only.

@@ -34,7 +34,7 @@ Sources: [text-to-3D API](../../sources/meshy.ai/text-to-3d-api/2026-10-26.md),
 [fal catalogue](../../sources/fal.ai/meshy-v7-1-catalogue/2026-10-26.md).
 
 - **Hosts:** Meshy's own API (`api.meshy.ai/openapi/…`) and fal. Replicate had no Meshy listing at
-  capture ([negative record](../../sources/replicate.com/meshy-v7-1-not-listed/2026-10-26.md)). fal
+  capture (checked 2026-10-26). fal
   reports `hostingType: "proxy"`, i.e. it forwards to Meshy rather than running the weights
   ([fal catalogue](../../sources/fal.ai/meshy-v7-1-catalogue/2026-10-26.md)).
 - **Siblings:** Meshy 6 (active), Meshy 6 Lite (active), Meshy 7 (deprecated), and the separate
@@ -233,8 +233,7 @@ declaring feet to metres on 2026-10-12; before the fix the unit mismatch meant "
 - **Host gaps on fal.** fal exposes no `texture_resolution` or `target_formats`, caps the prompt at 600
   characters instead of 800, and does not state whether Ultra geometry carries a surcharge
   ([fal catalogue](../../sources/fal.ai/meshy-v7-1-catalogue/2026-10-26.md)).
-- **No second independent host.** Replicate had no Meshy listing
-  ([negative record](../../sources/replicate.com/meshy-v7-1-not-listed/2026-10-26.md)), so fal is the
+- **No second independent host.** Replicate had no Meshy listing (checked 2026-10-26), so fal is the
   only independent host record and every cross-host claim here rests on one host plus the vendor.
 - **No independent quality evidence.** No benchmark, arena or third-party measurement of Meshy 7.1 was
   captured.

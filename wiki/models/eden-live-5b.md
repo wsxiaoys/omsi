@@ -284,8 +284,7 @@ number without stating the basis.
 ### Replicate — absent
 
 No VAST, Tripo or EdenLive listing exists: nine direct routes returned 404 and five catalogue searches
-returned only fuzzy matches on unrelated models
-([Replicate](../../sources/replicate.com/eden-live-not-listed/2026-10-26.md)). The independent host set
+returned only fuzzy matches on unrelated models (checked 2026-10-26). The independent host set
 for this model is therefore fal plus Reactor, not fal plus Replicate.
 
 ### Weights and licences

@@ -48,7 +48,7 @@ That is one arena's preference vote, not a capability ceiling; see **Independent
 | ElevenLabs | `POST /v1/text-to-speech/{voice_id}` with `model_id: eleven_v4_turbo` | implied by the model table and the pricing page, **not** demonstrated by any captured sample |
 | fal | `elevenlabs/tts/eleven-v4-turbo` (+ `/stream`) | **not** `fal-ai/elevenlabs/…`; `status: public`, `deprecated: false`, `hostingType: proxy` ([fal](../../sources/fal.ai/eleven-v4/2026-10-26.md)) |
 | WaveSpeedAI | `POST https://api.wavespeed.ai/api/v3/elevenlabs/eleven-v4-turbo` | MP3 only, asynchronous ([WaveSpeed](../../sources/wavespeed.ai/eleven-v4/2026-10-26.md)) |
-| Replicate | none | `/elevenlabs/v4-turbo` returned **404** at capture ([negative record](../../sources/replicate.com/eleven-v4-not-listed/2026-10-26.md)) |
+| Replicate | none | `/elevenlabs/v4-turbo` returned **404** at capture (checked 2026-10-26) |
 
 - **Siblings:** `eleven_v4` (the quality tier, same family), and the retained predecessors
   `eleven_v3` / `eleven_v3_conversational` and `eleven_multilingual_v2`. The vendor's Deprecated table
@@ -335,7 +335,7 @@ where the vendor claims v4 is stronger.
   latency and availability are ElevenLabs' too
   ([fal](../../sources/fal.ai/eleven-v4/2026-10-26.md)).
 - **Not on Replicate** four weeks after launch, while v3, Flash v2.5, Turbo v2.5 and Multilingual v2
-  are all listed there ([negative record](../../sources/replicate.com/eleven-v4-not-listed/2026-10-26.md)).
+  are all listed there (checked 2026-10-26).
 - **No weights, no self-hosting, no snapshot pinning** — closed and hosted only, and the vendor says
   behaviour "may shift over time" under the fixed ID.
 

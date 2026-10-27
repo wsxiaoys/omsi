@@ -77,10 +77,18 @@ edits the page. A citation must name the capture it was read from.
 ### Evidence floor
 
 Before a model page is considered started, it needs at least one first-party
-(publisher or model-developer) source **and** at least one independent host
-record. Two host pages alone do not satisfy the floor, because hosts restate
-each other and vendor marketing. If only host material exists, say so in the
-page's evidence status rather than implying vendor confirmation.
+(publisher or model-developer) source **and** at least one independent
+measurement that the model matters on quality, cost or efficiency: a row on a
+leaderboard the vendor does not operate, an independent re-run of a published
+benchmark, or a third party's price, latency or throughput measurement.
+
+A host listing is **not** part of the floor. Hosts list whatever sells and
+restate the vendor's copy, so a catalogue entry says nothing about whether a
+model is worth a page; distribution belongs on the page as a fact. Nor does the
+vendor's own benchmark table count, nor a leaderboard that only republishes
+vendor numbers, nor download counts and stars. If the only independent material
+is a subset re-run or a different harness, say so — it supports the level, not
+the rank.
 
 ## Model identity
 

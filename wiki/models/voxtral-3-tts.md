@@ -67,9 +67,7 @@ CC BY-NC 4.0, at **$13 per 1M characters** against the predecessor's $16
 Sources: [API reference](../../sources/mistral.ai/audio-speech-api-reference/2026-10-26.md),
 [OpenRouter](../../sources/openrouter.ai/voxtral-mini-tts-3-0/2026-10-26.md),
 [regional inference](../../sources/mistral.ai/regional-inference/2026-10-26.md),
-[launch post](../../sources/mistral.ai/voxtral-3-launch/2026-10-26.md),
-[fal negative record](../../sources/fal.ai/voxtral-tts-3-not-listed/2026-10-26.md),
-[Replicate negative record](../../sources/replicate.com/voxtral-tts-3-not-listed/2026-10-26.md).
+[launch post](../../sources/mistral.ai/voxtral-3-launch/2026-10-26.md).
 
 ### Identity ambiguity
 
@@ -313,9 +311,8 @@ an intelligibility or accuracy metric.
   the 3.0 model; fal and Replicate do not list it. Mistral's own endpoints (plus a pass-through
   aggregator) are the whole surface
   ([model card](../../sources/mistral.ai/voxtral-tts-3-model-card/2026-10-26.md),
-  [weights check](../../sources/huggingface.co/voxtral-4b-tts-2603/2026-10-26.md),
-  [fal](../../sources/fal.ai/voxtral-tts-3-not-listed/2026-10-26.md),
-  [Replicate](../../sources/replicate.com/voxtral-tts-3-not-listed/2026-10-26.md)).
+  [weights check](../../sources/huggingface.co/voxtral-4b-tts-2603/2026-10-26.md); fal and Replicate
+  searched 2026-10-26).
 - **Preview-stage behaviour churn.** Silent updates are allowed, and a realtime session reports a
   `-13` snapshot behind the `-3-0` alias
   ([lifecycle policy](../../sources/mistral.ai/model-lifecycle-policy/2026-10-26.md),
@@ -424,9 +421,7 @@ Small 4 for reasoning" and "$0.08/min with larger model", bundling STT, LLM and 
 - **Independent host record:** OpenRouter's model page and endpoints API. **Caveat:** every OpenRouter
   endpoint is `provider_name: "Mistral"`, so it is a pass-through that restates Mistral's price and
   measures Mistral's service — a host record, not a second implementation. fal and Replicate were
-  checked and do not carry the model
-  ([fal](../../sources/fal.ai/voxtral-tts-3-not-listed/2026-10-26.md),
-  [Replicate](../../sources/replicate.com/voxtral-tts-3-not-listed/2026-10-26.md)).
+  checked on 2026-10-26 and do not carry the model.
 - **Independent evaluation:** Artificial Analysis's TTS leaderboard, default view plus the embedded
   per-slice payload.
 
