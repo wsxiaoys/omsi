@@ -6,11 +6,11 @@ records exist under `wiki/models/` and `sources/`.
 
 Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `[w]` in active worktree curation · `[ ]` planned, no page
 
-101 pages exist on `master`: all 100 rows, with row 91 split into `deepseek-v4.1-flash` and
-`deepseek-v4.1-flash-1017`. Batches 1–10 are complete and every page is curated with source
-records; no stubs remain. Batches 11–14 (#101–131) are a proposed upper-bound extension: they
-pass the identity tests and evidence floor on discovery, but are still `[ ]` and have not been
-curated.
+130 pages exist on `master`: rows 1–100 are complete (row 91 is split into
+`deepseek-v4.1-flash` and `deepseek-v4.1-flash-1017`), and 29 of the 30 rows in Batches 11–13 are
+curated. Row 114 (Qwen-Audio 3.1 TTS Plus) remains `[ ]`: its first-party docs are captured, but
+no independent host serves it, so the evidence floor is unmet. Row 131 (Gemini 3.5 Flash Lite) is
+the proposed Batch 14 lite tier and remains planned.
 
 Eighteen rows predate the one-year window and are retained as specialist/utility or baseline
 exceptions: rows 25–27, 29–30, 38, 47, 49–50, 55, 63–66, 70–71, 74 and 98. Their pages state
@@ -31,7 +31,8 @@ the original dates; none claims to be a current-window launch.
   separability), not the host catalogue. Hosts split entries for billing reasons and merge them
   for convenience, so catalogue structure is a lead rather than a decision. Where the split is
   unclear, the page records the ambiguity instead of guessing.
-- Source records exist for every curated page: all 101 pages. Batches 11–14 are planned only.
+- Source records exist for every curated page (130 pages). Row 114 has first-party captures but
+  no page; row 131 is planned.
 - **Lite-tier rule (Batch 14).** A low-priced tier earns a row only when it is the newest member of
   its own efficiency line *and* the vendor is super-mainstream enough that the tier is a real
   production default (Gemini, OpenAI, Anthropic). Tiers that are one of five to eight
@@ -217,7 +218,7 @@ TTS and music releases that now lead the Artificial Analysis TTS board and fal a
 | 111 | Eleven v4 Turbo | ElevenLabs | ElevenLabs `eleven_v4_turbo`; AA TTS leaderboard (#1) | `[x]` half price of `eleven_v4`, ~100ms WebSocket tier |
 | 112 | Inworld Realtime TTS-2 | Inworld | AA TTS leaderboard (`Realtime TTS-2`, `TTS-2 Flash`) | `[x]` successor to TTS-1.5 (#69) |
 | 113 | Cartesia Sonic 3.6 | Cartesia | AA TTS leaderboard (`Sonic 3.6`) | `[x]` |
-| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[x]` |
+| 114 | Qwen-Audio 3.1 TTS Plus | Alibaba | AA TTS leaderboard (`Qwen-Audio-3.1-TTS-Plus`) | `[ ]` blocked: first-party docs captured, no independent host; evidence floor unmet |
 | 115 | Voxtral 3 TTS | Mistral | AA TTS leaderboard (`Voxtral 3 TTS`) | `[x]` |
 | 116 | Lyria 3.5 | Google | fal `google/lyria-3.5` | `[x]` successor to Lyria 3 (#73) |
 | 117 | MiniMax Music 3 | MiniMax | fal `minimax/music-3` | `[x]` successor to Music 2.6 (#67) |
