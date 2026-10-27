@@ -71,7 +71,7 @@ rows are marked `[ ]`.
 | 27 | BiRefNet v2 | open source | fal `fal-ai/birefnet/v2` | `[ ]` |
 | 28 | SAM 3 | Meta | fal `fal-ai/sam-3` | `[ ]` |
 | 29 | Topaz Upscale | Topaz Labs | fal `topaz/upscale` | `[ ]` |
-| 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[ ]` |
+| 30 | Pixelcut Background Removal | Pixelcut | fal `pixelcut/background-removal` | `[x]` |
 
 ## Batch 4 — Video: frontier (10)
 
