@@ -178,7 +178,10 @@ async function buildWiki(): Promise<Wiki> {
       const heading = extractTitle(content, rel);
       const title = kind === "model" ? path.basename(rel, ".md") : heading;
       const origin = meta.origin ?? "";
-      const originUrl = /(https?:\/\/[^\s)]+)/.exec(origin)?.[1] ?? "";
+      const originUrl = (/(https?:\/\/[^\s)]+)/.exec(origin)?.[1] ?? "").replace(
+        /[.,;:)\]>]+$/,
+        "",
+      );
 
       docs.set(rel, {
         path: rel,
@@ -1454,15 +1457,18 @@ const HTML = String.raw`<!doctype html>
   function linkify(text) {
     return text.replace(/(https?:\/\/[^\s<]+)/g, function (url) {
       var trail = '';
-      // Angle brackets around a URL are markdown autolink syntax, and esc() has
-      // already turned them into entities; keep them out of the href.
-      if (url.slice(-4) === '&gt;') {
-        trail = '&gt;';
-        url = url.slice(0, -4);
-      }
-      while (/[.,;:)]$/.test(url)) {
-        trail = url.slice(-1) + trail;
-        url = url.slice(0, -1);
+      // Trailing punctuation and the escaped bracket of a markdown autolink
+      // (&lt;https://…&gt;) are not part of the URL; peel both off, in any order.
+      for (;;) {
+        if (url.slice(-4) === '&gt;') {
+          trail = '&gt;' + trail;
+          url = url.slice(0, -4);
+        } else if (/[.,;:)]$/.test(url)) {
+          trail = url.slice(-1) + trail;
+          url = url.slice(0, -1);
+        } else {
+          break;
+        }
       }
       return '<a href="' + url + '" target="_blank" rel="noreferrer noopener">' + url + '</a>' + trail;
     });
