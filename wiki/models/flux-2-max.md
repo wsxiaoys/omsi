@@ -5,20 +5,20 @@ generation and editing model, and the only FLUX.2 variant with web-grounded gene
 **2025-12-16**, three weeks after [pro] and [flex]
 ([BFL release notes](../../sources/bfl.ai/flux-2-max-release-notes/2026-10-26.md)), and available
 only as a hosted endpoint — no weights are published
-([Hugging Face check](../../sources/huggingface.co/flux-2-max-weights-search/2026-10-26/index.md)).
+([Hugging Face check](../../sources/huggingface.co/flux-2-max-weights-search/2026-10-26.md)).
 
 ## Identity
 
 - Canonical name: **FLUX.2 [max]**. Marketing and host spellings vary: "FLUX.2 Max",
   "Flux 2 Max" (fal, Replicate), "Flux 2 Max (Text to Image)" (fal page title).
 - First-party endpoint: `POST /v1/flux-2-max`
-  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)).
+  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)).
   There is **no `flux-2-max-preview`** and no pinned-snapshot pair, unlike [pro], which ships as
   `flux-2-pro` (frozen) plus `flux-2-pro-preview` (moving)
   ([family overview](../../sources/bfl.ai/flux-2-max-bfl-model-page/2026-10-26.md)).
 - Partner endpoints: `fal-ai/flux-2-max` (text-to-image) and `fal-ai/flux-2-max/edit` (editing)
-  on fal ([t2i](../../sources/fal.ai/flux-2-max/2026-10-26/index.md),
-  [edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26/index.md));
+  on fal ([t2i](../../sources/fal.ai/flux-2-max/2026-10-26.md),
+  [edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26.md));
   `black-forest-labs/flux-2-max` on Replicate, one model covering both
   ([Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md)).
 - Release date: **2025-12-16**, from BFL's changelog. Two host-side dates agree: fal's metadata
@@ -40,14 +40,14 @@ attributes to it alone — grounding search, which the family table marks "Yes" 
 for every other variant ([overview](../../sources/bfl.ai/flux-2-max-bfl-model-page/2026-10-26.md)).
 BFL's own API reference tells readers to "start with FLUX.2 [pro]" for most use cases and reserve
 [max] for "the hardest edits and maximum prompt following"
-([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)). A serving
+([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)). A serving
 profile of one model does not get its own launch announcement and price tier.
 
 **Indistinguishable from [pro] at the request level.** Both endpoints reference the *same*
 OpenAPI request schema, `Flux2Inputs` — same eight `input_image_N` slots, same `disable_pup`, same
 `safety_tolerance` range, same output formats. The family table also gives both "Standard"
 controls. So nothing a caller sends distinguishes the tiers
-([API reference artifact](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)).
+([API reference artifact](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)).
 
 **The weight-level relationship is undocumented.** BFL publishes no parameter count, architecture,
 or benchmark for either tier, and no weights for either. Replicate's README (BFL copy) asserts
@@ -80,9 +80,9 @@ All of the following is vendor or host documentation. None of it is a test resul
 
 - **Text-to-image and editing through one first-party endpoint.** `/v1/flux-2-max` accepts a
   prompt with or without input images; the same schema serves both
-  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)).
+  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)).
   fal splits the two into separate endpoints, and its text-to-image endpoint accepts no images at
-  all ([fal t2i](../../sources/fal.ai/flux-2-max/2026-10-26/index.md)).
+  all ([fal t2i](../../sources/fal.ai/flux-2-max/2026-10-26.md)).
 - **Up to eight reference images via the API, ten in the playground.** BFL's family table and
   Replicate's schema agree on eight for the API; Replicate states it as a hard limit ("Maximum 8
   images") ([overview](../../sources/bfl.ai/flux-2-max-bfl-model-page/2026-10-26.md),
@@ -105,17 +105,17 @@ All of the following is vendor or host documentation. None of it is a test resul
   are lower or narrower — see Limitations.
 - **Prompt upsampling on by default.** `disable_pup: true` turns it off on BFL's API, and the
   field's own description says the default applies to "[pro] and [max]"
-  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)). Neither
+  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)). Neither
   fal nor Replicate exposes an equivalent switch.
 - **Seed** for reproducibility, on all three hosts
-  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md),
-  [fal](../../sources/fal.ai/flux-2-max/2026-10-26/index.md),
+  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md),
+  [fal](../../sources/fal.ai/flux-2-max/2026-10-26.md),
   [Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md)).
 - **Hex color control and JSON-structured prompting**, documented for the family rather than for
   [max] specifically ([overview](../../sources/bfl.ai/flux-2-max-bfl-model-page/2026-10-26.md),
   [marketing page](../../sources/bfl.ai/flux-2-max-marketing-page/2026-10-26.md)).
 - **Async delivery**: submit-and-poll or webhook, with `cost`, `input_mp`, and `output_mp`
-  returned on submission ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md)).
+  returned on submission ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md)).
 
 ### Marketing claims, kept separate
 
@@ -137,7 +137,7 @@ Recorded as claims, not findings:
 - **No public weights.** [max] is hosted-only. BFL's overview offers downloads for [klein] and
   [dev] only, and BFL's Hugging Face organization has no [max] or [pro] repository
   ([overview](../../sources/bfl.ai/flux-2-max-bfl-model-page/2026-10-26.md),
-  [Hugging Face](../../sources/huggingface.co/flux-2-max-weights-search/2026-10-26/index.md)).
+  [Hugging Face](../../sources/huggingface.co/flux-2-max-weights-search/2026-10-26.md)).
   Self-hosting is not an option at any price.
 - **No sampling controls.** Steps and guidance are not exposed — "Standard" controls in the family
   table. [flex] is the family's answer for that
@@ -145,25 +145,25 @@ Recorded as claims, not findings:
 - **Moderation ranges differ by host, so a tolerance value is not portable.** BFL accepts an
   integer 0–7 (default 2), gated per route and organization, with unapproved levels returning 422;
   fal and Replicate accept 1–5 (default 2). A value legal on BFL's API (0, 6, or 7) is out of
-  range on both hosts ([BFL](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md),
-  [fal](../../sources/fal.ai/flux-2-max/2026-10-26/index.md),
+  range on both hosts ([BFL](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md),
+  [fal](../../sources/fal.ai/flux-2-max/2026-10-26.md),
   [Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md)). fal also adds a separate
   `enable_safety_checker` switch whose disabling "requires account authorization".
 - **The 4MP ceiling is not reachable everywhere.** fal bounds output to `max_area` 4,194,304 px
   with 2560 px per side; Replicate caps output at 2048×2048 and recommends 2MP or below, so its
   4MP setting only lands near 1:1
-  ([fal](../../sources/fal.ai/flux-2-max/2026-10-26/index.md),
+  ([fal](../../sources/fal.ai/flux-2-max/2026-10-26.md),
   [Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md)).
 - **Prompt-length limit is undocumented.** BFL's schema puts no bound on `prompt`; the only
   figure anywhere is the family marketing bullet "32K text input tokens", which is not scoped to
   [max] and carries no tokenizer detail
-  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26/index.md),
+  ([API reference](../../sources/bfl.ai/flux-2-max-api-reference/2026-10-26.md),
   [marketing page](../../sources/bfl.ai/flux-2-max-marketing-page/2026-10-26.md)).
 - **No documented input-megapixel cap for [max].** BFL charges for input megapixels but states no
   ceiling; fal declares a bare string array for `image_urls` with no `maxItems`; Replicate caps
   reference images at eight but says nothing about total input megapixels
-  ([BFL](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26/index.md),
-  [fal edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26/index.md),
+  ([BFL](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26.md),
+  [fal edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26.md),
   [Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md)).
 - **Host-specific gaps.** fal's text-to-image endpoint takes no images; neither fal nor Replicate
   exposes `disable_pup`; neither host documents grounding search, though Replicate's README lists
@@ -182,9 +182,9 @@ Recorded as claims, not findings:
 | fal `fal-ai/flux-2-max` | $0.07 first processed MP | $0.03 | billed as processed MP on `/edit` | $0.16 |
 | Replicate `black-forest-labs/flux-2-max` | $0.04/run + $0.03/output MP = $0.07 | $0.03 | $0.03/input MP | $0.04 + $0.12 = $0.16 |
 
-Sources: [BFL pricing feed](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26/index.md),
-[fal](../../sources/fal.ai/flux-2-max/2026-10-26/index.md),
-[fal edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26/index.md),
+Sources: [BFL pricing feed](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26.md),
+[fal](../../sources/fal.ai/flux-2-max/2026-10-26.md),
+[fal edit](../../sources/fal.ai/flux-2-max-edit/2026-10-26.md),
 [Replicate](../../sources/replicate.com/flux-2-max/2026-10-26.md).
 
 - **The three schedules decompose differently and agree numerically.** BFL's "first MP $0.07 +
@@ -194,7 +194,7 @@ Sources: [BFL pricing feed](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10
 - **BFL's printed "Image Editing from $0.10" is not a separate rate.** It is the $0.07 first-MP
   price plus one input megapixel at $0.03 — the same arithmetic reproduces every FLUX.2 row on
   that page. The input-megapixel charge is what makes editing cost more
-  ([pricing feed](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26/index.md)).
+  ([pricing feed](../../sources/bfl.ai/flux-2-max-pricing-feed/2026-10-26.md)).
 - **Relative to siblings:** [max]'s $0.07 first megapixel is 2.33× [pro]'s $0.03, 1.4× [flex]'s
   $0.05, and 5× [klein] 4B's $0.014 (same record).
 - **Licensing:** fal's model metadata flags the endpoint `licenseType: commercial`, but that is a

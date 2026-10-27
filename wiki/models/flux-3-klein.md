@@ -63,19 +63,19 @@ canonical name is **FLUX 3 Image Klein**.
   deployments such as Replicate. Both stay obtainable, the difference is a caller-visible choice
   (16 vs 50 steps, LoRA-compatible vs training target), and each has its own model card — so this
   page keeps one identity with a checkpoint split rather than two pages.
-- **It is not FLUX.2 [klein].** FLUX.2 [klein] 4B/9B is the prior generation
-  (rows 14–15 of the roster, no page yet). Klein 3 has fewer parameters than FLUX.2 [klein] 9B
-  (5.6B vs 9B) and scores higher on independent preference votes, so findings do not transfer in
-  either direction.
+- **It is not FLUX.2 [klein].** The prior generation has its own pages:
+  [FLUX.2 [klein] 4B](flux-2-klein-4b.md) and [FLUX.2 [klein] 9B](flux-2-klein-9b.md). Klein 3 has
+  fewer parameters than FLUX.2 [klein] 9B (5.6B vs 9B) and scores higher on independent preference
+  votes, so findings do not transfer in either direction.
 
-### Identity question left open
+### FLUX 3 Max is a video model
 
-The roster treats "FLUX 3 Max" as a FLUX 3 image tier (row 18). The only captured evidence for
-that label describes it as a **video** model: fal's `blackforestlabs/flux-3-max/*` endpoints are
+The roster initially treated "FLUX 3 Max" as a FLUX 3 image tier (row 18). The captured evidence
+describes it as a **video** model: fal's `blackforestlabs/flux-3-max/*` endpoints are
 text-to-video, image-to-video and keyframes-to-video, and fal calls it "a post-trained variant of
-FLUX 3 Video"
-([fal catalogue](../../sources/fal.ai/flux-3-klein/2026-10-26.md)). Whether a first-party FLUX 3
-image model above FLUX 3 Image exists is not settled here; that belongs to row 18's page.
+FLUX 3 Video" ([fal catalogue](../../sources/fal.ai/flux-3-klein/2026-10-26.md)). The dedicated
+[FLUX 3 Max](flux-3-max.md) page records the identity correction; no first-party FLUX 3 image
+model above FLUX 3 Image was found.
 
 ## Current assessment
 
