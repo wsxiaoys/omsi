@@ -41,7 +41,8 @@ No weights are published and BFL's own API does not serve it.
   ([release notes](../../sources/bfl.ai/flux-3-max-release-notes/2026-10-26.md)).
 - **Siblings / name collisions:**
   - FLUX 3 Video — the base, served first-party by BFL. Same family, different checkpoint.
-  - FLUX 3 Image, FLUX 3 Image Klein, FLUX 3 Action, FLUX 3 Dev — the other FLUX 3 products.
+  - [FLUX 3 Image](flux-3-image.md), [FLUX 3 Image Klein](flux-3-klein.md), FLUX 3 Action,
+    FLUX 3 Dev — the other FLUX 3 products.
     BFL's launch plan names exactly those four and **not** Max
     ([announcement](../../sources/bfl.ai/flux-3-max-family-announcement/2026-10-26.md)).
   - **FLUX.2 \[max]** — an unrelated 2025 image model, and the only "max" row in BFL's price list

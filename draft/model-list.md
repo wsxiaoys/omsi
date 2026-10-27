@@ -8,8 +8,8 @@ Status: `[s]` stub page created, no sources · `[x]` page + sources curated · `
 
 23 pages exist. Image: all ten Batch 1 pages, all ten Batch 2 pages (FLUX 3 Max is a video
 derivative, not an image tier), and Recraft V4 Pro from Batch 3. Text: the two DeepSeek V4.1 Flash
-pages from Batch 10. All 23 pages are curated with source records; no stubs remain. Rows in
-batches 4–9 without a page are marked `[ ]`.
+pages from Batch 10. All 23 pages are curated with source records; no stubs remain. Remaining
+rows are marked `[ ]`.
 
 ## How this roster was built
 

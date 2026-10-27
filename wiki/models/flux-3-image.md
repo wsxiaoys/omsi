@@ -31,9 +31,10 @@ says "FLUX 3 Image is the part that generates and edits images"
 - Release: 2026-10-01 first-party and on both captured hosts the same day. Inside the one-year
   window.
 - Siblings: FLUX 3 Video (2026-08-04, `POST /v1/flux-3-video`), FLUX 3 Action (open weights on
-  Hugging Face from 2026-09-22), FLUX 3 Image, FLUX 3 Image Klein (2026-10-15, open weights, 5.6B),
-  and the planned open-weight "FLUX 3 Dev" multimodal backbone named in the launch plan but not
-  found as a shipped page or weights repository at capture
+  Hugging Face from 2026-09-22), FLUX 3 Image, [FLUX 3 Image Klein](flux-3-klein.md) (2026-10-15,
+  open weights, 5.6B), [FLUX 3 Max](flux-3-max.md) (a video derivative, not an image tier), and the
+  planned open-weight "FLUX 3 Dev" multimodal backbone named in the launch plan but not found as a
+  shipped page or weights repository at capture
   ([HF search](../../sources/huggingface.co/flux3-image-weights-search/2026-10-26.md)). The FLUX.2
   family is the prior generation; FLUX.2 [pro] has its own page at [flux-2-pro.md](./flux-2-pro.md).
 

@@ -41,12 +41,13 @@ canonical name is **FLUX 3 Image Klein**.
 - Release date: **2026-10-15** (BFL release note and launch post both dated that day; fal published
   its endpoints 2026-10-15; the Hugging Face repositories were created 2026-10-13/14). This is
   inside the one-year window (cutoff 2025-10-26).
-- Siblings: **FLUX 3 Image** (the hosted parent; only Klein has published weights, since BFL calls
-  Klein "the second open weights release from the FLUX 3 family" —
-  [launch post](../../sources/bfl.ai/flux-3-image-klein-blog/2026-10-26.md), stub page
-  [flux-3-image.md](./flux-3-image.md)); FLUX 3 Video, FLUX 3 Action and FLUX 3 Max elsewhere in
-  the FLUX 3 family; and the prior generation FLUX.2 [pro] ([flux-2-pro.md](./flux-2-pro.md)),
-  [max], [flex], [dev] and [klein] 4B/9B.
+- Siblings: **[FLUX 3 Image](flux-3-image.md)** (the hosted parent; only Klein has published
+  weights among the image tiers, since BFL calls Klein "the second open weights release from the
+  FLUX 3 family" —
+  [launch post](../../sources/bfl.ai/flux-3-image-klein-blog/2026-10-26.md)); FLUX 3 Video, FLUX 3
+  Action and [FLUX 3 Max](flux-3-max.md) elsewhere in the FLUX 3 family; and the prior generation
+  [FLUX.2 [pro]](flux-2-pro.md), [max](flux-2-max.md), [flex](flux-2-flex.md),
+  [dev](flux-2-dev.md), and [klein] [4B](flux-2-klein-4b.md) / [9B](flux-2-klein-9b.md).
 
 ### Identity questions that are settled
 
