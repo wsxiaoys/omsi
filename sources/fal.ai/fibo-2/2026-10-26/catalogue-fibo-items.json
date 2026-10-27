@@ -1,0 +1,909 @@
+{
+ "query": "GET https://fal.ai/api/models?keywords=bria",
+ "captured": "2026-10-26",
+ "total_items_in_query": 55,
+ "note": "Fibo-related items only, copied verbatim from the catalogue response; other BRIA items (RMBG, eraser, expand, product-shot, video) omitted.",
+ "items": [
+  {
+   "id": "bria/fibo-2/generate",
+   "discovery": {
+    "tasks": [
+     "text-to-image"
+    ],
+    "family": "Fibo",
+    "version": "2.0",
+    "variant": "Generate",
+    "tags": [
+     "input:text",
+     "output:image",
+     "task:generate-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "dbb0v4cregj81mifipl0",
+   "isFavorited": false,
+   "title": "Fibo 2.0 Generate",
+   "category": "text-to-image",
+   "tags": [
+    "text-to-image",
+    "image generation",
+    "complex prompts",
+    "structured prompts",
+    "aspect ratios",
+    "e-commerce",
+    "marketing creative",
+    "product imagery",
+    "commercial use",
+    "licensed AI"
+   ],
+   "shortDescription": "Fibo 2.0 Generate is Bria's text-to-image model, strongest on reasoning and knowledge-heavy prompts the ones that need real understanding, not just a style match. Trained only on licensed data, with clear commercial rights.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aaf018b/OBERerkifKAq4LsOG1Eed.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-2/generate",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-10-19T12:39:45.491Z",
+   "group": {
+    "key": "bria-fibo-2",
+    "label": "Generate"
+   },
+   "pricingInfoOverride": "Your request will cost $0.04 per image",
+   "machineType": null,
+   "examples": [],
+   "description": "Fibo 2.0 Generate is Bria's text-to-image model for campaign visuals, product and lifestyle scenes, and prompts that involve multiple subjects or spatial relationships. Bria describes its strengths as reasoning- and knowledge-heavy prompts and states that it is trained on licensed data.\n\nThe endpoint accepts a free-form prompt, which is expanded into a structured prompt, or a VGL document used directly. The structured prompt is returned with the generated image and can be reused in a later request.\n\nOutput is approximately one megapixel, with 21 aspect ratios from panoramic 5:1 to vertical 1:5. A seed controls reproducibility, and sync mode returns the image directly in the response. An optional image_url provides a visual reference for a prompt, or a close variation when used alone. It cannot be combined with vgl or style.\n\nFor changes to an existing image, use Fibo 2.0 Edit.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-10-20T15:00:51.801Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-2/edit",
+   "discovery": {
+    "tasks": [
+     "image-editing"
+    ],
+    "family": "Fibo",
+    "version": "2.0",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:edit-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "dbb0vi4regj95lqfjm9g",
+   "isFavorited": false,
+   "title": "Fibo 2.0 Edit",
+   "category": "image-to-image",
+   "tags": [
+    "image editing",
+    "instruction-based image editing",
+    "reference images",
+    "e-commerce",
+    "product photography",
+    "background swap",
+    "product restaging",
+    "campaign localization",
+    "masked editing",
+    "commercial use",
+    "licensed AI"
+   ],
+   "shortDescription": "Fibo 2.0 Edit makes targeted, instruction-based edits from up to four images. Background swaps, product restaging, keeping the product true to the original. Trained only on licensed data, with clear commercial rights.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aaf018f/r_IIxW5iTEj8Z1mQQQesQ.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-2/edit",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-10-19T12:40:40.081Z",
+   "group": {
+    "key": "bria-fibo-2",
+    "label": "Edit"
+   },
+   "pricingInfoOverride": "Your request will cost $0.04 per image",
+   "machineType": null,
+   "examples": [],
+   "description": "Fibo 2.0 Edit is Bria's image editing model for background changes, product restaging, campaign adaptations, and reference-guided variations. Bria states that the model is trained on licensed data.\n\nThe endpoint accepts one to four images in image_urls: the source image first, followed by up to three references. Instructions can refer to them as <image_1>, <image_2>, and so on. Free-form instructions are expanded into a VGL document, which is returned with the edited image and can be reused directly.\n\nSingle-image requests keep the source aspect ratio. An optional mask marks the area to regenerate in white and the area to preserve in black; it must match the source image size. Masked output retains the source dimensions and the original pixels outside the mask. Masks are supported only with a single image.\n\nMulti-image requests support 21 output aspect ratios at approximately one megapixel. Left unset, the output keeps the first image's aspect ratio. A seed controls reproducibility, and sync mode returns the image directly in the response.\n\nFor generation from a text prompt, use Fibo 2.0 Generate.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-10-20T15:00:44.422Z",
+   "deprecated": false,
+   "resultComparison": true,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit-1.5/expand",
+   "discovery": {
+    "tasks": [],
+    "family": "Fibo",
+    "version": "1.5",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:outpaint-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "db4r58sregj1euo07mj0",
+   "isFavorited": false,
+   "title": "Bria Expand (FIBO-Edit-1.5)",
+   "category": "image-to-image",
+   "tags": [
+    "image expansion",
+    "outpainting",
+    "aspect ratio",
+    "canvas extension",
+    "e-commerce",
+    "image editing"
+   ],
+   "shortDescription": "Bria Expand extends an image beyond its borders to any of 9 aspect ratios or a custom canvas up to 25 megapixels. Built on FIBO-Edit-1.5, with optional prompt guidance for the new area and the original pixels kept at full resolution.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aadc4f5/AJbmm8K8W1VNcBKFIjI1l.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit-1.5/expand",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-10-10T03:36:03.330Z",
+   "group": {
+    "key": "bria-fibo-edit-1.5",
+    "label": "Expand"
+   },
+   "pricingInfoOverride": "Your request will cost **$0.04** per image.",
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-10-14T17:20:09.587Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit-1.5/virtual-try-on",
+   "discovery": {
+    "tasks": [],
+    "family": "Fibo",
+    "version": "1.5",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:edit-image",
+     "task:virtual-try-on"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "dam0sq4regj13p31qbc0",
+   "isFavorited": false,
+   "title": "Bria Virtual Try-On (FIBO-Edit-1.5)",
+   "category": "image-to-image",
+   "tags": [
+    "virtual try-on",
+    "fashion tech",
+    "apparel",
+    "e-commerce",
+    "garment visualization",
+    "fitting room",
+    "image editing"
+   ],
+   "shortDescription": "Bria Virtual Try-On edits a person photo to show the subject wearing garments or accessories from one to three reference images, guided by optional text instructions. Built on FIBO-Edit-1.5, it supports multi-garment changes and preserves the source aspect ratio by default.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aaace34/m1K534dU518WX0hCH5qrc.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit-1.5/virtual-try-on",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-09-17T15:59:36.855Z",
+   "group": {
+    "key": "bria-fibo-edit-1.5",
+    "label": "Virtual Try-On"
+   },
+   "pricingInfoOverride": "Billing is calculated per generated image at **$0.04**, regardless of resolution. For example, **10 images cost $0.40**.",
+   "machineType": null,
+   "examples": [
+    "a0d63ea4-2de8-4b64-9a81-68a5c9226286"
+   ],
+   "description": "Bria Virtual Try-On uses FIBO-Edit-1.5 to visualize garments and accessories on a person. The endpoint accepts a person image and one to three garment or accessory reference images for outfit changes in a single generation.\n\nAn optional instruction adds direction to the built-in try-on instruction, specifying which garments to replace, how to layer them, and which items should stay unchanged. The output keeps the person image's aspect ratio unless an explicit aspect ratio is selected. A seed controls reproducibility, and sync mode can return the image directly in the response.\n\nUse cases include apparel e-commerce listings, digital lookbooks, seasonal catalogs, virtual fitting rooms, and social commerce creative.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-09-17T16:28:31.632Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit-1.5/edit",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "version": "1.5",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:edit-image",
+     "task:style-transfer",
+     "task:virtual-try-on"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "da25m94regj0e0cpi76g",
+   "isFavorited": false,
+   "title": "Fibo Edit 1.5 Image Editing",
+   "category": "image-to-image",
+   "tags": [
+    "stylized",
+    "transform",
+    "editing"
+   ],
+   "shortDescription": "Commercially safe, multi-reference image editing model. Follows natural language instructions alone or with up to 4 reference images, purpose-built for complex object and character combinations, virtual try-on, background replacement, style transfer, and more.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa6d5e8/yOi-9W3zC_BCDdcIiU-ga.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit-1.5/edit",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-18T13:16:20.570Z",
+   "group": {
+    "key": "bria-fibo-edit-1.5",
+    "label": "Image Editing"
+   },
+   "machineType": null,
+   "examples": [
+    "1c66b6de-24d6-4549-b480-32365646d826",
+    "1ceae2ed-1f7d-4047-a280-2e3bdaa407ba",
+    "331f7e16-dff7-46ab-be9a-36ac02351e24",
+    "ac8fe8c7-5c11-4f1e-900f-4823d338ac09",
+    "36fd097f-e124-4c5b-9b3e-d3d730191248"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-26T06:50:22.045Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/relight",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:relight-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nmj6cregja209rar0g",
+   "isFavorited": false,
+   "title": "Fibo Edit [Relight]",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "relighting",
+    "json"
+   ],
+   "shortDescription": "Precise, controllable photo re-lighting with structured text inputs. Apply natural lighting styles, soften harsh shadows, and transform scene illumination - production-ready and trained exclusively on licensed data.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b2423/RcBGC6N3eWjIoh-8jqvlr_6a7d71be051c495a8d0243021b8d8bbc.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/relight",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:40:09.156Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Relight"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:40:09.156Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/edit",
+   "discovery": {
+    "tasks": [
+     "image-editing"
+    ],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:edit-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nm7nsregjbft1r8b9g",
+   "isFavorited": false,
+   "title": "Fibo Edit",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "image-editing",
+    "json"
+   ],
+   "shortDescription": "High-fidelity image editing model with state-of-the-art controllability. Combines JSON + Mask + Image for precise, fine-grained edits ideal for production and enterprise workflows. Trained on licensed data - safe for commercial use.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b2391/TzByxh26B-nDqx9gTZc0b_f58ca08fafa840de8434a2793b9f2d93.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/edit",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:15:43.270Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Edit"
+   },
+   "machineType": null,
+   "examples": [
+    "21b4375c-eafa-4dfc-952b-e183de5e7a90",
+    "7795e7c3-6c20-4479-be68-4568b416e6de",
+    "18ec3616-8cf8-4c2b-af0e-008f0220b445",
+    "5bef0574-0feb-40ea-b56d-cd5e0e56b72d",
+    "b3fa52df-2397-4851-b217-e7508d77ae0f",
+    "a1679864-f534-4f8e-b042-ca8ccec417b4"
+   ],
+   "description": "High-fidelity image editing model with state-of-the-art controllability. Combines JSON + Mask + Image for precise, fine-grained edits ideal for production and enterprise workflows. Trained on licensed data - safe for commercial use.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:15:43.270Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/restore",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:denoise-image",
+     "task:restore-image",
+     "task:sharpen-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nmlq4regjc92hrbdfg",
+   "isFavorited": false,
+   "title": "Fibo Edit [Restore]",
+   "category": "image-to-image",
+   "tags": [
+    "image-restoration",
+    "fibo-edit",
+    "bria",
+    "json"
+   ],
+   "shortDescription": "Photo restoration model that automatically denoises, deblurs, and enhances old or damaged photos - removes imperfections while preserving original character.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b2441/xs0GaTAO7yUEIyxNUFA1t_358414183ebb4bc6b8e418880de46a03.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/restore",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:45:44.048Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Restore"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:45:44.048Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo/generate",
+   "discovery": {
+    "tasks": [
+     "image-editing",
+     "text-to-image"
+    ],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:text",
+     "output:image",
+     "task:edit-image",
+     "task:generate-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d40uh9sregjfc9v1uci0",
+   "isFavorited": false,
+   "title": "Fibo",
+   "category": "text-to-image",
+   "tags": [
+    "bria",
+    "fibo",
+    "prompt-adherence"
+   ],
+   "shortDescription": "SOTA open-source text-to-image model delivering high-fidelity outputs with accurate typography. JSON-structured prompts provide production-ready controllability for enterprise and agentic workflows. Trained exclusively on licensed data.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/monkey/KZ0Rdf_H7CtVE7Gpqk7XB_430bc50472c44700aaee472dd73c18f1.jpg",
+   "modelUrl": "https://fal.run/bria/fibo/generate",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2025-10-29T10:12:55.756Z",
+   "machineType": null,
+   "examples": [
+    "78bdce55-a7a4-4222-a2a3-22e1678c22a2",
+    "0934f8ec-6f53-4390-8d64-7f1b3f3f1039",
+    "11d73667-04d8-477a-ac73-c315799229fc",
+    "c5c11b0e-2a10-4798-820a-f3972107e8cf",
+    "c6ebec38-bb91-48e8-8d3c-baf6cd47514c",
+    "be9f03f0-1621-4e38-b13b-5c30365b4953",
+    "98f74c02-2a5a-47d0-b987-476753ada7b2",
+    "98d87061-2815-4a2f-a4b9-9fec552ed2c5"
+   ],
+   "description": "SOTA open-source text-to-image model delivering high-fidelity outputs with accurate typography. JSON-structured prompts provide production-ready controllability for enterprise and agentic workflows. Trained exclusively on licensed data.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2025-10-29T10:12:55.756Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-gen-1.5/text-to-image",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "version": "1.5",
+    "tags": [
+     "input:text",
+     "output:image",
+     "task:generate-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "da21i1sregj7p0ci0b90",
+   "isFavorited": false,
+   "title": "Fibo Gen 1.5 Text to Image",
+   "category": "text-to-image",
+   "tags": [
+    "stylized",
+    "transform",
+    "realism"
+   ],
+   "shortDescription": "Text-to-image model with high-fidelity outputs, accurate typography, and style preset, strong in photorealism, textures, and beyond. JSON-structured prompts give enterprise and agentic workflows production-ready control. Trained on licensed data.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aa6d4c9/_rpYrcZ6wOWy82Q_F5OuM.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-gen-1.5/text-to-image",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-08-18T08:34:15.254Z",
+   "machineType": null,
+   "examples": [
+    "c0d8b9e8-2f2a-4cfa-b86b-58600f9d10fb",
+    "ccd2988c-5aa2-4cb2-9662-88c955cc50df",
+    "a7556734-3ac9-4e32-be56-295ba99e5899"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-08-24T14:55:10.307Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/colorize",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:adjust-image-colors",
+     "task:colorize-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nllksregja36hr3q6g",
+   "isFavorited": false,
+   "title": "Fibo Edit [Colorize]",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "color"
+   ],
+   "shortDescription": "Image colorization and color-grading model. Bring color to black-and-white photos or apply curated color treatments using simple style-based commands.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b22ac/WkSYi-IgNLEv3uRGvcvAc_13b3ad6702bb451086ff8971fb1b302f.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/colorize",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T10:37:07.394Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Colorize"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T10:37:07.394Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit-1.5/product-holding",
+   "discovery": {
+    "tasks": [],
+    "family": "Fibo",
+    "version": "1.5",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:composite-image",
+     "task:edit-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "dam0smkregjfs431q7lg",
+   "isFavorited": false,
+   "title": "Bria Product Holding (FIBO-Edit-1.5)",
+   "category": "image-to-image",
+   "tags": [
+    "product in hand",
+    "product placement",
+    "person holding product",
+    "product photography",
+    "e-commerce",
+    "marketing visuals",
+    "brand campaigns",
+    "UGC-style content",
+    "commercial use",
+    "licensed AI"
+   ],
+   "shortDescription": "Bria Product Holding edits a person photo to show the subject holding or carrying a product, using one to three product reference images and optional text instructions. Built on FIBO-Edit-1.5, it preserves the source aspect ratio by default and supports a selectable output aspect ratio.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0aaace30/icQi2Jfgz7oQDWifoEC_q.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit-1.5/product-holding",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-09-17T15:59:22.167Z",
+   "group": {
+    "key": "bria-fibo-edit-1.5",
+    "label": "Product Holding"
+   },
+   "pricingInfoOverride": "Billing is calculated per generated image at **$0.04**, regardless of resolution. For example, **10 images cost $0.40**.",
+   "machineType": null,
+   "examples": [
+    "d2cf6c64-6c4d-43dc-9639-64d76a630581"
+   ],
+   "description": "Bria Product Holding uses FIBO-Edit-1.5 to place a product in a person's hands or show the person carrying it. The endpoint accepts a person image and one to three product reference images, which can show packaging, another angle, or a companion item.\n\nAn optional instruction adds direction to the built-in product-holding instruction, such as which hand holds the product or whether its logo faces the camera. The output keeps the person image's aspect ratio unless an explicit aspect ratio is selected. A seed controls reproducibility, and sync mode can return the image directly in the response.\n\nUse cases include e-commerce lifestyle images, product listings, brand campaigns, and social commerce creative.",
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-09-17T16:28:25.571Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-lite/generate",
+   "discovery": {
+    "tasks": [
+     "text-to-image"
+    ],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "variant": "Lite",
+    "tags": [
+     "input:text",
+     "output:image",
+     "task:generate-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d50mf2cregj23hlvpk9g",
+   "isFavorited": false,
+   "title": "Fibo Lite",
+   "category": "text-to-image",
+   "tags": [
+    "bria",
+    "fibo",
+    "lite"
+   ],
+   "shortDescription": "Fast, low-latency text-to-image model with high-quality output and full JSON-structured controllability. Open-source, trained on licensed data, and optimized for production-scale generation.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a868a4a/_QE3Hulvi5T-kP4GZwZxf_35c1ffe448b0481183bdb17a0618ef52.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-lite/generate",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2025-12-16T14:07:05.087Z",
+   "machineType": null,
+   "examples": [
+    "6b3947b5-449e-4dc3-8dc6-376b730b1e7a",
+    "e535c5b3-8a47-4a86-a7c9-83d7bbf576d3",
+    "48e03088-3580-4579-8363-f4ed3fe449a0",
+    "3a92830e-dbe6-4e94-9525-580b74e5c1f5",
+    "09358cce-6570-4100-87d8-013d8bbb1ca2",
+    "77adcd1a-8a6f-45bf-93c9-4c8bd79ad601",
+    "dbf25b0f-33e6-47f1-8723-a7775a6e4788",
+    "b02c39b0-fcc0-4e5c-ba09-580092008bb8"
+   ],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2025-12-16T14:07:05.087Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/erase_by_text",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:remove-image-object"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nma7kregja211r8u0g",
+   "isFavorited": false,
+   "title": "Fibo Edit [Erase by Text]",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "prompt-eraser"
+   ],
+   "shortDescription": "Remove unwanted objects from images with a text prompt - fast, precise editing that seamlessly blends results. Built for production scale and trained on licensed data for safe commercial use.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b23af/c69cfQKwEcq8-r1yWTAQp_7190e3ad18a141e9b2c0b5f64311be31.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/erase_by_text",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:21:02.673Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Erase by Text"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:21:02.673Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo/generate/structured_prompt",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:text",
+     "output:json",
+     "task:write-prompt"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d413e4cregj29jf22jfg",
+   "isFavorited": false,
+   "title": "Fibo",
+   "category": "text-to-json",
+   "tags": [
+    "bria",
+    "fibo",
+    "structured-prompting"
+   ],
+   "shortDescription": "Structured Prompt Generation endpoint for Fibo, Bria's SOTA Open source model.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/kangaroo/0DWtoqgo_Rli062CkYFDy_1329a7c4a855435c94b1e9d7169fe405.jpg",
+   "modelUrl": "https://fal.run/bria/fibo/generate/structured_prompt",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2025-10-29T15:47:29.106Z",
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2025-10-29T15:47:29.106Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/add_object_by_text",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:add-image-object"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nm5mcregjapahr7qd0",
+   "isFavorited": false,
+   "title": "Fibo Edit [Add Object by Text]",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "object-addition",
+    "json"
+   ],
+   "shortDescription": "Precisely insert new objects into images with structured spatial commands. Context-aware, high-quality editing with seamless blending. Trained on licensed data for risk-free commercial and brand-safe use.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b236f/uXgjCOumhqoBoOk1AZ91X_ed4e0c8f0cfb46acb1bdb5e2b66a2a58.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/add_object_by_text",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:11:21.771Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Add Object by Text"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:11:21.771Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  },
+  {
+   "id": "bria/fibo-edit/reseason",
+   "discovery": {
+    "tasks": [],
+    "hosting": "serverless",
+    "family": "Fibo",
+    "tags": [
+     "input:image",
+     "output:image",
+     "task:edit-image"
+    ],
+    "lab": "Bria AI"
+   },
+   "modelId": "d5nmknsregjapahrb6d0",
+   "isFavorited": false,
+   "title": "Fibo Edit [Reseason]",
+   "category": "image-to-image",
+   "tags": [
+    "bria",
+    "fibo-edit",
+    "reseason"
+   ],
+   "shortDescription": "Transform the season or weather of an image - summer to winter, sunny to rainy - with realistic atmosphere and lighting. Trained exclusively on licensed data for risk-free commercial use.",
+   "thumbnailUrl": "https://v3b.fal.media/files/b/0a8b2436/-APQ6KojmPWSlZmt9kQbv_0cb651b353f94746b86aed13325cd8aa.jpg",
+   "modelUrl": "https://fal.run/bria/fibo-edit/reseason",
+   "githubUrl": "",
+   "licenseType": "commercial",
+   "date": "2026-01-20T11:43:27.199Z",
+   "group": {
+    "key": "fibo-edit",
+    "label": "Reseason"
+   },
+   "machineType": null,
+   "examples": [],
+   "authSkippable": false,
+   "status": "public",
+   "publishedAt": "2026-01-20T11:43:27.199Z",
+   "deprecated": false,
+   "resultComparison": false,
+   "hidePricing": false,
+   "removed": false,
+   "modelLab": "Bria AI",
+   "modelLabId": "d8m36bkregj5ka3lrd00",
+   "modelFamily": "Fibo",
+   "hostingType": "serverless",
+   "kind": "inference",
+   "trainingEndpoints": []
+  }
+ ]
+}
